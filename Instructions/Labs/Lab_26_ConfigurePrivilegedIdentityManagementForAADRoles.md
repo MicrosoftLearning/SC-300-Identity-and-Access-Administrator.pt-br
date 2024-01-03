@@ -1,33 +1,33 @@
 ---
 lab:
-  title: 26 - Configurar o Privileged Identity Management para funções do Azure AD
+  title: 26 – Configurar o Privileged Identity Management para funções do Microsoft Entra
   learning path: '04'
   module: Module 04 - Plan and Implement and Identity Governance Strategy
 ---
 
-# Laboratório 26: Configurar o Privileged Identity Management para funções do Azure AD
+# Laboratório 26 – Configurar o Privileged Identity Management para funções do Microsoft Entra
 
 ## Cenário do laboratório
 
-Um Administrador de funções com privilégios pode personalizar o PIM (Privileged Identity Management) em sua organização, incluindo alterar a experiência de um usuário que está ativando uma atribuição de função qualificada. Você deve se familiarizar com a configuração do PIM.
+Um administrador de funções com privilégios pode personalizar o PIM (Privileged Identity Management) em sua organização do Microsoft Entra, incluindo alterar a experiência de um usuário que está ativando uma atribuição de função elegível. Você deve se familiarizar com a configuração do PIM.
 
-#### Tempo previsto: 30 minutos
+#### Tempo estimado: 30 minutos
 
-### Exercício 1 - Definir configurações de função do Azure AD
+### Exercício 1 – Definir as configurações de função do Microsoft Entra
 
-#### Tarefa 1 - Abrir configurações de função
+#### Tarefa 1 – Abrir configurações de função
 
-Siga estas etapas para abrir as configurações de uma função do Azure AD.
+Siga estas etapas para abrir as configurações de uma função do Microsoft Entra.
 
-1. Entre no  [https://portal.azure.com](https://portal.azure.com) como administrador global.
+1. Entre no  [https://entra.microsoft.com](https://entra.microsoft.com) como um Administrador global.
 
-2. Pesquise e selecione o **Azure AD Privileged Identity Management.**
+2. Pesquise e selecione o **Privileged Identity Management.**
 
-3. Na página Privileged Identity Management, na navegação à esquerda, selecione **funções do Azure AD.**
+3. Na página Privileged Identity Management, na navegação à esquerda, selecione **Funções do Microsoft Entra.**
 
 4. Na página Início rápido, no painel de navegação esquerdo, selecione **Configurações.**
 
-    ![Imagem da tela exibindo a página funções do Azure AD com o menu Configurações realçado](./media/lp3-mod3-pim-ad-roles-settings.png)
+    ![Imagem da tela exibindo a página funções do Microsoft Entra com o menu Configurações realçado](./media/lp3-mod3-pim-ad-roles-settings.png)
 
 5. Analise a lista de funções e, em **Pesquisar por nome de função**, insira **conformidade**.
 
@@ -35,7 +35,7 @@ Siga estas etapas para abrir as configurações de uma função do Azure AD.
 
 7. Analise as informações dos detalhes da configuração de função.
 
-#### Tarefa 2 - Exigir aprovação para ativar
+#### Tarefa 2 – Exigir aprovação para ativar
 
 Caso esteja configurando vários aprovadores, a aprovação será concluída assim que um deles for aprovado ou negado. Você não pode exigir aprovação de pelo menos dois usuários. Para exigir aprovação para ativar uma função, siga estas etapas.
 
@@ -43,39 +43,41 @@ Caso esteja configurando vários aprovadores, a aprovação será concluída ass
 
     ![Imagem da tela exibindo a parte superior da página Detalhes da configuração da função – Administrador de conformidade com a opção Editar realçada](./media/lp4-mod3-pim-edit-compliance-role.png)
 
-2. Na página Editar configuração de função – Administrador de conformidade, marque a caixa de seleção **Exigir aprovação para ativar**.
+2. Na tela Editar configuração de função – Administrador de conformidade, marque a caixa de seleção **Exigir aprovação para ativar**.
 
 3. Selecione **Selecionar aprovadores**.
 
 4. No painel Selecionar um membro, escolha sua conta de administrador e clique em **Selecionar**.
 
-    ![Imagem da tela exibindo a página Editar configurações da função e o painel de membro com os membros selecionados realçados](./media/lp4-mod3-pim-add-approver.png)
+    ![Imagem da tela exibindo o painel Editar configurações da função e o painel Selecionar um membro com os membros selecionados realçados](./media/lp4-mod3-pim-add-approver.png)
 
 5. Depois de definir as configurações da função, selecione **Atualizar** para salvar suas alterações.
 
-### Exercício 2 - PIM com funções do Azure AD
+### Exercício 2 – PIM com funções do Microsoft Entra
 
-#### Tarefa 1 - Atribuir uma função
+#### Tarefa 1 – Atribuir uma função
 
-Com o Azure AD (Azure Active Directory), um Administrador global pode fazer atribuições de função de administrador permanentes do Azure AD. Essas atribuições de função podem ser criadas usando o portal do Azure ou usando comandos do PowerShell.
+Com o Microsoft Entra ID, um Administrador global pode tornar permanentes as atribuições de função de administrador do Microsoft Entra. Essas atribuições de função podem ser criadas usando o Centro de administração do Microsoft Entra, ou o portal do Azure, ou usando comandos do PowerShell.
 
-O serviço PIM (Privileged Identity Management) do Azure AD também permite que os Administradores de função com privilégios façam atribuições de funções de administrador permanente. Além disso, os Administradores de função com privilégios podem tornar os usuários qualificados para funções de administrador do Azure AD. Um administrador qualificado pode ativar a função quando necessário e suas permissões expirarão assim que forem feitas.
+O serviço PIM (Privileged Identity Management) também permite que os Administradores de função com privilégios façam atribuições de funções de administrador permanente. Além disso, os Administradores de funções com privilégios podem tornar os usuários qualificados para funções de administrador do Microsoft Entra. Um administrador qualificado pode ativar a função quando necessário e suas permissões expirarão assim que forem feitas.
 
-Siga etapas a seguir para tornar um usuário qualificado para uma função de administrador do Azure AD.
+Siga estas etapas para tornar um usuário elegível para uma função de administrador do Microsoft Entra.
 
-1. Entre no [https://portal.azure.com](https://portal.azure.com)usando uma conta de administrador global.
+1. Entre no [https://entra.microsoft.com](https://entra.microsoft.com) usando uma conta de administrador global.
 
-2. Pesquise e selecione o **Azure AD Privileged Identity Management.**
+2. Pesquise e selecione o **Privileged Identity Management.**
 
-3. Na página Privileged Identity Management, na navegação à esquerda, selecione **funções do Azure AD.**
+    **Observação** – você pode encontrá-lo no menu em Identidade – Governança de Identidade – Privileged Identity Management.
+
+3. Na página Privileged Identity Management, na navegação à esquerda, selecione **Funções do Microsoft Entra.**
 
 4. Na página Início rápido, no painel de navegação esquerdo, selecione **Funções**.
 
 5. No menu superior, selecione **+ Adicionar atribuições**.
 
-    ![Imagem da tela exibindo funções do Azure AD com o menu Adicionar atribuições realçado](./media/lp4-mod3-pim-assign-role.png)
+    ![Imagem da tela exibindo funções do Microsoft Entra com o menu Adicionar atribuições realçado](./media/lp4-mod3-pim-assign-role.png)
 
-6. Na página Adicionar atribuições, na guia **Associação**, examine as configurações.
+6. No painel Adicionar atribuições, na guia **Associação**, revise as configurações.
 
 7. Selecione o menu **Selecionar função** e depois **Administrador de conformidade**.
 
@@ -83,7 +85,7 @@ Siga etapas a seguir para tornar um usuário qualificado para uma função de ad
 
 9. Em **Selecionar membro(s)**, escolha **Nenhum membro selecionado**.
 
-10. No painel Selecionar um membro, escolha **Miriam Graham** e clique em **Selecionar**.
+10. No painel Selecionar um membro, selecione **Miriam Graham** e, em seguida, selecione **Selecionar**.
 
     ![Imagem da tela exibindo o painel Selecionar um membro com um membro selecionado realçado](./media/lp4-mod3-pim-add-role-assignment.png)
 
@@ -91,39 +93,38 @@ Siga etapas a seguir para tornar um usuário qualificado para uma função de ad
 
 12. Na guia **Configurações**, em **Tipo de atribuição**, analise as opções disponíveis. Para essa tarefa, use a configuração padrão.
 
-    - Atribuições Qualificadas exigem que o membro da função execute uma ação para usar a função. As ações podem incluir a execução de uma verificação de Autenticação multifator (MFA), fornecimento de uma justificativa comercial ou solicitação de aprovação dos aprovadores designados.
+    - Atribuições Qualificadas exigem que o membro da função execute uma ação para usar a função. As ações podem incluir a execução de uma verificação de MDA (Autenticação Multifator), fornecimento de uma justificativa comercial ou solicitação de aprovação dos aprovadores designados.
     - As atribuições Ativas não exigem que o membro execute nenhuma ação para usar a função. Membros atribuídos como ativos sempre têm os privilégios atribuídos à função.
 
 13. Revise as configurações restantes, depois selecione **Atribuir**.
 
-#### Tarefa 2 - Faça login como Miriam
+#### Tarefa 2 – Entrar com Miriam
 
-1. Abra uma nova janela do navegador anônima.
-2. Conectar-se ao Portal do Azure (https://portal.azure.com).
-3. Se ele for aberto com um usuário conectado, selecione o nome dele no canto superior direito e clique em **Entrar como uma conta diferente**.
-4. Faça login com Miriam.
+1. Abra uma janela do navegador InPrivate.
+2. Entre no Centro de administração do Microsoft Entra (https://entra.microsoft.com).
+    **Observação** – Se ele for aberto com um usuário conectado, selecione seu nome no canto superior direito e selecione **Entrar como uma conta diferente**.
+3. Fazer logon com Miriam.
 
    | Campo | Valor |
    | :--- | :--- |
-   | Nome de Usuário | **MiriamG@** `<<your domain.onmicrosoft.com>>` |
-   | Senha |  Insira a senha de administrador do locatário(Consulte a guia Recursos de laboratório para recuperar a senha de administrador do locatário) |
+   | Nome de Usuário | **MiriamG@**`<<your domain.onmicrosoft.com>>` |
+   | Senha |  Insira a senha de administrador do locatário(Consulte a guia Recursos do laboratório para recuperar a senha de administrador do locatário) |
 
-5. Feche a caixa de diálogo **Bem-vindo ao Azure**.
-6. Na barra **Pesquisar recursos, serviços e documentos**, procure o Azure Active Directory e abra a página.
-7. Na página **Visão geral**, procure **Meu feed**.
-8. Selecione **Visualizar perfil** sob o nome de Miriam Graham, na página de perfil de Miriam aberta.
-9. Selecione **Funções atribuídas** e clique em **Atribuições qualificadas**.
-10. Observe que a função **Administrador de conformidade** agora está disponível para Miriam.
+4. No menu **Identidade** , abra **Usuários** e selecione **Todos os usuários**.
+5. Encontre **Miriam** na lista de usuários
+6. Na página **Visão geral**, procure as **funções atribuídas**.
+7. Selecione **Atribuições elegíveis**.
+1. Observe que a função de **Administrador de conformidade** agora está disponível para Miriam.
 
-#### Tarefa 3 - Ativar suas funções do Azure AD
+#### Tarefa 3 – Ativar suas funções Microsoft Entra
 
-Quando você precisar assumir uma função do Azure AD, poderá solicitar a ativação abrindo **Minhas funções** no Privileged Identity Management.
+Quando você precisar assumir uma função do Microsoft Entra, poderá solicitar a ativação abrindo **Minhas funções** no Privileged Identity Management.
 
-1. Na barra **Pesquisar recursos, serviços e documentos**, procure Privilegiado.
-2. Abra o **Azure AD Privileged Identity Management**.
+1. Na barra **Pesquisar recursos, serviços e documentos**, procure Privileged.
+2. Abra a página **Privileged Identity Management**.
 3. Na página do Privileged Identity Management, no menu de navegação à esquerda, selecione **Minhas funções.**
 
-4. Na página Minhas funções, examine a lista de atribuições elegíveis.
+4. Na página Minhas funções, revise a lista de **Atribuições elegíveis**.
 
     ![Imagem da tela exibindo Minhas funções com atribuições de função qualificadas realçadas](./media/lp4-mod3-my-roles.png)
 
@@ -133,24 +134,24 @@ Quando você precisar assumir uma função do Azure AD, poderá solicitar a ativ
 
     ![Imagem da tela exibindo uma janela pop-up para ativar o Administrador de conformidade](./media/lp4-mod3-pim-activate-role.png)
 
-    **Verificação** - Com base em nossa configuração atual do ambiente de laboratório, será necessário configurar o MFA e efetuar login com êxito.
+    **Verificação** – Com base em nossa configuração atual do ambiente de laboratório, será necessário configurar o MFA e efetuar login com êxito.
 
-7. Depois de concluir a verificação de segurança adicional, no painel Ativar – Administrador de conformidade, na caixa **Motivo**, insira **Esta é a minha justificativa para ativar esta função**.
+7. Depois de concluir a verificação de segurança adicional, no painel Ativar – Administrador de conformidade, na caixa **Motivo**, insira **Esta é a minha justificativa para ativar essa função**.
 
-    **Nota importante** - use o princípio do privilégio mínimo: você só deve ativar a conta pelo tempo que precisar.  Se o trabalho que precisa ser feito leva apenas 1,5 horas, então defina a duração para duas horas.  Da mesma forma, se você souber que não poderá fazer o trabalho até depois das 15h, escolha um horário de ativação personalizado.
+    **Observação importante** – O princípio de privilégio mínimo. Você só deve ativar a conta para o período de tempo que você precisar dela.  Se o trabalho precisar ser feito, leva apenas uma hora e meia, então defina a duração para duas horas.  Da mesma forma, se você souber que não poderá fazer o trabalho até depois das 15h, escolha um horário de ativação personalizado.
 
 8. Selecione **Ativar**.
 
-#### Tarefa 4 - Atribuir uma função com escopo restrito
+#### Tarefa 4 – Atribuir uma função com escopo restrito
 
 Para determinadas funções, o escopo das permissões concedidas pode ser restrito a uma única unidade de administração, uma única entidade de serviço ou um único aplicativo. Esse procedimento é um exemplo de como atribuir uma função que tenha o escopo de uma unidade administrativa.
 
-1. Lembre-se de fechar as janelas do navegador para MiriamG e, em seguida, abra o Portal do Azure como sua conta de administrador.
-2. Navegue até a página de Privileged Identity Management e, no menu de navegação à esquerda, selecione **funções do Azure AD.**
+1. Lembre-se de fechar as janelas do navegador de MiriamG e, em seguida, abra o Centro de administração do Microsoft Entra com sua conta de administrador.
+2. Navegue até a página Privileged Identity Management e, no menu de navegação à esquerda, selecione **Funções do Microsoft Entra.**
 3. Selecione **funções**.
 4. Na página Funções, no menu superior, selecione **+ Adicionar atribuições.**
 
-5. Na página Adicionar atribuições, selecione o menu **Selecionar função** e escolha **Administrador do usuário.**
+5. Na página Adicionar atribuições, selecione o menu **Selecionar função**, depois selecione **Administrador de usuários.**
 
 6. Selecione o menu **Tipo de escopo** e analise as opções disponíveis. Por enquanto, você usará o tipo de escopo **Diretório**.
 
@@ -158,11 +159,11 @@ Para determinadas funções, o escopo das permissões concedidas pode ser restri
 
 7. Tal como você fez ao atribuir uma função sem um escopo restrito, você adicionaria membros e concluiria as opções de configurações. Por enquanto, selecione **Cancelar**.
 
-#### Tarefa 5 - Atualizar ou remover uma atribuição de função existente
+#### Tarefa 5 – Atualizar ou remover uma atribuição de função existente
 
 Siga estas etapas para atualizar ou remover uma atribuição de função existente.
 
-1. Na página Abrir o Privileged Identity Management do Azure AD > Funções do Azure AD, no painel de navegação esquerdo, selecione **Atribuições**.
+1. Na Página Abrir o Privileged Identity Management > Funções do Microsoft Entra, na navegação à esquerda, selecione **Atribuições**.
 
 2. Na lista **Atribuições**, em Administrador de conformidade, analise as opções na coluna **Ação**.
 

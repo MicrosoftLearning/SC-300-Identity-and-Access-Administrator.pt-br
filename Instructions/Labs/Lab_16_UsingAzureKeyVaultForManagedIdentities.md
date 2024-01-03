@@ -1,31 +1,31 @@
 ---
 lab:
-  title: 16 - Usar o Azure Key Vault para identidades gerenciadas
+  title: 16 – Usar o Azure Key Vault para Identidades gerenciadas
   learning path: '02'
   module: Module 02 - Implement an Authentication and Access Management Solution
 ---
 
-# Laboratório 16 - Usar o Azure Key Vault para identidades gerenciadas
+# Laboratório 16 – Usar o Azure Key Vault para Identidades gerenciadas
 
-**Observação** - Este laboratório requer um Azure Pass. Consulte o laboratório 00 para obter instruções.
+**Observação** – Este laboratório requer um Azure Pass. Consulte o laboratório 00 para obter instruções.
 
 ## Cenário do laboratório
 
-Usando as identidades gerenciadas para recursos do Azure, seu código pode obter tokens de acesso para autenticar para recursos que oferecem suporte à autenticação do Azure AD.No entanto, nem todos os serviços do Azure dão suporte à autenticação do Azure AD. Para usar identidades gerenciadas para recursos do Azure com esses serviços, armazene as credenciais de serviço no Azure Key Vault e use a identidade gerenciada para acessar o Key Vault para recuperar as credenciais.
+Ao usar as identidades gerenciadas para recursos do Azure, seu código pode obter tokens de acesso para se autenticar nos recursos que dão suporte à autenticação do Microsoft Entra.No entanto, nem todos os serviços do Azure dão suporte à autenticação do Microsoft Entra. Para usar identidades gerenciadas em recursos do Azure com esses serviços, armazene as credenciais de serviço no Azure Key Vault e use a identidade gerenciada para acessar o Key Vault e recuperar as credenciais.
 
-#### Tempo previsto: 20 minutos
+#### Tempo estimado: 20 minutos
 
-### Exercício 1 - Usar o Azure Key Vault para gerenciar identidades da máquina virtual
+### Exercício 1 - Usar o Azure Key Vault para gerenciar identidades de Máquina Virtual
 
-#### Tarefa 1 - Criar uma máquina virtual do Windows
+#### Tarefa 1 – Criar uma máquina virtual do Windows
 
-1. Navegue até  [https://portal.azure.com](https://portal.azure.com)
+1. Navegue para o [https://portal.azure.com](https://portal.azure.com)
 
 1. Selecione **+ Criar um recurso**.
 
-1. Digite **Windows Client** na barra de pesquisa Pesquisar no Marketplace.
+1. Digite **Windows 11** na barra de pesquisa Pesquisar no Marketplace.
 
-1. Selecione **Windows Client** e, na lista suspensa do plano, escolha **Windows 10 Enterprise, versão 22H2 - x64 Gen 1**. Em seguida, escolha **Criar**.
+1. Selecione **Windows 11** e, na lista suspensa do plano, escolha **Windows 11 Enterprise, versão 21H2**. Em seguida, escolha **Criar**.
 
 1. Você precisará criar um nome de usuário administrador e uma senha para a VM na guia Básico.
 
@@ -35,30 +35,30 @@ Usando as identidades gerenciadas para recursos do Azure, seu código pode obter
 
 1. Selecione Criar.
 
-#### Tarefa 2 - Criar um Key Vault
+#### Tarefa 2 – Criar um Key Vault
 
-1. Entre no [https://portal.azure.com]( https://portal.azure.com)usando uma conta de administrador global.
+1. Entre no  [https://portal.azure.com]( https://portal.azure.com) usando uma Conta de administrador global.
 
 1. Na parte superior da barra de navegação esquerda, selecione Criar um recurso
 
-1. Na caixa Pesquisar no Marketplace, digite **Key Vault** e.  
+1. Na caixa Pesquisar no Marketplace, digite **Key Vault**.  
 
 1. Selecione **Key Vault** nos resultados.
 
 1. Selecione **Criar**.
 
-1. Preencha todas as informações necessárias conforme mostrado abaixo. Certifique-se de escolher a assinatura que você está usando para este laboratório.
-    **Observação** O nome do Key Vault precisa ser exclusivo. Procure uma marca de seleção verde à direita do campo.
+1. Preencha todas as informações necessárias, conforme mostrado abaixo. Certifique-se de escolher a assinatura que você está usando para este laboratório.
+    **Observação** O nome do Cofre de chaves precisa ser exclusivo. Procure uma marca de seleção verde à direita do campo.
 
- - **Grupo de recursos** - sc300KeyVaultrg
- - **Nome do Key Vault** - *anyuniquevalue*
- - Na página **Configuração de acesso**, selecione o botão de opção **Política de acesso do Vault**.
+ - **Grupo de recursos** – sc300KeyVaultrg
+ - **Nome do cofre de chaves** - *anyuniquevalue*
+ - Na página **Configuração de acesso**, selecione o botão de opção **Política de Acesso do Cofre**.
 1. Selecione **Examinar + criar**.
 
 1. Selecione **Criar**.
 
 
-#### Tarefa 3 - Criar um segredo
+#### Tarefa 3 – Criar um segredo
 
 1. Navegue até o Key Vault recém-criado.
 
@@ -66,7 +66,7 @@ Usando as identidades gerenciadas para recursos do Azure, seu código pode obter
 
 1. Selecione **+ Gerar/importar**.
 
-1. Na tela Criar um segredo, de Opções de upload, deixe **Manual** selecionado.
+1. Na tela Criar um segredo, em Opções de upload, deixe **Manual** selecionado.
 
 1. Insira um nome e um valor para o segredo.  O valor pode ser qualquer coisa que você desejar. 
 
@@ -74,25 +74,25 @@ Usando as identidades gerenciadas para recursos do Azure, seu código pode obter
 
 1. Selecione **Criar** para criar o segredo.
 
-#### Tarefa 4 - Permitir acesso ao Key Vault
+#### Tarefa 4 – Permitir acesso ao Cofre de chaves
 
 1. Navegue até o Key Vault recém-criado
 
-1. Selecione **Políticas de Acesso** no menu no lado esquerdo.
+1. Selecione **Política de Acesso** no menu no lado esquerdo.
 
 1. Selecione **+ Criar**.
 
 1. Na seção Adicionar política de acesso em Configurar com base no modelo (opcional), escolha Gerenciamento de Segredo no menu suspenso.
 
-1. Em **Selecionar entidade**, escolha **Nenhum selecionado** para abrir a lista de entidades a serem selecionadas. No campo de pesquisa, insira o nome da VM criada na tarefa 2.  Selecione a VM na lista de resultados e escolha Selecionar.
+1. Em **Selecionar entidade de segurança**, escolha **Nenhuma selecionada** para abrir a lista de entidades a serem selecionadas. No campo de pesquisa, insira o nome da VM criada na tarefa 2.  Selecione a VM na lista de resultados e escolha Selecionar.
 
 1. Selecione **Adicionar**.
 
-1. Selecione **Salvar**.
+1. Clique em **Salvar**.
 
-#### Tarefa 5 - Acessar dados com o segredo do Key Vault com o PowerShell
+#### Tarefa 5 – Acessar dados usando o segredo do Cofre de Chaves com o PowerShell
 
-1. Na máquina virtual do laboratório, abra o PowerShell.  
+1. Na máquina virtual de laboratório, abra o PowerShell.  
 
 1. No PowerShell, invoque a solicitação Web no locatário para obter o token para o host local na porta específica para a máquina virtual.  
 
@@ -106,12 +106,12 @@ Usando as identidades gerenciadas para recursos do Azure, seu código pode obter
     $KeyVaultToken = $Response.access_token
     ```
 
-1. Use o comando de Invoke-WebRequest do PowerShell para recuperar o segredo que você criou anteriormente no Key Vault, passando o token de acesso no cabeçalho de Autorização.  Você precisará da URL de seu Key Vault, que está na seção Essentials da página Visão geral do Key Vault.  Lembrete - O URI do Key Vault está na guia Visão geral.
+1. Use o comando de Invoke-WebRequest do PowerShell para recuperar o segredo que você criou anteriormente no Cofre de Chaves, passando o token de acesso no cabeçalho de Autorização.  Você precisará da URL de seu Key Vault, que está na seção Essentials da página Visão geral do Key Vault.  Lembrete – O URI do Cofre de Chaves está na guia Visão geral.
 
     ```
     Invoke-RestMethod -Uri https://<your-key-vault-URI>/secrets/<secret-name>?api-version=2016-10-01 -Method GET -Headers @{Authorization="Bearer $KeyVaultToken"}
     ```
-1. Você receberá uma resposta semelhante à mostrada a seguir: 
+1. Você deve receber uma resposta semelhante à mostrada a seguir: 
     ```
     'My Secret' https://mi-lab-vault.vault.azure.net/secrets/mi-test/50644e90b13249b584c44b9f712f2e51 @{enabled=True; created=16…
     ```

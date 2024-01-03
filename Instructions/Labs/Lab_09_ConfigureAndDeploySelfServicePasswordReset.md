@@ -1,33 +1,34 @@
 ---
 lab:
-  title: '09: habilitar a redefinição de senha self-service do Azure AD'
+  title: 09 – Habilitar a redefinição de senha por autoatendimento do Microsoft Entra
   learning path: '02'
   module: Module 02 - Implement an Authentication and Access Management Solution
 ---
 
-# Laboratório 09: configurar e implantar a redefinição de senha self-service
+# Laboratório 09 – Configurar e implantar a redefinição de senha por autoatendimento
 ## Cenário do laboratório
 
-A empresa decidiu capacitar os funcionários e habilitar a redefinição de senha self-service. Você deve definir essa configuração em sua organização.
+A empresa decidiu capacitar os funcionários e habilitar a redefinição de senha por autoatendimento. Você deve configurá-la na sua organização.
 
-#### Tempo previsto: 15 minutos
+#### Tempo estimado: 15 minutos
 
-### Exercício 1: criar um grupo com a SSPR habilitado e adicionar usuários a ele
+### Exercício 1 – Criar um grupo com a SSPR habilitada e adicionar usuários a ele
 
-#### Tarefa 1: criar um grupo ao qual atribuir a SSPR
+#### Tarefa 1 – Criar um grupo ao qual atribuir a SSPR
 
 Você quer distribuir a SSPR para um conjunto limitado de usuários primeiro para verificar se a configuração da SSPR funciona conforme o esperado. Você irá criar um grupo de segurança para a distribuição limitada e adicionar um usuário ao grupo.
 
-1. Na página Azure Active Directory, em **Gerenciar**, selecione **Grupos** e selecione **Novo grupo** na janela do lado direito.
+1. No centro de administração do Microsoft Entra, abra o menu de navegação **Identidade** à esquerda.
+1. Em **Grupos**, selecione **Todos os grupos** e escolha **Novo Grupo** na janela do lado direito.
 
-2. Crie um novo grupo com as seguintes informações:
+2. Crie um grupo com as seguintes informações:
 
     | **Configuração**| **Valor**|
     | :--- | :--- |
     | Tipo de grupo| Segurança|
     | Nome do grupo| SSPRTesters|
     | Descrição do grupo| Usuários de teste da distribuição da SSPR|
-    | Tipo de afiliação| Atribuído|
+    | Tipo de associação| Atribuído|
     | Membros| Alex Wilber |
     | |  Allan Deyoung |
     | | Bruna Alves |
@@ -35,17 +36,17 @@ Você quer distribuir a SSPR para um conjunto limitado de usuários primeiro par
     
 3. Selecione **Criar**.
 
-    ![Imagem da tela exibindo a página Novo grupo com Tipo de grupo, Nome do grupo e Criar realçados](./media/lp2-mod2-create-sspr-security-group.png)
+    ![Imagem da tela exibindo a página Novo grupo com tipo de grupo, nome do grupo e criar realçados](./media/lp2-mod2-create-sspr-security-group.png)
 
-#### Tarefa 2: habilitar a SSPR para seu grupo de teste
+#### Tarefa 2 – Habilitar a SSPR para seu grupo de teste
 
 Habilite a SSPR para o grupo.
 
-1. Navegue de volta à página do Azure Active Directory.
+1. Navegue de volta para o menu de navegação **Identidade**.
 
-2. Em **Gerenciar**, selecione  **Redefinição de senha**.
+2. Em  **Proteção**, selecione  **Redefinição de senha**.
 
-3. Na página Propriedades da página Redefinição de senha, em **Redefinição de senha self-service habilitada**, selecione  **Selecionado**.
+3. Na página Propriedades da página Redefinição de senha, em **Redefinição de senha por autoatendimento habilitada**, selecione  **Selecionado**.
 
 4. Selecione **Selecionar grupo** e escolha **SSPRSecurityGroupUser**.
 
@@ -55,23 +56,23 @@ Habilite a SSPR para o grupo.
 
     ![Imagem da tela exibindo a página de propriedades Redefinição de senha com Selecionado, Selecionar grupo e Salvar realçados](./media/lp2-mod2-enable-password-reset-for-selected-group.png)
 
-7. Em  **Gerenciar**, selecione Revisar os valores padrão das configurações de  **Métodos de autenticação**,  **Registro**, **Notificações** e **Personalização**.
+7. Na tela **Redefinição de senha**, procure em  **Gerenciar*, selecione e examine os valores padrão para cada uma das **configurações de métodos de autenticação **, ** Registro**, **Notificações** e **Personalização**.
 
-    **Observação**: é importante ter o **telefone** selecionado como um dos métodos de autenticação para o restante deste laboratório, mas você também pode ter outras opções.
+    **Observação** é importante ter **telefone** selecionado como um dos métodos de autenticação para o restante deste laboratório, mas você também pode ter outras opções.
 
-#### Tarefa 3: registrar-se na SSPR com Alex
+#### Tarefa 3 - Registre-se na SSPR como Alex
 
-Agora que a configuração da SSPR foi concluída, registre um número do telefone celular para o usuário que você criou.
+Agora que a configuração da SSPR foi concluída, registre um número de telefone celular para o usuário que você criou.
 
-1. Abra um navegador diferente ou uma sessão anônima do navegador e acesse [https://aka.ms/ssprsetup](https://aka.ms/ssprsetup).
+1. Abra um navegador diferente ou uma sessão do navegador InPrivate ou Incognito e acesse [https://aka.ms/ssprsetup](https://aka.ms/ssprsetup).
 
     Isso garante que seja solicitada a você a autenticação de usuário.
 
-2. Entre como **AlexW@** `<<organization-domain-name>>.onmicrosoft.com` com a senha = Insira a senha de administrador do locatário (Consulte a guia Recursos de laboratório para recuperar a senha de administrador).
+2. Entre como **AlexW@**`<<organization-domain-name>>.onmicrosoft.com` com a senha = Digite a senha de administrador do locatário (Consulte a guia Recursos de laboratório para recuperar a senha de administrador).
 
-    **Observação:** substitua organization-domain-name pelo nome de seu domínio.
+    **Observação** – Substitua organization-domain-name pelo nome do seu domínio.
 
-3. Se for solicitado a atualizar sua senha, insira uma nova senha de sua escolha. Não se esqueça de registrar a nova senha.
+3. Ao receber uma solicitação de atualização de senha, insira uma nova senha de sua escolha. Lembre-se de registrá-la.
 
 4. Na caixa de diálogo **Mais informações necessárias**, selecione **Avançar**.
 
@@ -79,52 +80,52 @@ Agora que a configuração da SSPR foi concluída, registre um número do telefo
 
     ![Imagem da tela exibindo a página Manter sua conta segura com a caixa de diálogo Escolher um método diferente realçada](./media/lp2-mod2-keep-your-account-secure-page.png)
 
-    **Observação:** neste laboratório, você usará a opção **Telefone**. Insira os detalhes de seu celular.
+    **Observação** – Neste laboratório, você usará a opção **Telefone**. Insira os detalhes de seu celular.
 
-6. Insira seu número de celular pessoal no campo de número de telefone.
-7. Selecione  **Enviar código por SMS**.
+6. Digite seu número de telefone celular pessoal no campo de número de telefone.
+7. Selecione  **Enviar um código por SMS**.
 8. Selecione **Avançar**.
 
-9. Ao receber o código em seu celular, insira-o na caixa de texto e selecione **Avançar**.
+9. Ao receber o código em seu celular, digite-o na caixa de texto e selecione **Avançar**.
 
-10. Depois do registro de seu telefone, selecione **Avançar** e depois **Concluído**.
+10. Após o telefone ser registrado, selecione **Avançar** e **Concluído**.
 
 11. Feche o navegador. Você não precisa concluir o processo de entrada.
 
-#### Tarefa 4: testar SSPR
+#### Tarefa 4: Testar a SSPR
 
 Agora, vamos testar se o usuário pode redefinir a própria senha.
 
-1. Abra um navegador diferente ou uma sessão anônima do navegador e acesse  [https://portal.azure.com](https://portal.azure.com).
+1. Abra um navegador diferente ou uma sessão do navegador InPrivate ou Incognito e acesse  [https://portal.azure.com](https://portal.azure.com).
 
     Isso garante que seja solicitada a você a autenticação de usuário.
 
-2. Insira **AlexW@** `<<organization-domain-name>>.onmicrosoft.com` e depois selecione **Avançar**.
+2. Digite **AlexW@** `<<organization-domain-name>>.onmicrosoft.com` e selecione **Avançar**.
 
-    **Observação:** substitua organization-domain-name pelo nome de seu domínio.
+    **Observação** – Substitua organization-domain-name pelo nome do seu domínio.
 
-3. Na página Inserir senha, selecione **Esqueci minha senha**.
+3. Na página Digitar senha, selecione **Esqueci minha senha**.
 
 4. Na página Voltar para sua conta, preencha as informações solicitadas e selecione **Avançar**.
 
     ![Imagem da tela exibindo a página Voltar para sua conta com Email ou nome de usuário, a caixa de captcha e o botão Avançar realçados](./media/lp2-mod2-get-back-into-your-account-page.png)
 
-5. Na tarefa da **Etapa 1 da verificação**, selecione **Enviar SMS para meu celular**, insira seu número de telefone e selecione **Enviar SMS**.
+5. Na tarefa **etapa de verificação 1**, selecione **Enviar SMS para o meu celular**, digite seu número de telefone e clique em **Enviar SMS**.
 
     ![Imagem da tela exibindo a etapa de verificação 1 com os métodos de contato, a caixa de número de telefone e o botão Enviar SMS realçados](./media/lp2-mod2-sspr-verification-step-1.png)
 
-6. Insira seu código de verificação e selecione **Avançar**.
+6. Digite seu código de verificação e selecione **Avançar**.
 
-7. Na etapa Escolher nova senha, insira e confirme sua nova senha.  Recomende uma senha = **Pass@w.rd1234**.
+7. Na etapa Escolher nova senha, digite e confirme sua nova senha.  Senha recomendável = **Pass@w.rd1234**.
 
 8. Ao concluir, selecione **Concluir**.
 
 9. Entre como **AlexW** com a nova senha que você criou.
 
-10. Insira seu código de verificação e verifique se você pode concluir o processo de entrada.
+10. Digite seu código de verificação e verifique se você pode concluir o processo de entrada.
 
 11. Depois de terminar, feche o navegador.
 
-#### Tarefa 5: o que acontecerá se você testar um usuário que não esteja no grupo SSPRTesters?
+#### Tarefa 5 – O que acontece se você escolher um usuário que não esteja no grupo SSPRTesters?
 
-1. Como teste, abra uma nova janela do navegador anônimo e tente fazer logon no Portal do Azure como GradyA e selecione a opção **Esqueci minha senha**.
+1. Como teste, abra uma nova janela do navegador InPrivate, tente fazer logon no Portal do Azure como GradyA e selecione a opção **Esqueci minha senha**.
