@@ -25,7 +25,7 @@ O Microsoft Sentinel é uma solução nativa de nuvem, SIEM e SOAR da Microsoft.
 
 1. Selecione **+ Criar** no canto superior esquerdo.
 
-1. No bloco **Adicionar o Microsoft Sentinel a um workspace**, selecione **Criar um novo workspace**.
+1. No bloco **Adicionar o Microsoft Sentinel a um bloco de workspace**, selecione **+ Criar um novo workspace**.
 
 1. Em **Grupo de recursos**, selecione **Criar novo** e insira **Sentinel-RG**.
 
@@ -40,11 +40,11 @@ O Microsoft Sentinel é uma solução nativa de nuvem, SIEM e SOAR da Microsoft.
 1. Se solicitado, selecione **OK** para ativar a avaliação gratuita do Microsoft Sentinel.
 
 #### Tarefa 2 – Adicionar o Azure AD como fonte de dados
-    **Note** - As of 11/1/2023, the data source is still Azure AD (not Microsoft Entra ID)
+    **Note** - As of 2/8/2024, the data source is now Microsoft Entra ID.
 
 1. No  **Microsoft Sentinel**, navegue pelo menu até **Gerenciamento de conteúdo** e selecione **Hub de Conteúdo**.
 
-1. Use a caixa de pesquisa para procurar o **Azure** na lista de conectores, localize o **Azure Active Directory** e marque a caixa de seleção.
+1. Use a caixa de pesquisa para procurar o **Entra** na lista de conectores, localize o **Microsoft Entra ID** e marque a caixa de seleção.
 
 1. Um bloco de pré-visualização será aberto à direita.  Selecione **Instalar**.
 
@@ -58,13 +58,13 @@ O Microsoft Sentinel é uma solução nativa de nuvem, SIEM e SOAR da Microsoft.
 
 1. Em **Configuração**, marque as caixas de **Logs de entrada** e de **Logs de auditoria**. Outras fontes de logs estão disponíveis, mas estão atualmente em **Versão-prévia** e fora do escopo deste curso.
 
-1. Selecione **Aplicar Alterações**. 
+1. Selecione **Aplicar alterações**. 
 
 1. Uma notificação dizendo que as alterações foram aplicadas será exibida. Navegue até o workspace do **Microsoft Sentinel** selecionando o **X** no canto superior direito da página do conector.
 
 1. Selecione **Atualizar** no bloco **Microsoft Sentinel | Conectores de dados** e o número 1 será exibido na contagem **Conectados**.
 
-   **Observação** – O conector de dados do Azure AD pode levar alguns minutos para ser exibido na contagem ativa. 
+   **Observação** – pode levar alguns minutos para que o conector de dados do Microsoft Entra seja exibido na contagem ativa. 
 
 #### Tarefa 3 – Executar uma consulta Kusto em uma atividade do usuário
 

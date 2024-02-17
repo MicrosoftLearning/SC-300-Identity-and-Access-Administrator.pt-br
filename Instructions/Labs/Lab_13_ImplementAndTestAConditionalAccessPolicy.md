@@ -15,9 +15,9 @@ Sua organização precisa ser capaz de limitar o acesso do usuário a seus aplic
 
 #### Tempo estimado: 30 minutos
 
-### Exercício 1 – Definir uma política de acesso condicional para impedir que o DebraB acesse o Yammer
+### Exercício 1: Definir uma política de acesso condicional para impedir que o DebraB acesse o Sway
 
-#### Tarefa 1 –- Confirmar que o DebraB tem acesso ao Yammer
+#### Tarefa 1 – Confirmar se o DebraB tem acesso ao Sway
 
 
 1. Inicie uma nova janela do navegador InPrivate.
@@ -91,7 +91,7 @@ Você deve testar suas políticas de acesso condicional para garantir que elas e
 
 3. Caso tenha se conectado, feche a guia, aguarde 1 minuto e tente novamente.
     
-   **Observação** – Se você estiver conectado automaticamente ao Sway como DebraB, você precisará fazer logoff manualmente. Suas credenciais/acessos foram armazenados em cache.  Depois de fazer logoff e iniciar sessão, a sua sessão do Yammer negará o acesso.
+   **Observação**: se você estiver conectado automaticamente ao Sway como DebraB, precisará fazer logon manualmente.  Suas credenciais/acesso foram armazenados em cache.  Depois que você fizer logon e entrar, sua sessão do Sway deverá negar o acesso.
 
 4. Feche a guia e retorne à página Acesso condicional.
 

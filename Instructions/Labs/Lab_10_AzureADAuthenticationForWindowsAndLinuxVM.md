@@ -91,11 +91,11 @@ A empresa decidiu que o Azure Active Directory deve ser usado para fazer logon e
 1. **Saia** da sessão RDP com a máquina virtual.
 
 
-#### Tarefa 4 - Modificar seu arquivo RDP para dar suporte ao logon do Azure AD
+#### Tarefa 4 – Modificar o arquivo RDP para dar suporte ao logon do Microsoft Entra ID
 
 1. Abra a pasta **Downloads** no gerenciador de arquivos.
 
-1. **Faça uma cópia** do arquivo RDP e adicione **-AzureAD** ao final do nome do arquivo.
+1. **Faça uma cópia** do arquivo RDP e adicione **-EntraID** ao final do nome do arquivo.
 
 1. Edite a nova versão do arquivo RDP que você acabou de copiar usando o Bloco de Notas. Adicione estas duas linhas de texto à parte inferior do arquivo:
      ```
@@ -105,11 +105,11 @@ A empresa decidiu que o Azure Active Directory deve ser usado para fazer logon e
  
  1. **Salve** o arquivo RDP.  Agora você deve ter duas versões do arquivo:
       - <<virtual machine name>>.RDP
-      - <<virtual machine name>>-AzureAD.RDP
+      - <<virtual machine name>>-EntraID.RDP
 
-#### Tarefa 5 – Conectar-se ao Datacenter do Microsoft Windows Server 2022 usando o logon do Azure AD
+#### Tarefa 5 – Conectar-se à máquina virtual do Windows usando o logon do Microsoft Entra ID
 
-1. Abra o **<<virtual machine name>>-AzureAD.RDP
+1. Abra o **<<virtual machine name>>-EntraID.RDP
 
 1. Selecione **Conectar** quando a caixa de diálogo abrir.
 
@@ -129,19 +129,17 @@ A empresa decidiu que o Azure Active Directory deve ser usado para fazer logon e
 
 1. O Windows Server deve confirmar o logon e abrir o Painel do Gerenciador do Servidor normal.
 
-#### Tarefa 6 – Teste opcional para explorar o logon do Azure AD
+#### Tarefa 6 – Teste opcional para explorar o logon do Microsoft Entra ID
 
 1. Verifique se o JoniS foi o único usuário adicionado ao grupo Administradores.
 
-1. No Painel do Gerenciador do Servidor, selecione o menu **Ferramentas** no canto superior esquerdo.
-
-1. Inicie a ferramenta **Gerenciamento do computador**.
+1. Use clique secundário do mouse no botão INICIAR e selecione **Gerenciamento do computador** no menu pop-up.
 
 1. Abra **Usuários e Grupos Locais** e navegue até **Grupos, Administradores**.
 
 1. Você deve ver **Azure\JoniSherman...** na lista.
 
-1. Verifique se outros membros do Azure AD podem fazer logon.
+1. Verifique se outros membros do Microsoft Entra ID conseguem entrar.
 
 1. Saia da sessão de Área de Trabalho Remota.
 
@@ -159,7 +157,9 @@ A empresa decidiu que o Azure Active Directory deve ser usado para fazer logon e
 
 1. Selecione **+ Criar um recurso**.
 
-1. Selecione **Criar** em **Ubuntu Server 18.04 LTS** na visualização Popular.
+1. Pesquise por **Ubuntu**.
+
+1. Selecione **Criar** em **Ubuntu Server 22.04 LTS**. Você pode usar outros servidores Linux para este laboratório de teste.
 
 1. Na guia **Gerenciamento**, marque a caixa para ativar **Logon com o Azure Active Directory (Versão prévia)**.
 
