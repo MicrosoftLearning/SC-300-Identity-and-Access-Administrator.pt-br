@@ -1,6 +1,6 @@
 ---
 lab:
-  title: '10: Autenticação do Azure AD para máquinas virtuais do Windows e do Linux'
+  title: 10 - Autenticação do Microsoft Entra ID para Máquinas Virtuais do Windows e Linux
   learning path: '02'
   module: Module 02 - Implement an Authentication and Access Management Solution
 ---
@@ -11,13 +11,13 @@ lab:
 
 ## Cenário do laboratório
 
-A empresa decidiu que o Azure Active Directory deve ser usado para fazer logon em máquinas virtuais para acesso remoto.  Este laboratório mostrará como isso pode ser configurado para máquinas virtuais Windows e Linux.
+A empresa decidiu que o Microsoft Entra ID deve ser usado para fazer logon em máquinas virtuais para acesso remoto.  Este laboratório mostrará como isso pode ser configurado para máquinas virtuais Windows e Linux.
 
 #### Tempo estimado: 30 minutos
 
-### Exercício 1 - Fazer logon em máquinas virtuais do Windows no Azure com o Azure AD
+### Exercício 1: Fazer logon em Máquinas Virtuais do Windows no Azure com o Microsoft Entra ID
 
-#### Tarefa 1 - Criar uma Máquina Virtual do Windows com o logon do Azure AD habilitado
+#### Tarefa 1: Criar uma Máquina Virtual do Windows com o logon do Microsoft Entra ID habilitado
 
 1. Navegue para o [https://portal.azure.com](https://portal.azure.com)
 
@@ -30,17 +30,15 @@ A empresa decidiu que o Azure Active Directory deve ser usado para fazer logon e
 1. Você precisará criar um nome de usuário administrador e uma senha para a VM na guia Básico.
    - Use um nome de usuário que você vai lembrar e uma senha segura.
 
-1. Na guia **Gerenciamento**, marque a caixa para **Fazer logon com o Azure AD** na seção Azure AD.
+1. Na guia **Gerenciamento**, marque a caixa **Logon com Microsoft Entra ID** na seção Microsoft Entra ID.
 
-    NOTA : a partir de 11/1/2023, esta interface do usuário não foi atualizada para mostrar o Microsoft Entra ID, ainda faz referência ao Azure AD.
-
-    NOTA2: você notará que a **Identidade gerenciada atribuída ao sistema** na seção Identidade é verificada automaticamente e fica cinza. Essa ação deverá ocorrer automaticamente depois que você habilitar a opção Logon com o Azure AD.
+        NOTE: You will notice that the **System assigned managed identity** under the Identity section is automatically checked and turned grey. This action should happen automatically once you enable Login with Microsoft Entra ID.
 
 1. Percorra o restante da experiência de criação de uma máquina virtual. 
 
 1. Selecione Criar.
 
-#### Tarefa 2 - logon do Azure AD para Máquinas Virtuais do Azure existentes
+#### Tarefa 2: Entrar com o Microsoft Entra ID nas Máquinas Virtuais do Azure existentes
 
 1. Navegue até **Máquinas Virtuais** em https://portal.azure.com[](https://portal.azure.com).
 
@@ -57,7 +55,7 @@ A empresa decidiu que o Azure Active Directory deve ser usado para fazer logon e
 
 1. Selecione **Revisão + atribuir** para concluir o processo
 
-#### Tarefa 3 - Atualizar a VM do Servidor para dar suporte ao logon do Azure AD
+#### Tarefa 3: Atualizar a VM do servidor para dar suporte ao logon do Microsoft Entra ID
 
 1. Selecione o item de menu **Conectar**.
 
@@ -89,7 +87,6 @@ A empresa decidiu que o Azure Active Directory deve ser usado para fazer logon e
 1. Selecione **Aplicar** e, em seguida, **OK**.
 
 1. **Saia** da sessão RDP com a máquina virtual.
-
 
 #### Tarefa 4 – Modificar o arquivo RDP para dar suporte ao logon do Microsoft Entra ID
 
