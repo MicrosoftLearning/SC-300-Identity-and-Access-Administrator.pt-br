@@ -9,7 +9,7 @@ lab:
 
 ## Cenário do laboratório
 
-O Microsoft Entra Identity Protection fornece detecção e correção automatizadas para riscos baseados em identidade e fornece dados no portal para investigar riscos potenciais. O Microsoft Entra Identity Protection também fornece uma classificação de segurança de identidade para monitorar e melhorar sua postura de segurança de identidade.  Da mesma forma que o Microsoft 365 Defender e o Microsoft Defender para Nuvem, a classificação de segurança de identidade fornece ações e recomendações de melhoria que podem aprimorar sua postura geral de segurança para identidades no Microsoft Entra ID.  Este laboratório vai explorar esta capacidade. 
+O Microsoft Entra Identity Protection fornece detecção e correção automatizadas para riscos baseados em identidade e fornece dados no portal para investigar riscos potenciais. O Microsoft Entra Identity Protection também fornece uma Classificação de Segurança de Identidade para monitorar e melhorar sua postura de segurança de identidade.  Da mesma forma que o Microsoft Defender XDR e o Microsoft Defender para Nuvem, a Classificação de Segurança de Identidade fornece ações de melhoria e recomendações que podem melhorar sua postura de segurança geral para identidade na ID do Microsoft Entra.  Este laboratório vai explorar esta capacidade. 
 
 #### Tempo estimado: 15 minutos
 
@@ -27,7 +27,7 @@ O Microsoft Entra Identity Protection fornece detecção e correção automatiza
 
 5. Role para baixo para ver as **ações de melhoria**.
 
-6. Em contraste com as ações de melhoria no Microsoft Defender para Nuvem e no Microsoft 365 Defender, essas ações de melhoria são específicas para a identidade.  Isso fornece uma lista mais focada de ações potenciais para o gerenciamento da postura de segurança.  Quaisquer ações de melhoria iniciadas a partir dessa lista também fornecerão um impacto na postura geral de segurança do locatário. 
+6. Ao contrário das ações de melhoria no Microsoft Defender para Nuvem e no Microsoft Defender XDR, essas ações de melhoria são específicas para a identidade.  Isso fornece uma lista mais focada de ações potenciais para o gerenciamento da postura de segurança.  Quaisquer ações de melhoria iniciadas a partir dessa lista também fornecerão um impacto na postura geral de segurança do locatário. 
 
 #### Tarefa 2 – Executar uma ação de melhoria
 

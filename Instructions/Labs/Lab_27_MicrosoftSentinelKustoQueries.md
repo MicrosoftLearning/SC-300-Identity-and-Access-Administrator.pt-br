@@ -11,7 +11,7 @@ lab:
 
 ## Cenário do laboratório
 
-O Microsoft Sentinel é uma solução nativa de nuvem, SIEM e SOAR da Microsoft.  Por meio da conexão de fontes de dados da Microsoft e de soluções de segurança de terceiros, você tem a capacidade de executar tarefas de operações de segurança.  Neste exercício de laboratório, você criará um workspace do Microsoft Sentinel com conectores de dados para o Azure AD para executar consultas de busca usando KQL (Linguagem de Consulta Kusto). 
+O Microsoft Sentinel é uma solução nativa de nuvem, SIEM e SOAR da Microsoft.  Por meio da conexão de fontes de dados da Microsoft e de soluções de segurança de terceiros, você tem a capacidade de executar tarefas de operações de segurança.  Neste exercício de laboratório, você irá criar um workspace do Microsoft Sentinel com conectores de dados para o Microsoft Entra ID para executar consultas de busca usando Linguagem de Consulta Kusto (KQL). 
 
 #### Tempo estimado: 30 minutos
 
@@ -39,7 +39,7 @@ O Microsoft Sentinel é uma solução nativa de nuvem, SIEM e SOAR da Microsoft.
 
 1. Se solicitado, selecione **OK** para ativar a avaliação gratuita do Microsoft Sentinel.
 
-#### Tarefa 2 – Adicionar o Azure AD como fonte de dados
+#### Tarefa 2 – Adicionar o Microsoft Entra ID como uma fonte de dados
     **Note** - As of 2/8/2024, the data source is now Microsoft Entra ID.
 
 1. No  **Microsoft Sentinel**, navegue pelo menu até **Gerenciamento de conteúdo** e selecione **Hub de Conteúdo**.
