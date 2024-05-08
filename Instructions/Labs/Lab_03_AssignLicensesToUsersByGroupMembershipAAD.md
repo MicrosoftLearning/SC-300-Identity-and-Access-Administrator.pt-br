@@ -44,7 +44,7 @@ Sua organização decidiu usar grupos de segurança no Microsoft Entra ID para g
    | :--- | :--- |
    | Tipo de grupo| Segurança|
    | Nome do grupo| sg-SC300-O365|
-   | Tipo de associação| Atribuído|
+   | Tipo de afiliação| Atribuído|
    | Proprietários| *Atribuir sua própria conta de administrador como o proprietário do grupo*|
 
 5. Selecione o texto **Nenhum membro selecionado** em Membros.
@@ -86,7 +86,7 @@ Sua organização decidiu usar grupos de segurança no Microsoft Entra ID para g
     
 5. Feche a janela do navegador. 
 
-### Exercício 2 - Criar um grupo do Microsoft 365 no Microsoft Entra ID
+### Exercício 2 – Criar um grupo do Microsoft 365 no Microsoft Entra ID
 
 #### Tarefa 1 - Criar o grupo
 
@@ -104,7 +104,7 @@ Parte de suas funções como administrador do Microsoft Entra é criar diferente
    | :--- | :--- |
    | Tipo de grupo| Microsoft 365|
    | Nome do grupo| Vendas do noroeste|
-   | Tipo de associação| Atribuído|
+   | Tipo de afiliação| Atribuído|
    | Proprietários| *Atribuir sua própria conta de administrador como o proprietário do grupo*|
    | Membros| **Alex Wilber** e **Bianca Pisani**|
 
@@ -128,7 +128,7 @@ Parte de suas funções como administrador do Microsoft Entra é criar diferente
 
 5. Na caixa **Nome do grupo**, digite **SC300-myDynamicGroup**.
 
-6. Selecione o menu **Tipo de associação** e, em seguida, selecione **Usuário dinâmico**.
+6. Selecione o menu **Tipo de afiliação** e, em seguida, selecione **Usuário dinâmico**.
 
 7. Selecione um **Proprietário** para o grupo.
 
@@ -136,7 +136,7 @@ Parte de suas funções como administrador do Microsoft Entra é criar diferente
 
 8. No lado direito acima da caixa **Sintaxe de regra**, selecione **Editar**.
 
-9. No painel Editar sintaxe de regra, digite a seguinte expressão na caixa **Sintaxe de regra**:
+9. No painel Editar sintaxe de regra, insira a seguinte expressão na caixa **Sintaxe de regra**:
 
    ```powershell
    user.objectid -ne null

@@ -22,7 +22,7 @@ Como uma camada adicional de segurança, você precisa habilitar e configurar as
 
 2. Abra o menu do portal e selecione  **Microsoft Entra ID**.
 
-3. No menu à esquerda, em **Identidade**, selecione **Proteção**.
+3. No menu, em **Identidade**, selecione **Proteção**.
 
 4. Na página Segurança, na navegação à esquerda, selecione **Proteção de identidade**.
 
@@ -46,7 +46,7 @@ Como uma camada adicional de segurança, você precisa habilitar e configurar as
 
     **Dica** – A recomendação da Microsoft é permitir o acesso e exigir alteração de senha.
 
-13. Selecione a caixa de seleção **Exigir alteração de senha** e depois selecione **Concluído**.
+13. Marque a caixa de seleção **Exigir alteração de senha** e depois selecione **Concluído**.
 
 14. Em **Imposição de política**, selecione **Ativado** e clique em **Salvar**.
 
@@ -58,10 +58,10 @@ Como uma camada adicional de segurança, você precisa habilitar e configurar as
 
 3. Em **Risco de entrada**, selecione **Baixo e superior**.
 
-4. No painel Risco de entrada, selecione **Alto** e, em seguida, selecione **Concluído**.
+4. No painel Risco de entrada, selecione **Alto** e depois **Concluído**.
 
 5. Em **Controles** > **Acesso**, selecione **Bloquear acesso**.
 
-6. Marque a caixa de seleção **Exigir autenticação multifator** e, em seguida, selecione **Concluído**.
+6. Marque a caixa de seleção **Exigir autenticação multifator** e selecione **Concluído**.
 
 7. Em **Imposição de política**, selecione **Ativado** e clique em **Salvar**.
