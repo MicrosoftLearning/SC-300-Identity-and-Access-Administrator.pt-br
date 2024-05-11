@@ -77,11 +77,3 @@ O Microsoft Sentinel é uma solução nativa de nuvem, SIEM e SOAR da Microsoft.
 1. Selecione **Executar**. 
 
 1. Isso fornecerá uma lista de IDs de usuário no Microsoft Entra ID.  Como acabamos de criar o workspace, talvez você não veja os resultados.  Observe o formato da consulta.
-
-1. Em **Gerenciamento de ameaças** no menu, selecione **Busca**. 
-
-1. Role para baixo para encontrar a consulta **Local de logon anômalo pela conta de usuário e pelo aplicativo de autenticação**.  Esta consulta sobre a entrada do Microsoft Entra considera todas as entradas de usuários de cada aplicativo do Microsoft Entra e seleciona a alteração mais anômala no perfil de localização de um usuário em um aplicativo individual. A intenção é procurar comprometimento da conta do usuário, possivelmente por meio de um vetor de aplicativo específico. 
-
-1. Selecione **Exibir resultados da consulta** para executar a consulta.
-
-1. Isso pode não fornecer resultados com o novo workspace, mas agora você viu como as consultas podem ser executadas para coletar informações ou para detectar possíveis ameaças.
