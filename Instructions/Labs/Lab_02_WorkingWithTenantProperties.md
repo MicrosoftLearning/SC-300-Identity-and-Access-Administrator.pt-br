@@ -19,7 +19,9 @@ Você precisa identificar e atualizar as diferentes propriedades associadas ao s
 
 1. Navegue até [https://entra.microsoft.com](https://entra.microsoft.com) e entre usando uma Conta de administrador global para o diretório.
 
-1. No menu **Identidade**, abra o menu **Configurações**, selecione **Nomes de domínio**.
+1. No menu **Identidade**, use a opção **Mostrar mais* na parte inferior.
+
+1.  Abra o menu **Configurações** e selecione **Nomes de domínio**.
 
 1. Selecione **+ Adicionar domínio personalizado**.
 
@@ -28,6 +30,8 @@ Você precisa identificar e atualizar as diferentes propriedades associadas ao s
     ```
     sales.labtenant.onmicrosoft.com
     ```
+
+1. **Observação**: Você será solicitado a abrir o centro de administração do Microsoft 365 para concluir essa ação.
 
 1. Selecione **Adicionar domínio** para adicionar o subdomínio.
 
