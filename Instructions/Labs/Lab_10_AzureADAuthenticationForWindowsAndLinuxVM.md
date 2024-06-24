@@ -146,7 +146,7 @@ A empresa decidiu que o Microsoft Entra ID deve ser usado para fazer logon em m�
 
 1. Você deve notar que o acesso a cada um desses usuários é negado.
 
-### Exercício opcional 2 – Fazer logon em Máquinas Virtuais do Linux no Azure com o Azure AD
+### Exercício Opcional 2 – Fazer logon nas Máquinas Virtuais do Linux no Azure com o Microsoft Entra ID
 
 #### Tarefa 1 – Criar uma VM do Linux com a identidade gerenciada atribuída pelo sistema
 
@@ -158,13 +158,13 @@ A empresa decidiu que o Microsoft Entra ID deve ser usado para fazer logon em m�
 
 1. Selecione **Criar** em **Ubuntu Server 22.04 LTS**. Você pode usar outros servidores Linux para este laboratório de teste.
 
-1. Na guia **Gerenciamento**, marque a caixa para ativar **Logon com o Azure Active Directory (Versão prévia)**.
+1. Na guia **Gerenciamento**, marque a caixa para habilitar o **Logon com o Microsoft Entra ID**.
 
 1. Certifique-se de que **Identidade gerenciada atribuída pelo sistema** está selecionada.
 
 1. Percorra o restante da experiência de criação de uma máquina virtual. Durante esta visualização, você terá que criar uma conta de administrador com nome de usuário e senha ou chave pública SSH.
 
-#### Tarefa 2 - logon do Azure AD para Máquinas Virtuais do Azure existentes
+#### Tarefa 2: Entrar com o Microsoft Entra ID nas Máquinas Virtuais do Azure existentes
 
 1. Navegue até **Máquinas Virtuais** em https://portal.azure.com[](https://portal.azure.com).
 
