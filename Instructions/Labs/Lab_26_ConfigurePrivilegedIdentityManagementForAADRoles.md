@@ -13,6 +13,8 @@ Um administrador de funções com privilégios pode personalizar o PIM (Privileg
 
 #### Tempo estimado: 30 minutos
 
+OBSERVAÇÃO – Houve mudanças contínuas na exigência de MFA em ambientes de laboratório.  Ao alternar entre usuários para concluir este laboratório, pode ser solicitado que você configure a MFA.
+
 ### Exercício 1 – Definir as configurações de função do Microsoft Entra
 
 #### Tarefa 1 – Abrir configurações de função
@@ -93,7 +95,7 @@ Siga estas etapas para tornar um usuário elegível para uma função de adminis
 
 12. Na guia **Configurações**, em **Tipo de atribuição**, analise as opções disponíveis. Para essa tarefa, use a configuração padrão.
 
-    - Atribuições Qualificadas exigem que o membro da função execute uma ação para usar a função. As ações podem incluir a execução de uma verificação de MDA (Autenticação Multifator), fornecimento de uma justificativa comercial ou solicitação de aprovação dos aprovadores designados.
+    - Atribuições Qualificadas exigem que o membro da função execute uma ação para usar a função. As ações podem incluir a execução de uma verificação de Autenticação multifator (MFA), fornecimento de uma justificativa comercial ou solicitação de aprovação dos aprovadores designados.
     - As atribuições Ativas não exigem que o membro execute nenhuma ação para usar a função. Membros atribuídos como ativos sempre têm os privilégios atribuídos à função.
 
 13. Revise as configurações restantes, depois selecione **Atribuir**.

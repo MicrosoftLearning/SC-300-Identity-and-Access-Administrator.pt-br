@@ -35,16 +35,30 @@ O Microsoft Entra Identity Protection fornece detecção e correção automatiza
 
 2. No bloco que é aberto, role para baixo e selecione **Introdução**.
 
-3. Uma nova guia será aberta para **Proteção de Identidade | Política de risco de entrada**.
+3. Uma nova guia será aberta para **Acesso condicional**.
+ **Observação** – por padrão, o botão Introdução abrirá no Portal do Azure. Você pode usar o portal ou voltar para o Centro de Administração do Entra. As duas opções funcionarão.
 
-4. Selecione **Todos os usuários** em **Atribuições**.
+4. Selecione **+ Nova política**.
 
-5. Selecione **Médio e superior** em **Risco de entrada**.
+5. Dê um nome à sua política. Recomendamos que as organizações criem um padrão significativo para os nomes de suas políticas.
 
-6. Selecione **Permitir** - **Exigir autenticação multifator**, em **Controles**.
+6. Em Atribuições, selecione Usuários ou identidades de carga de trabalho.
 
-7. Transforme a **imposição de política** para **Habilitada** (se ainda não tiver sido feita) e selecione **Salvar**.
+7. Em Incluir, selecione Todos os usuários.
 
-8. Você criou uma política de risco de entrada que agora deve aumentar sua classificação de segurança de identidade.  Isso levará até 24 horas para entrar em vigor na sua classificação de segurança de identidade.
+8. Em Excluir, selecione Usuários e grupos e escolha as contas que vão continuar podendo usar a autenticação herdada. A Microsoft recomenda que você exclua pelo menos uma conta para impedir que você fique bloqueado.
 
-9. Revise outras ações de melhoria e as etapas para criá-las e habilitá-las.
+9. Em Recursos de destino > Aplicativos na nuvem > Incluir, escolha Todos os aplicativos na nuvem.
+
+10. Em Condições > Aplicativos clientes, defina Configurar como Sim.
+ - Marque apenas as caixas clientes do Exchange ActiveSync e outros clientes.
+
+11. Selecione Concluído.
+
+12. Em Controles de acesso > Conceder, clique em Bloquear acesso.
+
+13. Escolha Selecionar.
+
+14. Confirme suas configurações e defina Habilitar política com Somente relatório.
+
+15. Selecione Criar para criar e habilitar sua política.
