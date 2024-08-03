@@ -119,7 +119,7 @@ A empresa decidiu que o Microsoft Entra ID deve ser usado para fazer logon em m�
 1. Selecione **OK**.
 
 1. Na caixa de diálogo de logon, insira as seguintes informações:
-   - Nome de usuário = **AzureAD\JoniS@<<your lab domainname>>
+   - Nome de usuário = **AzureAD\JoniS@ seu nome de domínio**
    - Senha = Insira a senha fornecida pelo provedor do laboratório
 
    NOTA: JoniS é o usuário que concedemos acesso para fazer logon como administrador durante a Tarefa 1.
