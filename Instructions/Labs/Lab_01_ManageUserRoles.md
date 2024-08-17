@@ -262,7 +262,7 @@ Pode acontecer de uma conta ser excluída e, em seguida, precisar ser recuperada
 
 #### Tarefa 1 - Localizar seu usuário não licenciado no Azure Active Directory
 
-Algumas contas de usuário em sua organização não receberão todos os produtos disponíveis em sua licença atribuída ou precisarão de atualizações ou adições à atribuição de licença. Você precisa garantir que possa atualizar a atribuição de licença de uma conta de usuário no Azure AD.
+Algumas contas de usuário em sua organização não receberão todos os produtos disponíveis em sua licença atribuída ou precisarão de atualizações ou adições à atribuição de licença. Você precisa garantir que possa atualizar a atribuição de licença de uma conta de usuário no Microsoft Entra ID.
 
 1. Navegue até [https://entra.microsoft.com]( https://entra.microsoft.com).
 
