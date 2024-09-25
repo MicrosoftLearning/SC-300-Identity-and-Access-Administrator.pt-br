@@ -48,7 +48,7 @@ Como uma camada adicional de segurança, você precisa habilitar e configurar as
 
 13. Marque a caixa de seleção **Exigir alteração de senha** e depois selecione **Concluído**.
 
-14. Em **Imposição de política**, selecione **Ativado** e clique em **Salvar**.
+14. Em **Aplicação da política**, selecione **Habilitada** e, em seguida, selecione **Salvar**.
 
 #### Tarefa 2 – Habilitar Política de risco de entrada
 
@@ -64,4 +64,4 @@ Como uma camada adicional de segurança, você precisa habilitar e configurar as
 
 6. Marque a caixa de seleção **Exigir autenticação multifator** e selecione **Concluído**.
 
-7. Em **Imposição de política**, selecione **Ativado** e clique em **Salvar**.
+7. Em **Aplicação da política**, selecione **Habilitada** e, em seguida, selecione **Salvar**.

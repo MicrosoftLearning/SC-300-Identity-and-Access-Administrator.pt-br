@@ -61,7 +61,7 @@ O Microsoft Defender para Aplicativos de Nuvem nos permite criar políticas de A
    - Nome de usuário = PradeepG@<<<your lab hoster provided domain>>>
    - Senha = a senha da sua guia Recursos
 5. Confirme que o Pradeep tem acesso e que você recebeu uma nova mensagem:
-   - Sua empresa está monitorando o uso deste aplicativo.
+   - O acesso ao Microsoft Forms é monitorado.
 6. Feche a janela de navegação InPrivate.
 
 ### Exercício 2 – Configurar alertas no Microsoft Defender para Aplicativos de Nuvem
@@ -72,11 +72,9 @@ Registrar seu aplicativo estabelece uma relação de confiança entre seu aplica
 
 1. Entre no [https://security.microsoft.com](https://security.microsoft.com) usando uma conta de administrador global.
 
-1. No menu esquerdo, role até a parte inferior e selecione **Mais recursos**.
+1. No menu à esquerda, role até e selecione **Políticas** na **seção Aplicativos em nuvem** do menu à esquerda.
 
-1. Na janela **Mais recursos**, localize e selecione **Abrir** em **Microsoft Defender para Aplicativos em Nuvem**.  Isso o levará ao portal do **Microsoft Defender para Aplicativos em Nuvem** na conta do Microsoft 365.
-
-1. No menu do portal **Microsoft Defender para Aplicativos em Nuvem**, selecione a seta suspensa para **Controle** e selecione **Políticas**.
+1. No menu **Políticas**, localize e selecione **Gerenciamento de Políticas**.
 
 1. Selecione **+ Criar política**. Selecione **Política de Acesso**.
 
@@ -90,7 +88,7 @@ Registrar seu aplicativo estabelece uma relação de confiança entre seu aplica
 
 1. Deixe **Ações** como **Teste**.
 
-1. Em **Alertas**, deixe a opção **Criar um alerta...** marcada e selecione **Alerta enviado como email**.
+1. Em **Alertas**, deixe a opção **Criar um alerta...** marcada e selecione **Enviar alerta como email**.
 
 1. Insira o endereço de email do administrador do laboratório e pressione **Enter** no teclado.
 
@@ -105,7 +103,7 @@ Registrar seu aplicativo estabelece uma relação de confiança entre seu aplica
    - Nome de usuário = PradeepG@<<<your lab hoster provided domain>>>
    - Senha = a senha da sua guia Recursos
 5. Confirme que o Pradeep tem acesso e que você recebeu uma nova mensagem:
-   - Sua empresa está monitorando o uso deste aplicativo.
+   - O acesso ao Microsoft Forms é monitorado.
 6. Feche a janela de navegação InPrivate.
 
 #### Tarefa 3 – Examinar a atividade no Defender para Aplicativos em Nuvem

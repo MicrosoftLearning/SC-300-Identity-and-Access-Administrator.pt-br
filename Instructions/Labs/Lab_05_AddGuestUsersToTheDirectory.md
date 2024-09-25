@@ -122,7 +122,7 @@ Uma parceria recente foi estabelecida com outra empresa. Por enquanto, funcioná
     }
     ```
 
-6. Enviou o comando MgInvitation para convidar o usuário externo:
+6. Envie o comando MgInvitation para convidar o usuário externo:
 
     ```
     New-MgInvitation -BodyParameter $params

@@ -63,7 +63,7 @@ Você precisa identificar e atualizar as diferentes propriedades associadas ao s
 
     **IMPORTANTE** – Quando o locatário é criado, o país ou região é especificado naquele momento. Não é possível alterar essa configuração posteriormente.
 
-3. Na página **Propriedades**, em **Propriedades do locatário**, busque a **Localização** e analise as informações.
+3. Na página **Propriedades**, em **Propriedades do locatário**, localize **Localização dos dados** e revise as informações.
 
     ![Imagem de tela mostrando a página Propriedades do Azure Active Directory com as configurações de país ou região e de localização destacadas](./media/azure-active-directory-properties-country-location.png)
 
