@@ -27,7 +27,7 @@ A autenticação multifator fornece um meio de verificar quem você é usando ma
 
 5. Na página Proteção de identidade, na navegação à esquerda, em **Proteger**, selecione **Política de registro com autenticação multifator**.
 
-    ![Imagem da tela exibindo a página da política de registro MFA com o caminho de navegação realçado](./media/lp2-mod4-browse-to-mfa-registration-policy.png)
+    ![Imagem da tela exibindo a página da política de registro de MFA com o caminho de navegação realçado](./media/lp2-mod4-browse-to-mfa-registration-policy.png)
 
 6. Em **Atribuições**
 
@@ -50,7 +50,7 @@ A autenticação multifator fornece um meio de verificar quem você é usando ma
 
 1. Em **Atribuições**, selecione **Todos os usuários** em Usuários e selecione um usuário para aplicar a MFA.
 
-1. Altere a **Aplicação da política** de **Desativada** para **Ativada**.
+1. Altere a **Aplicação da política ** de **Desabilitada** para **Habilitada**.
 
 1. Selecione **Salvar**.
 

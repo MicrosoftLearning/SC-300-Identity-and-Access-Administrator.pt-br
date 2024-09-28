@@ -31,7 +31,7 @@ O Microsoft Entra Identity Protection fornece detecção e correção automatiza
 
 #### Tarefa 2 – Executar uma ação de melhoria
 
-1. Para melhorar uma área da postura de segurança de identidade, selecione **Proteger todos os usuários com uma política de risco de entrada**.
+1. Para melhorar uma área da postura de segurança de identidade, selecione **Habilitar políticas de risco de entrada da Proteção de Identidade do Microsoft Entra ID**.
 
 2. No bloco que é aberto, role para baixo e selecione **Introdução**.
 
