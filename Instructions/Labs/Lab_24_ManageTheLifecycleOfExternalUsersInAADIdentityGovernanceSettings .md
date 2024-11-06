@@ -9,7 +9,7 @@ lab:
 
 ## Cenário do laboratório
 
-Você pode selecionar o que acontece quando um usuário externo, que foi convidado para seu diretório por meio de uma solicitação de pacote de acesso que está sendo aprovada, não tiver mais nenhuma atribuição de pacote de acesso. Isso pode ocorrer se o usuário ceder todas as atribuições de pacote de acesso ou se a última atribuição de pacote de acesso dele expirar. Por padrão, quando um usuário externo não tem mais nenhuma atribuição de pacote de acesso, ele é impedido de entrar no seu diretório. Após 30 dias, a conta de usuário convidado dele é removida do seu diretório.
+Você pode selecionar o que acontece quando um usuário externo, que foi convidado para seu diretório por meio de uma solicitação de pacote de acesso que está em aprovação, não tiver mais nenhuma atribuição de pacote de acesso. Isso pode ocorrer se o usuário ceder todas as atribuições de pacote de acesso ou se a última atribuição de pacote de acesso dele expirar. Por padrão, quando um usuário externo não tem mais nenhuma atribuição de pacote de acesso, ele é impedido de entrar no seu diretório. Após 30 dias, a conta de usuário convidado dele é removida do seu diretório.
 
 #### Tempo estimado: 5 minutos
 
@@ -25,7 +25,7 @@ Você pode selecionar o que acontece quando um usuário externo, que foi convida
 
 4. No menu superior, selecione **Editar**.
 
-    ![Imagem da tela exibindo a página de configurações de governança de identidade com a opção Gerenciar o ciclo de vida de usuários externos realçada.](./media/lp4-mod1-manage-lifcycle-of-ext-users.png)
+    ![Imagem da tela exibindo a página de configurações de governança de identidade com a opção de gerenciar o ciclo de vida de usuários externos realçada.](./media/lp4-mod1-manage-lifcycle-of-ext-users.png)
 
 5. Na seção **Gerenciar o ciclo de vida de usuários externos**, analise as diferentes configurações para usuários externos.
 

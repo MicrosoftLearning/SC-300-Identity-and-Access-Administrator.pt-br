@@ -42,8 +42,8 @@ Você deve habilitar as configurações de colaboração externa para sua organi
 
     **OBSERVAÇÃO**
     - Os usuários convidados têm o mesmo acesso que os membros (mais inclusivo): essa opção fornece aos convidados o mesmo acesso aos recursos do Microsoft Entra e aos dados de diretório que os usuários membros.
-    - Os usuários convidados têm acesso limitado a propriedades e associações de objetos do directory (padrão) : essa configuração bloqueia convidados de determinadas tarefas de diretório, como a enumeração de usuários, grupos ou outros recursos de diretório. Os convidados podem ver a associação de todos os grupos não ocultos.
-    - O acesso do usuário convidado é restrito a propriedades e associações de objetos próprios do diretório (mais restritivo) : com essa configuração, os convidados podem acessar somente os próprios perfis. Os convidados não têm permissão para ver os perfis, grupos ou associações de grupo dos outros usuários.
+    - Os usuários convidados têm acesso limitado a propriedades e associações de objetos do directory (padrão) : essa configuração bloqueia convidados de determinadas tarefas de diretório, como a enumeração de usuários, grupos ou outros recursos de diretório. Os convidados podem ver a afiliação de todos os grupos não ocultos.
+    - O acesso do usuário convidado é restrito a propriedades e afiliações de objetos próprios do diretório (mais restritivo): com essa configuração, os convidados podem acessar somente os próprios perfis. Os convidados não têm permissão para ver os perfis, grupos ou afiliações de grupo dos outros usuários.
 
     ![Imagem da tela exibindo opções de restrição do acesso do usuário convidado.](./media/lp1-mod3-guest-user-access-restrictions.png)
 
@@ -52,19 +52,19 @@ Você deve habilitar as configurações de colaboração externa para sua organi
     **OBSERVAÇÃO**
     - Todas as pessoas na organização, incluindo os convidados e os que não são administradores, podem convidar usuários convidados (opção mais inclusiva): para permitir que convidados na organização chamem outros convidados, incluindo aqueles que não são membros de uma organização, selecione esse botão de opção.
     - Os usuários membros e os usuários atribuídos a funções de administrador específicas podem convidar usuários convidados, incluindo os convidados com permissões de membro: para permitir que usuários membros e usuários com funções de administrador específicas chamem convidados, selecione esse botão de opção.
-    - Somente os usuários atribuídos a funções de administrador específicas podem convidar usuários convidados: para permitir que somente os usuários com funções de administrador chamem convidados, selecione esse botão de opção. As funções de administrador incluem Administrador Global, Administrador de Usuárioe Emissor do Convite ao Convidado.
-    - Ninguém na organização, incluindo os administradores, pode convidar usuários convidados (opção mais restritiva) : para negar que todos na organização chamem convidados, selecione esse botão de opção.
-    - Se a opção Membros podem convidar estiver definida como Não e os Administradores e usuários na função de emissor do convite estiverem definidos como Sim, os usuários na função Emissor do convite ainda poderão convidar convidados.
+    - Somente os usuários atribuídos a funções de administrador específicas podem convidar usuários convidados: para permitir que somente os usuários com funções de administrador chamem convidados, selecione esse botão de opção. As funções de administrador incluem Administrador global, Administrador de usuário e Emissor de convites independente.
+    - Ninguém na organização, incluindo os administradores, pode convidar usuários convidados (opção mais restritiva): para negar que todos na organização chamem convidados, selecione esse botão de opção.
+    - Se a opção Membros podem convidar estiver definida como Não e os Administradores e usuários na função Emissor de convites independente estiverem definidos como Sim, os usuários na função Emissor de convites independente ainda poderão convidar convidados.
 
     ![Imagem da tela exibindo as configurações de convite de convidado com a opção Convidados podem convidar definida como Não e realçada](./media/lp1-mod3-guest-user-invite-settings.png)
 
 11. Em  **Restrições de colaboração**, examine as opções disponíveis e aceite as configurações padrão.
 
     **IMPORTANTE**
-    - Você pode criar uma lista de permissões ou uma lista de negações. Você não pode configurar os dois tipos de listas. Por padrão, qualquer domínio que ão esteja na lista de permissão ou na lista de negação, e vice-versa.
+    - Você pode criar uma lista de permissões ou uma lista de negações. Você não pode configurar os dois tipos de listas. Por padrão, qualquer domínio que não esteja na lista de permissão ou na lista de negação, e vice-versa.
     - Você pode criar apenas uma política por organização. Você pode atualizar a política para incluir mais domínios ou você pode excluir a política para criar uma nova.
     - O número de domínios que você pode adicionar a uma lista de permissões ou lista de negações é limitado apenas pelo tamanho da política. O tamanho máximo de toda a política é 25 KB (25.000 caracteres), que inclui a lista de permissões ou a lista de negações e quaisquer outros parâmetros configurados para outros recursos.
-    - Esta lista funciona independentemente das listas de permissão/bloqueio do OneDrive for Business e SharePoint Online. Se você quiser restringir o compartilhamento de arquivos no SharePoint Online, será necessário configurar uma lista de permissão ou negação para o One Drive for Business e para o SharePoint Online.
+    - Esta lista funciona independentemente das listas de permissão/bloqueio do OneDrive for Business e SharePoint Online. Se você quiser restringir o compartilhamento de arquivos no SharePoint Online, será necessário configurar uma lista de permissão ou negação para o OneDrive for Business e para o SharePoint Online.
     - A lista não se aplica a usuários externos que já resgataram o convite. A lista será aplicada depois que for configurada. Se um convite do usuário estiver em um estado pendente e você definir uma política que bloqueia seu domínio, a tentativa do usuário para resgatar o convite falhará.
 
 12. Após terminar, **salve** suas alterações.

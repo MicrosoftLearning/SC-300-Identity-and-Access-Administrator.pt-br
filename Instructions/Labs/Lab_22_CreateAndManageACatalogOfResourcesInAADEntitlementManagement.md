@@ -55,9 +55,9 @@ Para incluir recursos em um pacote de acesso, os recursos devem existir em um ca
 
 1. Na página Governança de identidade, se necessário, selecione **Catálogos**.
 
-2. Na lista **Catálogos**, selecione **Marketing**.
+2. Na lista **Catálogos**, selecione **Marketing.**
 
-3. No painel de navegação esquerdo, em **Gerenciar**, selecione **Recursos**.
+3. No painel de navegação esquerdo, em **Gerenciar, **selecione **Recursos**.
 
 4. No menu, selecione + **Adicionar recursos**.
 
@@ -65,7 +65,7 @@ Para incluir recursos em um pacote de acesso, os recursos devem existir em um ca
 
    | Tipo de recurso | Valor |
    | :------------- | :---------- |
-   |  **Grupos e Equipes** | Retail |
+   |  **Grupos e Equipes** | Varejo |
    |  **Aplicativos** | Box |
    |  **Aplicativos** | Salesforce |
    |  **Sites do SharePoint** | Marca SharePoint <<<escolha na sua lista de sites do SharePoint disponíveis |
@@ -120,7 +120,7 @@ O usuário que criou um catálogo se torna o primeiro proprietário do catálogo
 
 1. Em **Selecionar escopo de usuário**, selecione **Somente usuários convidados**.
 
-1. Selecione **Próximo: Revisões**.
+1. Selecione **Avançar: Revisões**.
 
 1. O próximo bloco é onde você configura quem revisa e aprova o acesso, com que frequência o acesso será revisado e quando o acesso expirará.
 

@@ -31,9 +31,9 @@ Sua organização exige que apenas usuários ou grupos específicos tenham acess
 
     ![Imagem da tela exibindo a página Procurar na Galeria do Microsoft Entra com a caixa de pesquisa realçada](./media/lp3-mod1-azure-ad-gallery-search.png)
 
-6. Nos resultados, selecione **GitHub Enterprise Cloud – Enterprise Account**.
+6. Nos resultados, selecione **GitHub Enterprise Cloud – conta corporativa**.
 
-7. Em **GitHub Enterprise Cloud – Enterprise Account**, examine as configurações e selecione **Criar**.
+7. Em **GitHub Enterprise Cloud – conta corporativa**, examine as configurações e selecione **Criar**.
 
 8. Quando a conta for criada, haverá o redirecionamento para a página GitHub Enterprise Cloud – Conta Enterprise.
 

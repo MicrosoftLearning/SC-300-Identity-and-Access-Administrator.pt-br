@@ -77,7 +77,7 @@ Em seguida, vamos examinar como configurar regras de política de acesso condici
 
 9. Certifique-se de que **Exigir todos os controles selecionados** esteja selecionado.
 
-10. Escolha **Selecionar**.
+10. Clique em **Selecionar**.
 
 11. Defina **Habilitar política** como **Ativo**.
 

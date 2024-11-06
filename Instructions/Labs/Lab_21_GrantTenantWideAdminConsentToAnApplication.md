@@ -19,7 +19,7 @@ Para aplicativos desenvolvidos pela sua organização ou para aqueles registrado
 
    **Aviso** – A concessão de consentimento do administrador em todo o locatário para um aplicativo concederá ao aplicativo e ao seu fornecedor acesso aos dados da sua organização. Examine atentamente as permissões solicitadas pelo aplicativo antes de conceder consentimento.
 
-A função de Administrador Global é necessária para fornecer consentimento de administrador para permissões de aplicativo para a API do Microsoft Graph.
+A função de administrador global é necessária para fornecer consentimento de administrador para permissões de aplicativo para a API do Microsoft Graph.
 
 1. Em um exercício anterior, você criou um aplicativo chamado Aplicativo de Demonstração. Caso necessário, no centro de administração do Microsoft Entra, navegue até **Identidade**, **Aplicativos** e, em seguida, **Registros de aplicativo** e selecione **Aplicativo de demonstração**.
 
@@ -33,7 +33,7 @@ A função de Administrador Global é necessária para fornecer consentimento de
 
 4. Em **Permissões configuradas**, selecione **Conceder consentimento de administrador**.
 
-    ![Imagem da tela exibindo a página de permissão da API e o consentimento de administrador Conceder para a Contoso realçado](./media/lp3-mod3-api-permissions-admin-consent.png)
+    ![Imagem da tela exibindo a página de permissão da API com Conceder consentimento de administrador para a Contoso realçado](./media/lp3-mod3-api-permissions-admin-consent.png)
 
 5. Examine a caixa de diálogo e selecione **Sim.**
 
@@ -49,10 +49,10 @@ Você pode conceder consentimento de administrador em todo o locatário por meio
 
 3. Em **Permissões**, selecione **Conceder consentimento de administrador**.
 
-    ![Imagem da tela exibindo a página de permissões de Aplicativo de demonstração e o Conceder consentimento de administrador para a Contoso realçado](./media/lp3-mod3-grant-admin-consent-in-enterprise-app.png)
+    ![Imagem da tela exibindo a página de permissões de Aplicativo de demonstração com Conceder consentimento de administrador para a Contoso realçado](./media/lp3-mod3-grant-admin-consent-in-enterprise-app.png)
 
    **Aviso** – A concessão de consentimento do administrador em todo o locatário por meio de Registros de aplicativo revogará todas as permissões concedidas anteriormente em todo o locatário. As permissões concedidas anteriormente pelos usuários em seu próprio nome não serão afetadas.
 
-4. Quando solicitado, entre usando sua conta de Administrador global.
+4. Quando solicitado, entre usando sua conta de administrador global.
 
 5. Na caixa de diálogo **Permissões solicitadas**, examine as informações e selecione **Aceitar**.

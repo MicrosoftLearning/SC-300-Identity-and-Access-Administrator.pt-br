@@ -112,7 +112,7 @@ Primeiro, siga estas etapas para criar um escopo de exemplo chamado Employees.Re
 
 6. Em seguida, especifique os atributos do escopo no  **painel Adicionar um escopo**. Para este passo a passo, você pode usar os valores de exemplo ou especificar o seu próprio valor.
 
-    | Campo| Description| Exemplo|
+    | Campo| Descrição| Exemplo|
     | :--- | :--- | :--- |
     | Nome do escopo| O nome do seu escopo. Uma convenção comum de nomenclatura de escopo é resource.operation.constraint.| Employees.Read.All|
     | Quem pode consentir| Se esse escopo pode ser consentido por usuários ou se é necessário ter o consentimento do administrador. Selecione Somente administradores para permissões com privilégios mais elevados.| Administradores e usuários|
