@@ -21,14 +21,14 @@ Você quer distribuir a SSPR para um conjunto limitado de usuários primeiro par
 1. No centro de administração do Microsoft Entra, abra o menu de navegação **Identidade** à esquerda.
 1. Em **Grupos**, selecione **Todos os grupos** e escolha **Novo Grupo** na janela do lado direito.
 
-2. Crie um grupo com as seguintes informações:
+2. Crie um novo grupo com as seguintes informações:
 
     | **Configuração**| **Valor**|
     | :--- | :--- |
     | Tipo de grupo| Segurança|
     | Nome do grupo| SSPRTesters|
     | Descrição do grupo| Usuários de teste da distribuição da SSPR|
-    | Tipo de associação| Atribuído|
+    | Tipo de afiliação| Atribuído|
     | Membros| Alex Wilber |
     | |  Allan Deyoung |
     | | Bruna Alves |
@@ -62,9 +62,9 @@ Habilite a SSPR para o grupo.
 
 #### Tarefa 3 - Registre-se na SSPR como Alex
 
-Agora que a configuração da SSPR foi concluída, registre um número de telefone celular para o usuário que você criou.
+Agora que a configuração da SSPR foi concluída, registre um número do telefone celular para o usuário que você criou.
 
-1. Abra um navegador diferente ou uma sessão do navegador InPrivate ou Incognito e acesse [https://aka.ms/ssprsetup](https://aka.ms/ssprsetup).
+1. Abra um navegador diferente ou uma sessão anônima do navegador e acesse [https://aka.ms/ssprsetup](https://aka.ms/ssprsetup).
 
     Isso garante que seja solicitada a você a autenticação de usuário.
 
@@ -72,7 +72,7 @@ Agora que a configuração da SSPR foi concluída, registre um número de telefo
 
     **Observação** – Substitua organization-domain-name pelo nome do seu domínio.
 
-3. Ao receber uma solicitação de atualização de senha, insira uma nova senha de sua escolha. Lembre-se de registrá-la.
+3. Ao receber uma solicitação de atualização de senha, insira uma nova senha de sua escolha. Não se esqueça de registrar a nova senha.
 
 4. Na caixa de diálogo **Mais informações necessárias**, selecione **Avançar**.
 
@@ -96,7 +96,7 @@ Agora que a configuração da SSPR foi concluída, registre um número de telefo
 
 Agora, vamos testar se o usuário pode redefinir a própria senha.
 
-1. Abra um navegador diferente ou uma sessão do navegador InPrivate ou Incognito e acesse  [https://portal.azure.com](https://portal.azure.com).
+1. Abra um navegador diferente ou uma sessão anônima do navegador e acesse  [https://portal.azure.com](https://portal.azure.com).
 
     Isso garante que seja solicitada a você a autenticação de usuário.
 
@@ -104,7 +104,7 @@ Agora, vamos testar se o usuário pode redefinir a própria senha.
 
     **Observação** – Substitua organization-domain-name pelo nome do seu domínio.
 
-3. Na página Digitar senha, selecione **Esqueci minha senha**.
+3. Na página Inserir senha, selecione **Esqueci minha senha**.
 
 4. Na página Voltar para sua conta, preencha as informações solicitadas e selecione **Avançar**.
 
@@ -114,15 +114,15 @@ Agora, vamos testar se o usuário pode redefinir a própria senha.
 
     ![Imagem da tela exibindo a etapa de verificação 1 com os métodos de contato, a caixa de número de telefone e o botão Enviar SMS realçados](./media/lp2-mod2-sspr-verification-step-1.png)
 
-6. Digite seu código de verificação e selecione **Avançar**.
+6. Insira seu código de verificação e selecione **Avançar**.
 
-7. Na etapa Escolher nova senha, digite e confirme sua nova senha.  Senha recomendável = **Pass@w.rd1234**.
+7. Na etapa Escolher nova senha, insira e confirme sua nova senha.  Senha recomendável = **Pass@w.rd1234**.
 
 8. Ao concluir, selecione **Concluir**.
 
 9. Entre como **AlexW** com a nova senha que você criou.
 
-10. Digite seu código de verificação e verifique se você pode concluir o processo de entrada.
+10. Insira seu código de verificação e verifique se você pode concluir o processo de entrada.
 
 11. Depois de terminar, feche o navegador.
 

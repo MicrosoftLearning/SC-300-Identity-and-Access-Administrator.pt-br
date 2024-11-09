@@ -38,6 +38,6 @@ Com base em seus requisitos organizacionais, você pode personalizar os valores 
 8. Salve suas alterações.
 
     **OBSERVAÇÃO** – Quando o limite do bloqueio inteligente for acionado, você receberá a seguinte mensagem enquanto a conta estiver bloqueada:
-    - Sua conta está temporariamente bloqueada para impedir o uso não autorizado. Tente novamente depois e, se ainda tiver problemas, entre em contato com seu administrador.
+    - Sua conta está temporariamente bloqueada para impedir o uso não autorizado. Tente novamente mais tarde e, se ainda tiver problemas, entre em contato com o administrador.
 
 9. Isso pode ser testado escolhendo um usuário em seu locatário do Microsoft Entra, acessando em um navegador privado <login.microsoftonline.com> e inserindo uma senha incorreta até que a conta receba a notificação de que está bloqueada.

@@ -11,7 +11,7 @@ lab:
 
 ## Cenário do laboratório
 
-Ao usar as identidades gerenciadas para recursos do Azure, seu código pode obter tokens de acesso para se autenticar nos recursos que dão suporte à autenticação do Microsoft Entra.No entanto, nem todos os serviços do Azure dão suporte à autenticação do Microsoft Entra. Para usar identidades gerenciadas em recursos do Azure com esses serviços, armazene as credenciais de serviço no Azure Key Vault e use a identidade gerenciada para acessar o Key Vault e recuperar as credenciais.
+Ao usar as identidades gerenciadas nos recursos do Azure, seu código pode obter tokens de acesso para se autenticar nos recursos que dão suporte à autenticação do Microsoft Entra.No entanto, nem todos os serviços do Azure dão suporte à autenticação do Microsoft Entra. Para usar identidades gerenciadas em recursos do Azure com esses serviços, armazene as credenciais de serviço no Azure Key Vault e use a identidade gerenciada para acessar o Key Vault e recuperar as credenciais.
 
 #### Tempo estimado: 20 minutos
 
@@ -88,7 +88,7 @@ Ao usar as identidades gerenciadas para recursos do Azure, seu código pode obte
 
 1. Selecione **Adicionar**.
 
-1. Clique em **Salvar**.
+1. Selecione **Salvar**.
 
 #### Tarefa 5 – Acessar dados usando o segredo do Cofre de Chaves com o PowerShell
 

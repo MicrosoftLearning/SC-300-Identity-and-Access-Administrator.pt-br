@@ -21,10 +21,10 @@ Sua empresa trabalha com muitos fornecedores e, ocasionalmente, você precisa ad
 
 1. Acesse as APIs do Google em https://console.developers.google.com e entre com sua conta do Google. É recomendável que você use uma conta do Google de equipe compartilhada.
 
-2. Aceite os termos de serviço se você for solicitado a fazê-lo.
+2. Aceite os termos de serviço se for solicitado a fazê-lo.
 
 **Criar um novo projeto:**
-3. Na parte superior da página, selecione o menu Projeto para abrir a página Selecionar um projeto. Escolha **Novo Projeto**.  Mantenha os demais campos com as configurações padrão.
+3. Na parte superior da página, selecione o menu Projeto para abrir a página Selecionar um projeto. Escolha **Novo projeto**.  Mantenha os demais campos com as configurações padrão.
 
 4. Na página Novo Projeto, dê um nome ao projeto (por exemplo, **MyB2BApp**) e, em seguida, selecione **Criar**.
 

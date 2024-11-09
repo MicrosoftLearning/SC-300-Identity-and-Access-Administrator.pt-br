@@ -58,7 +58,7 @@ Você precisará tornar um usuário qualificado para uma função de recurso do 
 
 13. Na guia **Configurações**, em **Tipo de atribuição**, selecione **Qualificado**.
 
-   - Atribuições **Qualificadas** exigem que o membro da função execute uma ação para usar a função. As ações podem incluir a execução de uma verificação de MDA (Autenticação Multifator), fornecimento de uma justificativa comercial ou solicitação de aprovação dos aprovadores designados.
+   - Atribuições **Qualificadas** exigem que o membro da função execute uma ação para usar a função. As ações podem incluir a execução de uma verificação de Autenticação multifator (MFA), fornecimento de uma justificativa comercial ou solicitação de aprovação dos aprovadores designados.
 
    - As atribuições **Ativas** não exigem que o membro execute nenhuma ação para usar a função. Membros atribuídos como ativos sempre têm os privilégios atribuídos à função.
 

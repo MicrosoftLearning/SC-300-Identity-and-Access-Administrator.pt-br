@@ -61,7 +61,7 @@ Sua empresa tem o Active Directory Domain Services local.  Eles gostariam de con
    -   Local _artifacts: **Aceite o padrão**
    -   Token SAS do local _artifacts: **deixe em branco**
 
-4. Selecione **Examinar + criar**.
+4. Selecione **Examinar + Criar**.
 
 5. Quando a validação for aprovada, selecione **Criar**.
     
@@ -163,7 +163,7 @@ Sua empresa tem o Active Directory Domain Services local.  Eles gostariam de con
     $UserCount = 1000 #Up to 2500 can be created
     ```
 
-   até
+   para
     ```pwsh
     $UserCount = 2500 #Up to 2500 can be created
     ```
