@@ -7,6 +7,8 @@ lab:
 
 # Laboratório 22 – Criar e gerenciar um catálogo de recursos no gerenciamento de direitos do Microsoft Entra
 
+### Tipo de logon = administração do Microsoft 365
+
 ## Cenário do laboratório
 
 Um catálogo é um contêiner de recursos e pacotes de acesso. Você cria um catálogo quando deseja agrupar recursos relacionados e pacotes de acesso. A pessoa que criar o catálogo se tornará o primeiro proprietário dele. Um proprietário de catálogo pode adicionar outros proprietários de catálogo. Você deve criar e configurar um catálogo em sua organização.
@@ -39,15 +41,15 @@ Um catálogo é um contêiner de recursos e pacotes de acesso. Você cria um cat
 
 6. Na caixa **Descrição**, insira **Para usuários do departamento de marketing**. Os usuários verão essas informações nos detalhes de um pacote de acesso.
 
-7. Em **Habilitado, selecione Não**.
+7. Em **Habilitado**, selecione **Sim**.
 
-- - **Habilitado para usuários externos** permite que os usuários em diretórios externos selecionados possam solicitar pacotes de acesso nesse catálogo. Nenhuma alteração será feita nessa configuração.
+  - **Habilitado para usuários externos**, selecione **Não**.  Essa configuração permite que os usuários em diretórios externos selecionados possam solicitar pacotes de acesso nesse catálogo. Nenhuma alteração será feita nessa configuração.
 
 9. Você pode optar por habilitar o catálogo para uso imediato ou desabilitar se pretender prepará-lo ou mantê-lo indisponível até quando pretender usá-lo. Para esse exercício, o catálogo não precisa ser habilitado.
 
-    ![Imagem da tela exibindo o painel Novo catálogo com as opções Nome, Descrição, Habilitado e Criar realçadas](./media/lp4-mod1-new-catalog-marketing.png)
+  ![Imagem da tela exibindo o painel Novo catálogo com as opções Nome, Descrição, Habilitado e Criar realçadas](./media/lp4-mod1-new-catalog-marketing.png)
 
-10. Selecione Criar.
+10. Selecione **Criar**.
 
 #### Tarefa 2 – Adicionar recursos a um catálogo
 
@@ -68,7 +70,7 @@ Para incluir recursos em um pacote de acesso, os recursos devem existir em um ca
    |  **Grupos e Equipes** | Varejo |
    |  **Aplicativos** | Box |
    |  **Aplicativos** | Salesforce |
-   |  **Sites do SharePoint** | Marca SharePoint <<<escolha na sua lista de sites do SharePoint disponíveis |
+   |  **Sites do SharePoint** | Marca – escolha este SharePoint na sua lista de sites disponíveis |
 
 6. Talvez você não tenha recursos em Grupos e equipes, Aplicativos ou Sites do SharePoint. Selecione qualquer categoria de recurso e, em seguida, um recurso dessa categoria.
 
@@ -124,13 +126,15 @@ O usuário que criou um catálogo se torna o primeiro proprietário do catálogo
 
 1. O próximo bloco é onde você configura quem revisa e aprova o acesso, com que frequência o acesso será revisado e quando o acesso expirará.
 
-1. Em **Selecionar revisores**, selecione **Proprietários de grupo** como esses revisores. **Observação**: os usuários convidados não devem ter permissão para revisar seu próprio acesso como uma boa prática de governança de identidade.
+1. Em **Selecionar revisores**, selecione **Proprietários de grupo** como esses revisores.
+
+  - **Observação**: os usuários convidados não devem ter permissão para revisar seu próprio acesso como uma boa prática de governança de identidade.
 
 1. Insira uma **Duração (em dias)**, o padrão é 3, escolha uma **Recorrência de revisão** e **Data de início** para a revisão.
 
 1. Selecione **Avançar: configurações** e defina as configurações de como a revisão ocorrerá e o que acontece quando o usuário convidado responde ou não responde.  Uma boa prática é selecionar **Aplicar resultados automaticamente ao recurso** e selecionar **Remover acesso** em **Se os revisores não responderem**. 
 
-1. Selecione **Avançar: Revisar + criar** e, em seguida, selecione **Criar** para criar a nova **Revisão de acesso**.
+1. Selecione **Avançar: Revisar + criar** e, em seguida, selecione **Criar** para criar a nova Revisão de acesso.
 
 
 #### Tarefa 6 – Excluir um catálogo

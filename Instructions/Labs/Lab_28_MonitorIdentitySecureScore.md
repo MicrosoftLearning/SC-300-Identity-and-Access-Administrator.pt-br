@@ -7,9 +7,13 @@ lab:
 
 # Lab 28 – Monitorar sua postura de segurança gerenciada com a classificação de segurança de identidade
 
+### Tipo de logon = administração do Microsoft 365
+
 ## Cenário do laboratório
 
 O Microsoft Entra Identity Protection fornece detecção e correção automatizadas para riscos baseados em identidade e fornece dados no portal para investigar riscos potenciais. O Microsoft Entra Identity Protection também fornece uma Classificação de Segurança de Identidade para monitorar e melhorar sua postura de segurança de identidade.  Da mesma forma que o Microsoft Defender XDR e o Microsoft Defender para Nuvem, a Classificação de Segurança de Identidade fornece ações de melhoria e recomendações que podem melhorar sua postura de segurança geral para identidade na ID do Microsoft Entra.  Este laboratório vai explorar esta capacidade. 
+
+**Observação** – Como este laboratório está sendo executado em um novo ambiente de locatário criado, você provavelmente obterá uma Classificação de Segurança de Identidade de 0,00%.  Leva cerca de 24 horas para que dados valiosos entrem no cálculo para fornecer uma classificação válida.
 
 #### Tempo estimado: 15 minutos
 
@@ -31,34 +35,31 @@ O Microsoft Entra Identity Protection fornece detecção e correção automatiza
 
 #### Tarefa 2 – Executar uma ação de melhoria
 
-1. Para melhorar uma área da postura de segurança de identidade, selecione **Habilitar políticas de risco de entrada da Proteção de Identidade do Microsoft Entra ID**.
+1. Para melhorar uma área da postura de segurança de identidade, selecione **Habilitar política de risco de entrada do Microsoft Entra ID Protection**.
 
 2. No bloco que é aberto, role para baixo e selecione **Introdução**.
 
-3. Uma nova guia será aberta para **Acesso condicional**.
+3. Uma nova guia será aberta para **Proteção de Identidade | Política de risco de entrada**.
  **Observação** – por padrão, o botão Introdução abrirá no Portal do Azure. Você pode usar o portal ou voltar para o Centro de Administração do Entra. As duas opções funcionarão.
 
-4. Selecione **+ Nova política**.
-
-5. Dê um nome à sua política. Recomendamos que as organizações criem um padrão significativo para os nomes de suas políticas.
-
-6. Em Atribuições, selecione Usuários ou identidades de carga de trabalho.
+6. Em Atribuições, escolha o texto **Todos os usuários**.
 
 7. Em Incluir, selecione Todos os usuários.
 
-8. Em Excluir, selecione Usuários e grupos e escolha as contas que vão continuar podendo usar a autenticação herdada. A Microsoft recomenda que você exclua pelo menos uma conta para impedir que você fique bloqueado.
+8. Em Excluir, selecione Usuários e grupos e escolha sua conta de **Administrador MOD**.
 
-9. Em Recursos de destino > Aplicativos na nuvem > Incluir, escolha Todos os aplicativos na nuvem.
+  - A Microsoft recomenda que você exclua pelo menos uma conta para impedir que você fique bloqueado.
 
-10. Em Condições > Aplicativos clientes, defina Configurar como Sim.
- - Marque apenas as caixas clientes do Exchange ActiveSync e outros clientes.
+9. Em Risco de entrada, selecione o texto que diz **Baixo e superior**.
+
+10. Escolha **Médio e superior** e selecione **Concluído**.
+
+10. Na seção **Controles**, escolha o texto que diz **Bloquear acesso**.
+
+11. Selecione **Conceder acesso – Exigir autenticação multifator**.
 
 11. Selecione Concluído.
 
-12. Em Controles de acesso > Conceder, clique em Bloquear acesso.
+14. Confirme suas configurações e defina a imposição da política como **Habilitada**.
 
-13. Escolha Selecionar.
-
-14. Confirme suas configurações e defina Habilitar política com Somente relatório.
-
-15. Selecione Criar para criar e habilitar sua política.
+15. Selecione **Salvar**.

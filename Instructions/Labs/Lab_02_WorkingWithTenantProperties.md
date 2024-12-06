@@ -7,6 +7,8 @@ lab:
 
 # Laboratório 02: Trabalhando com propriedades de locatário
 
+### Tipo de logon = administração do Microsoft 365
+
 ## Cenário do laboratório
 
 Você precisa identificar e atualizar as diferentes propriedades associadas ao seu locatário.
@@ -17,9 +19,11 @@ Você precisa identificar e atualizar as diferentes propriedades associadas ao s
 
 #### Tarefa 1 – Criar um nome de subdomínio personalizado
 
+Você usaria a ID do Microsoft Entra para criar um domínio que comprou.  Se você quiser criar um subdomínio para dividir seu domínio .onmicrosoft.com existente, precisará usar o Centro de administração do Microsoft 365.
+
 1. Navegue até [https://entra.microsoft.com](https://entra.microsoft.com) e entre usando uma Conta de administrador global para o diretório.
 
-1. No menu **Identidade**, use a opção **Mostrar mais* na parte inferior.
+1. No menu **Identidade**, use a opção **Mostrar mais** na parte inferior.
 
 1.  Abra o menu **Configurações** e selecione **Nomes de domínio**.
 
@@ -28,13 +32,18 @@ Você precisa identificar e atualizar as diferentes propriedades associadas ao s
 1. No campo **Nome de domínio personalizado**, crie um subdomínio personalizado para o locatário do laboratório colocando **vendas** na frente do nome de domínio **onmicrosoft.com**.  O formato será semelhante a este:
 
     ```
-    sales.labtenant.onmicrosoft.com
+    mydomain.com
     ```
 
 1. **Observação**: Você será solicitado a abrir o centro de administração do Microsoft 365 para concluir essa ação.
 
 1. Selecione **Adicionar domínio** para adicionar o subdomínio.
 
+1. Insira o nome do subdomínio `sales.tenantname.onmicrosoft.com` na caixa de diálogo.
+
+1. Clique no botão **Usar este domínio** na parte inferior da tela.
+
+1. Clique no botão **Fechar** quando a próxima tela abrir.  Para os fins deste laboratório, não configuraremos o DNS.
 
 ### Exercício 2 – Alterar o nome de exibição do locatário
 
@@ -63,7 +72,7 @@ Você precisa identificar e atualizar as diferentes propriedades associadas ao s
 
     **IMPORTANTE** – Quando o locatário é criado, o país ou região é especificado naquele momento. Não é possível alterar essa configuração posteriormente.
 
-3. Na página **Propriedades**, em **Propriedades do locatário**, localize **Localização dos dados** e revise as informações.
+3. Na página **Propriedades**, em **Propriedades do locatário**, busque a **Localização** e analise as informações.
 
     ![Imagem de tela mostrando a página Propriedades do Azure Active Directory com as configurações de país ou região e de localização destacadas](./media/azure-active-directory-properties-country-location.png)
 
@@ -113,7 +122,7 @@ Adicione as informações de privacidade da sua organização na área  **Propr
 #### Tarefa 2 – Verificação da sua política de privacidade
 
 1. Retorne à Tela inicial do Azure – Painel.
-2. Selecione o nome de usuário no canto superior direito da interface.
+2. Selecione o nome de usuário no canto superior direito da IU.
 3. Escolha **Exibir conta** no menu suspenso.
 
      **Uma nova guia do navegador é aberta automaticamente.**

@@ -7,6 +7,8 @@ lab:
 
 # Laboratório 04: Definir configurações de colaboração externa
 
+### Tipo de logon = administração do Microsoft 365
+
 ## Cenário do laboratório
 
 Você deve habilitar as configurações de colaboração externa para sua organização para acesso de convidados aprovados.
@@ -35,7 +37,7 @@ Você deve habilitar as configurações de colaboração externa para sua organi
     
 5. Verifique se a opção **Sim** está selecionada.
 6. Se necessário, selecione **Salvar**.
-7. Caso contrário, selecione `Home > Contoso Marketing >`**Identidades Externas** para retornar à tela anterior.
+7. Retorne ao menu **Identidades externas**.
 8. Selecione **Configurações de colaboração externa** na esquerda
 
 9. Em  **Acesso de usuário convidado**, examine os níveis de acesso que estão disponíveis e selecione **Acesso do usuário convidado é restrito a propriedades e associações dos próprios objetos de diretório (mais restritivo)**.
@@ -67,4 +69,4 @@ Você deve habilitar as configurações de colaboração externa para sua organi
     - Esta lista funciona independentemente das listas de permissão/bloqueio do OneDrive for Business e SharePoint Online. Se você quiser restringir o compartilhamento de arquivos no SharePoint Online, será necessário configurar uma lista de permissão ou negação para o OneDrive for Business e para o SharePoint Online.
     - A lista não se aplica a usuários externos que já resgataram o convite. A lista será aplicada depois que for configurada. Se um convite do usuário estiver em um estado pendente e você definir uma política que bloqueia seu domínio, a tentativa do usuário para resgatar o convite falhará.
 
-12. Após terminar, **salve** suas alterações.
+12. Após terminar, você deve **Salvar** as alterações.

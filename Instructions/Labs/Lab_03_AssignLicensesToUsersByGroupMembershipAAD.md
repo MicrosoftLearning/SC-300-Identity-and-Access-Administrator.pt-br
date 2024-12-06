@@ -7,6 +7,8 @@ lab:
 
 # Laboratório 03: atribuir licenças usando associação de grupo
 
+### Tipo de logon = administração do Microsoft 365
+
 ## Cenário do laboratório
 
 Sua organização decidiu usar grupos de segurança no Microsoft Entra ID para gerenciar licenças. Você precisa configurar um novo grupo de segurança e atribuir uma licença a esse grupo e verificar se as licenças de membros do grupo foram atualizadas.
@@ -56,18 +58,41 @@ Sua organização decidiu usar grupos de segurança no Microsoft Entra ID para g
 8. Selecione o botão **Criar**.
 9. Ao concluir, verifique se o grupo chamado **sg-SC300-O365** é mostrado na lista **Todos os grupos**.
 
-#### Tarefa 3 - Atribuir uma licença a um grupo
+#### Tarefa 3 – Adicionar uma licença do Office ao sg-SC300-O365
 
-1. Na lista **Todos os grupos**, selecione **sg-SC300-O365**.
-2. Na janela Marketing, em **Gerenciar**, selecione **Licenças**.
-3. No menu, selecione **+ Atribuições**.
-4. Na página de atualização de atribuições de licença, em **Selecionar licenças**, revise a lista de licenças disponíveis e marque a caixa de seleção para **Office 365 E3**.
+Você precisa adicionar e remover licenças por meio do Centro de administração do Microsoft 365. Esta é uma mudança relativamente nova.
 
-   **Dica** - Quando várias licenças são selecionadas, você pode usar o menu Examinar opções de licença para selecionar uma licença específica e exibir a opção de licença para essa licença.
+1. Abra uma nova guia no navegador.
 
-   ![Imagem da tela exibindo licenças selecionadas e atribuídas a um grupo. O menu Examinar licença também é selecionado exibindo várias opções de seleção.](./media/lp1-mod2-assign-license-group.png)
+2. Conecte-se ao centro de administração do Microsoft 365 em http://admin.microsoft.com.
 
-6. Selecione **Salvar**.
+3. Faça login como sua conta de administrador, se solicitado.
+
+4. No menu à esquerda, selecione **Cobrança** e, em seguida, selecione **Licenças**.
+
+5. Selecione Licença do **Office 365 E3** na lista.
+
+6. Escolha a guia **Grupos** na tela de licenças.
+
+7. Escolha o item **+ Adicionar licença**.
+
+8. Procure pelo grupo **sg-SC300-O365** e selecione-o na lista.
+
+8. Depois de adicionar Raul, clique em **Atribuir**.
+ 
+9. Feche a mensagem de confirmação.
+
+10. Volte para a guia do navegador com o **Centro de administração do Microsoft** aberto.
+
+11. Navegue de volta para **Todos os grupos**. Na navegação à esquerda, em **Identidade**, selecione **Grupos**
+
+12. Na página Usuários, selecione **sg-SC300-O365**.
+
+13. No painel de navegação esquerdo, selecione **Licenças**.
+
+14. Observe que a licença do Office 365 E3 foi atribuída.
+
+15. Você pode sair da tela de licença.
 
 #### Taks 4 - Confirmar a licença do Office 365
 

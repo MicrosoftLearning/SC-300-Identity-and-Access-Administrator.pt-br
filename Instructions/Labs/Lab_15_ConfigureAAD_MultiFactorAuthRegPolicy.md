@@ -7,6 +7,8 @@ lab:
 
 # Laboratório15 – Configurar a política de registro com autenticação multifator
 
+### Tipo de logon = administração do Microsoft 365
+
 ## Cenário do laboratório
 
 A autenticação multifator fornece um meio de verificar quem você é usando mais do que apenas um nome de usuário e senha. Ela oferece uma segunda camada de segurança para entradas de usuário. Para que os usuários possam responder aos prompts da MFA, eles devem primeiro se registrar na autenticação multifator do Microsoft Entra. Você deve configurar a política de registro com MFA da organização do Microsoft Entra para ser atribuída a todos os usuários.
@@ -44,13 +46,13 @@ A autenticação multifator fornece um meio de verificar quem você é usando ma
 
 **Observação**: o Microsoft Entra Identity Protection requer que o Microsoft Entra ID Premium P2 seja ativado. 
 
-1. No Centro de administração do Microsoft Entra, navegue até **Microsoft Entra Identity Protection** na barra de pesquisa.
+1. No centro de administração do Microsoft Entra, navegue até **Microsoft Entra ID Protection** na barra de pesquisa.
 
 1. Em **Proteger** no menu, selecione **Política de registro com autenticação multifator**.
 
 1. Em **Atribuições**, selecione **Todos os usuários** em Usuários e selecione um usuário para aplicar a MFA.
 
-1. Altere a **Aplicação da política ** de **Desabilitada** para **Habilitada**.
+1. Mude **Imposição de política** para **Habilitada**.
 
 1. Selecione **Salvar**.
 

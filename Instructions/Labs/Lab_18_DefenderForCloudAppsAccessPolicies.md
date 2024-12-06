@@ -7,6 +7,8 @@ lab:
 
 # 18 – Políticas de acesso e de sessão para o Defender para Aplicativos de Nuvem
 
+### Tipo de logon = administração do Microsoft 365
+
 ## Cenário do laboratório
 
 O Microsoft Defender para Aplicativos de Nuvem nos permite criar políticas de Acesso condicional adicionais específicas para os aplicativos de nuvem que estamos monitorando.  A criação dessas políticas pode ser feita no menu Controle no portal do Microsoft Defender para Aplicativos de Nuvem.
@@ -61,7 +63,7 @@ O Microsoft Defender para Aplicativos de Nuvem nos permite criar políticas de A
    - Nome de usuário = PradeepG@<<<your lab hoster provided domain>>>
    - Senha = a senha da sua guia Recursos
 5. Confirme que o Pradeep tem acesso e que você recebeu uma nova mensagem:
-   - O acesso ao Microsoft Forms é monitorado.
+   - Sua empresa está monitorando o uso deste aplicativo.
 6. Feche a janela de navegação InPrivate.
 
 ### Exercício 2 – Configurar alertas no Microsoft Defender para Aplicativos de Nuvem
@@ -103,7 +105,7 @@ Registrar seu aplicativo estabelece uma relação de confiança entre seu aplica
    - Nome de usuário = PradeepG@<<<your lab hoster provided domain>>>
    - Senha = a senha da sua guia Recursos
 5. Confirme que o Pradeep tem acesso e que você recebeu uma nova mensagem:
-   - O acesso ao Microsoft Forms é monitorado.
+   - Sua empresa está monitorando o uso deste aplicativo.
 6. Feche a janela de navegação InPrivate.
 
 #### Tarefa 3 – Examinar a atividade no Defender para Aplicativos em Nuvem

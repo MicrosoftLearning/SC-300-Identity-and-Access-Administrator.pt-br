@@ -6,11 +6,22 @@ lab:
 ---
 
 # Locatários do WWL – Termos de uso
-Se você estiver recebendo um locatário como parte de uma entrega de treinamento com instrutor, observe que o locatário é disponibilizado com a finalidade de dar suporte aos laboratórios práticos no treinamento com instrutor. Os locatários não devem ser compartilhados ou usados para fins fora dos laboratórios práticos. O locatário usado neste curso é um locatário de avaliação e não pode ser usado ou acessado após o fim da aula e não está qualificado para extensão. Os locatários não podem ser convertidos em uma assinatura paga. Os locatários obtidos como parte deste curso permanecem a propriedade da Microsoft Corporation e reservamos o direito de obter acesso e a qualquer momento. 
 
+Se você estiver recebendo um locatário como parte de uma entrega de treinamento com instrutor, observe que o locatário é disponibilizado com a finalidade de dar suporte aos laboratórios interativos no treinamento com instrutor. Os locatários não devem ser compartilhados ou usados para fins fora dos laboratórios interativos. O locatário usado neste curso é um locatário de avaliação e não pode ser usado ou acessado após o fim da aula e não está qualificado para extensão. Os locatários não podem ser convertidos em uma assinatura paga. Os locatários obtidos como parte deste curso permanecem a propriedade da Microsoft Corporation e reservamos o direito de obter acesso e a qualquer momento.
+
+# Duas opções de logon diferentes
+
+Este laboratório tem duas opções de logon diferentes, usadas em diferentes partes do laboratório. Um estilo de logon é para laboratórios que exigem recursos do Azure, o outro é para laboratórios que precisam apenas de recursos do Microsoft Entra e do Microsoft 365. Tipos de logon:
+
+  - Logon baseado em recurso do Azure
+  - Logon de locatário do Microsoft 365 + E5
+
+Será informado qual logon usar em cada um dos laboratórios.
 
 
 # Laboratório 01: Gerenciar funções de usuários
+
+### Tipo de logon = administração do Microsoft 365
 
 ## Cenário do laboratório
 
@@ -22,9 +33,10 @@ Sua empresa contratou recentemente um novo funcionário que desempenhará funç�
 
 #### Tarefa 1 - Adicionar um novo usuário
 
-1. Faça logon em [https://entra.microsoft.com](https://entra.microsoft.com) como um administrador global
+1. Entre no  [https://entra.microsoft.com](https://entra.microsoft.com) como um Administrador global.
+ - Use a conta de **administrador do Microsoft 365**.
 
-2. Selecione **Identidade** no menu à esquerda.
+2. No menu à esquerda, selecione **Identidade**.
 
 3. No menu de navegação à esquerda, em **Usuários**, selecione **Todos os Usuários** e, em seguida, **+ Novo Usuário** e **Criar novo usuário**.
 
@@ -61,13 +73,13 @@ Sua empresa contratou recentemente um novo funcionário que desempenhará funç�
     | Nova senha| Digite uma senha única e segura |
     | Confirmar senha| Digite a senha novamente |
 
-4. Se você vir uma **caixa de diálogo de tour**, selecione o botão **Talvez mais tarde**.
+4. Busque e selecione **Aplicativos empresariais** na caixa de diálogo de pesquisa na parte superior da tela.
 
-5. Busque e selecione **Aplicativos empresariais** na caixa de diálogo de pesquisa na parte superior da tela.
-7. Clique em **+ Novo aplicativo**. Observe que **+ Crie seu próprio aplicativo** não está disponível.
+5. Clique em **+ Novo aplicativo**. Observe que **+ Crie seu próprio aplicativo** não está disponível.
 
-9. Tente selecionar em algumas das outras configurações, como **Proxy de Aplicativo**, **configurações do usuário**, entre outras, para ver ao que **Chris Green** não tem direitos.
-10. Selecione o nome **ChrisG** no canto superior direito e saia.
+6. Tente selecionar algumas das outras configurações, como **Proxy de Aplicativo**, **configurações do usuário**, entre outras, para ver se **Chris Green** não tem direitos.
+
+7. Selecione o nome **ChrisG** no canto superior direito e saia.
 
 
 ### Exercício 2 - Atribuir a função de administrador de aplicativos e criar um aplicativo
@@ -280,20 +292,34 @@ Algumas contas de usuário em sua organização não receberão todos os produto
 
 7. Certifique-se de que Raul esteja com "Nenhuma atribuição de licença encontrada".
 
-8. Navegue de volta para **Todos os Usuários**. Na navegação à esquerda, em **Identidade**, selecione **Usuários**
+#### Tarefa 2 – Adicione uma licença do Windows a Raul
 
-9. Na página Usuários, selecione **Raul Razo**.
+Você precisa adicionar e remover licenças por meio do Centro de administração do Microsoft 365. Esta é uma mudança relativamente nova.
 
-10. No painel de navegação esquerdo, selecione **Licenças**.
+1. Abra uma nova guia no navegador.
 
-11. Selecione o botão **+ Atribuições**. 
+2. Conecte-se ao centro de administração do Microsoft 365 em http://admin.microsoft.com.
 
-12. Na página Atualizar atribuições de licença, marque a caixa de seleção de uma licença do **Windows 10/11 Enterprise E3**.
+3. Faça login como sua conta de administrador, se solicitado.
 
-    ![Imagem da tela exibindo a página Atualizar atribuições de licença e as opções de licença realçadas.](./media/lp1-mod2-assign-user-license-options.png)
+4. No menu à esquerda, selecione **Cobrança** e, em seguida, selecione **Licenças**.
 
-13. Ao concluir, selecione **Salvar**.
+5. Na lista, selecione **Windows 10/11 Enterprise E3**.
 
-14. Na parte superior da tela, selecione **Página Inicial**, selecione **Contoso**, **Usuário** e clique em **Raul Razo**.
+6. Escolha o item **+ Adicionar licença**.
 
-15. Observe que a licença foi atribuída.
+7. Procure por **Raul Razo** na lista.
+
+8. Depois de adicionar Raul, clique em **Atribuir**.
+
+9. Volte para a guia do navegador com o **Centro de administração do Microsoft** aberto.
+
+10. Navegue de volta para **Todos os Usuários**. Na navegação à esquerda, em **Identidade**, selecione **Usuários**
+
+11. Na página Usuários, selecione **Raul Razo**.
+
+12. No painel de navegação esquerdo, selecione **Licenças**.
+
+13. Observe que a licença foi atribuída.
+
+14. Você pode sair da tela de licença.

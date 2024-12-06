@@ -7,6 +7,8 @@ lab:
 
 # Laboratório 19 – Registrar um aplicativo
 
+### Tipo de logon = administração do Microsoft 365
+
 #### Tempo estimado: 30 minutos
 
 ### Exercício 1 – Registrar um aplicativo
@@ -27,8 +29,9 @@ Registrar seu aplicativo estabelece uma relação de confiança entre seu aplica
 
     ![Imagem de tela exibindo a página Registrar um aplicativo com o nome e as configurações padrão em destaque](./media/lp3-mod3-register-an-application.png)
 
-6. Ao concluir, você será direcionado para a página **Aplicativo de demonstração**.
+6. Selecione o botão **Registrar**.
 
+7. Ao concluir, você será direcionado para a página **Aplicativo de demonstração**.
 
 #### Tarefa 2 – Definir configurações da plataforma
 
@@ -56,7 +59,11 @@ Adicione e modifique URIs de redirecionamento para seus aplicativos registrados 
     | Android| Insira o  **Nome do pacote** do aplicativo, que você pode encontrar no arquivo AndroidManifest.xml, e gere e insira o  **Hash de assinatura**. Um URI de redirecionamento é gerado para você quando você especifica essas configurações.|
     | Aplicativos móveis e para desktop| Selecione um dos  **URIs de redirecionamento sugeridos**  ou especifique um  **URI de redirecionamento personalizado**. Para aplicativos de desktop, recomendamos: [https://login.microsoftonline.com/common/oauth2/nativeclient](https://login.microsoftonline.com/common/oauth2/nativeclient). Selecionar essa plataforma para aplicativos móveis que não estão usando a MSAL (Biblioteca de Autenticação da Microsoft) mais recente ou que não estão usando um agente. Selecione também essa plataforma para aplicativos de desktop.|
 
-5. Selecione  **Configurar** para concluir a configuração da plataforma.
+5. Selecione **Web** como sua plataforma.
+
+6. Insira `https://localhost` como o URI de Redirecionamento.
+
+7. Selecione  **Configurar** para concluir a configuração da plataforma.
 
 #### Tarefa 3 – Adicionar credenciais, certificado e segredo do cliente
 
@@ -75,20 +82,16 @@ Você pode adicionar certificados e segredos do cliente (uma cadeia de caractere
 
 2. Em  **Certificados e segredos**, selecione  **+ Novo segredo do cliente**.
 
-3. Adicione uma descrição para o segredo do cliente.
+3. Adicione uma descrição para o segredo do cliente e duração.
 
-4. Selecione uma duração.
+ - Descrição = segredo do laboratório SC300
+ - Duração = 90 dias (3 meses)
 
-5. Selecione **Adicionar**.
+4. Selecione **Adicionar**.
 
-6. **Salve o valor do segredo no bloco de notas** para uso no código do aplicativo cliente; A página Certificado e segredos exibirá o novo valor de segredo. É importante copiar esse valor, pois ele é mostrado apenas uma vez. Se você sair da página e voltar, ela apenas mostrará como um valor mascarado.
+5. **Salve o valor do segredo no bloco de notas** para uso no código do aplicativo cliente; A página Certificado e segredos exibirá o novo valor de segredo. É importante copiar esse valor, pois ele é mostrado apenas uma vez. Se você sair da página e voltar, ela apenas mostrará como um valor mascarado.
 
-7. Ignore as seções  **Adicionar um URI de redirecionamento**  e  **Definir as configurações de plataforma** . Você não precisa configurar um URI de redirecionamento para uma API Web, pois nenhum usuário está conectado interativamente.
-
-8. Ignore a seção  **Adicionar credenciais**  por enquanto. Sua API somente precisará das próprias credencias caso ela acesse uma API downstream, mas esse cenário não é abordado neste artigo.
-
-Com sua API Web registrada, você está pronto para adicionar os escopos que o código da API pode usar para fornecer permissão granular aos consumidores de sua API.
-
+Com o aplicativo Web registrado, você já pode adicionar os escopos que o código da API pode usar para fornecer permissão granular aos consumidores de sua API.
 
 #### Tarefa 5 – Adicionar um escopo
 
@@ -96,29 +99,27 @@ O código em um aplicativo cliente solicita permissão para executar operações
 
 Primeiro, siga estas etapas para criar um escopo de exemplo chamado Employees.Read.All:
 
-1. Entre no Centro de administração do Microsoft Entra.
+1. Selecione  **Identidade**, depois **Aplicativo** e, por fim, selecione **Registros de aplicativo** e o registro de aplicativo da sua API.
 
-2. Se você tem acesso a vários locatários, use o filtro  **Diretório + assinatura**  no menu superior para selecionar o locatário que contém o registro do aplicativo cliente.
-
-3. Selecione  **Identidade**, depois **Aplicativo **  e, por fim, selecione  **Registros de aplicativo** e o registro de aplicativo da sua API.
-
-4. Selecione  **Expor uma API**, depois  **+ Adicionar um escopo**.
+2. Selecione  **Expor uma API**, depois  **+ Adicionar um escopo**.
 
     ![Um registro de aplicativo expõe um painel de API no portal do Azure](./media/portal-02-expose-api.png)
 
-5. Será solicitado que você defina um  **URI da ID de aplicativo**, se ainda não tiver configurado um. O URI da ID do aplicativo atua como o prefixo dos escopos que você fará referência no código da API e deve ser globalmente exclusivo. Você pode usar o valor padrão fornecido que está no formato api://\<application-client-id\>, ou especificar um URI mais legível, como  `https://contoso.com/api`.
+3. Será solicitado que você defina um  **URI de ID do aplicativo**. Defina o valor como **api://DemoAppAPI**
 
-6. Selecione **Salvar e continuar**.
+  - Observação – O URI da ID do aplicativo atua como o prefixo dos escopos que você referenciará no código da API e deve ser globalmente exclusivo. Você pode usar o valor padrão fornecido, que está no formato api://<application-client-id\>, ou especificar um URI mais legível, como  `https://contoso.com/api`.
 
-6. Em seguida, especifique os atributos do escopo no  **painel Adicionar um escopo**. Para este passo a passo, você pode usar os valores de exemplo ou especificar o seu próprio valor.
+4. Selecione **Salvar e continuar**.
 
-    | Campo| Descrição| Exemplo|
+5. Em seguida, especifique os atributos do escopo no  **painel Adicionar um escopo**. Para este passo a passo, use os valores da terceira coluna – **Valor**.
+
+    | Campo| Descrição| Valor |
     | :--- | :--- | :--- |
-    | Nome do escopo| O nome do seu escopo. Uma convenção comum de nomenclatura de escopo é resource.operation.constraint.| Employees.Read.All|
+    | Nome do Escopo| O nome do seu escopo. Uma convenção comum de nomenclatura de escopo é resource.operation.constraint.| Employees.Read.All|
     | Quem pode consentir| Se esse escopo pode ser consentido por usuários ou se é necessário ter o consentimento do administrador. Selecione Somente administradores para permissões com privilégios mais elevados.| Administradores e usuários|
     | Nome de exibição de consentimento do administrador| Uma breve descrição da finalidade do escopo que somente os administradores verão.| Acesso somente leitura aos registros de funcionários|
     | Descrição do consentimento do administrador| Uma descrição mais detalhada da permissão concedida pelo escopo que somente os administradores verão.| Permitir que o aplicativo tenha acesso somente leitura a todos os dados de funcionários.|
-    | Nome de exibição do consentimento do usuário| Uma breve descrição da finalidade do escopo. Mostrado para os usuários somente se você definir Quem pode consentir como Administradores e usuários.| Acesso somente leitura aos registros de funcionários|
+    | Nome para exibição do consentimento do usuário| Uma breve descrição da finalidade do escopo. Mostrado para os usuários somente se você definir Quem pode consentir como Administradores e usuários.| Acesso somente leitura aos registros de funcionários|
     | Descrição de consentimento do usuário| Uma descrição mais detalhada da permissão concedida pelo escopo. Mostrado para os usuários somente se você definir Quem pode consentir como Administradores e usuários.| Permitir que o aplicativo tenha acesso somente leitura aos dados de funcionários.|
 
 7. Defina o  **Estado**  como  **Habilitado** e selecione  **Adicionar escopo**.
@@ -145,20 +146,21 @@ Em seguida, adicione outro escopo de exemplo chamado Employees.Write.All, que so
     | Quem pode consentir| Somente administradores|
     | Nome de exibição de consentimento do administrador| Gravação de acesso aos registros de funcionários|
     | Descrição do consentimento do administrador| Permitir que o aplicativo tenha acesso de gravação a todos os dados de funcionários.|
-    | Nome de exibição do consentimento do usuário| Nenhum (deixe em branco)|
+    | Nome para exibição do consentimento do usuário| Nenhum (deixe em branco)|
     | Descrição de consentimento do usuário| Nenhum (deixe em branco)|
 
-    >**Observação**: se você tiver adicionado com êxito os dois escopos de exemplo descritos nas seções anteriores, eles aparecerão no painel  **Expor uma API** do registro de aplicativo da API Web, semelhante a esta imagem:
+2. Confirme se o Estado está como **Habilitado** e clique em **Adicionar escopo**.
 
-    ![Captura de tela do painel Expor uma API mostrando dois escopos expostos.](./media/portal-03-scopes-list.png)
+  - **Observação**: se você tiver adicionado com êxito os dois escopos de exemplo descritos nas seções anteriores, eles aparecerão no painel  **Expor uma API** do registro de aplicativo da API Web, semelhante a esta imagem:
 
-    Conforme mostrado na imagem, a cadeia de caracteres completa de um escopo é a concatenação do  **URI da ID do Aplicativo**  da sua API Web e o  **Nome do escopo**.
+  ![Captura de tela do painel Expor uma API mostrando dois escopos expostos.](./media/portal-03-scopes-list.png)
 
-        **Note**: For example, if your web API's application ID URI is `https://contoso.com/api` and the scope name is Employees.Read.All, the full scope is: `https://contoso.com/api/Employees.Read.All`
+  Conforme mostrado na imagem, a cadeia de caracteres completa de um escopo é a concatenação do  **URI da ID do Aplicativo**  da sua API Web e o  **Nome do escopo**.
 
+  **Observação**: Por exemplo, se o URI da ID do aplicativo da API Web for `https://contoso.com/api` e o nome do escopo for Employees.Read.All, o escopo completo será: `https://contoso.com/api/Employees.Read.All`
 
-        **Note**: Next, you will configure a client app's registration with access to your web API and the scopes you defined by following the steps above.
-    Depois que um registro de aplicativo cliente recebe permissão para acessar sua API Web, o cliente pode receber um token de acesso OAuth 2.0 pela plataforma de identidade da Microsoft. Quando o cliente chama a API Web, ele apresenta um token de acesso cuja declaração de escopo (scp) é definida como as permissões que você especificou no registro de aplicativo do cliente. É possível expor escopos adicionais posteriormente conforme a necessidade. Considere que sua API Web pode expor vários escopos associados a diversas operações. O recurso pode controlar o acesso a API Web em runtime avaliando declarações de escopo (scp) no token de acesso OAuth 2.0 recebido.
+  **Observação**: Em seguida você vai configurar o registro de um aplicativo cliente com acesso à API Web e os escopos definidos seguindo as etapas acima.
+  Depois que um registro de aplicativo cliente recebe permissão para acessar sua API Web, o cliente pode receber um token de acesso OAuth 2.0 pela plataforma de identidade da Microsoft. Quando o cliente chama a API Web, ele apresenta um token de acesso cuja declaração de escopo (scp) é definida como as permissões que você especificou no registro de aplicativo do cliente. É possível expor escopos adicionais posteriormente conforme a necessidade. Considere que sua API Web pode expor vários escopos associados a diversas operações. O recurso pode controlar o acesso a API Web em runtime avaliando declarações de escopo (scp) no token de acesso OAuth 2.0 recebido.
 
 
 ### Exercício 2 –⁠ Gerenciar o registro de aplicativo com uma função personalizada
@@ -171,7 +173,7 @@ Você precisa criar uma nova função personalizada para o gerenciamento de apli
 
 2. Abra o menu do portal e selecione  **Microsoft Entra ID**.
 
-3. No menu esquerdo, em **Identity**, selecione **Funções e administradores**.
+3. No menu esquerdo, em **Identidade**, selecione **Funções e administradores**.
 
 4. Em seguida, selecione **Funções e item de administradores** e, em seguida, selecione **+ Nova função personalizada**.
 
@@ -196,5 +198,7 @@ Você precisa criar uma nova função personalizada para o gerenciamento de apli
 
     **Por que escolher esses dois** –- Para provisionamento de aplicativo, esses dois itens são as permissões mínimas necessárias para habilitar e impor o logon único para o aplicativo ou entidade de serviço que está sendo criado e ser capaz de atribuir o aplicativo empresarial a um conjunto de usuários ou grupos.  Outras permissões também podem ser concedidas.  Você pode obter uma lista completa de permissões disponíveis em `https://docs.microsoft.com/azure/active-directory/roles/custom-enterprise-app-permissions`.
 
-10. Examine as alterações e selecione **Criar.**
+10. Selecione **Avançar**.
+
+11. Examine as alterações e selecione **Criar.**
 

@@ -7,6 +7,8 @@ lab:
 
 # Laboratório 21: conceder consentimento do administrador em todo o locatário para um aplicativo
 
+### Tipo de logon = administração do Microsoft 365
+
 ## Cenário do laboratório
 
 Para aplicativos desenvolvidos pela sua organização ou para aqueles registrados diretamente em seu locatário do Microsoft Entra, é possível conceder consentimento de administrador em todo o locatário de Registros de aplicativo no portal do Azure.
@@ -43,16 +45,20 @@ A função de administrador global é necessária para fornecer consentimento de
 
 Você pode conceder consentimento de administrador em todo o locatário por meio de aplicativos empresariais se o aplicativo já tiver sido provisionado em seu locatário.
 
-1. No centro de administração do Microsoft Entra, navegue até **Identidade > Aplicativos > Aplicativos empresariais > Aplicativo de demonstração.**
+1. No centro de administração do Microsoft Entra, navegue até **Identidade** e **Aplicativos**.
 
-2. Na página **Aplicativo de demonstração**, em **Segurança,** no painel à esquerda, selecione **Permissões.**
+2. No menu, abra **Aplicativos empresariais**.
 
-3. Em **Permissões**, selecione **Conceder consentimento de administrador**.
+3. Na lista de aplicativos empresariais, escolha o **Aplicativo de demonstração** que registramos anteriormente.
+
+4. Na página **Aplicativo de demonstração**, em **Segurança,** no painel à esquerda, selecione **Permissões.**
+
+5. Em **Permissões**, selecione **Conceder consentimento de administrador**.
 
     ![Imagem da tela exibindo a página de permissões de Aplicativo de demonstração com Conceder consentimento de administrador para a Contoso realçado](./media/lp3-mod3-grant-admin-consent-in-enterprise-app.png)
 
    **Aviso** – A concessão de consentimento do administrador em todo o locatário por meio de Registros de aplicativo revogará todas as permissões concedidas anteriormente em todo o locatário. As permissões concedidas anteriormente pelos usuários em seu próprio nome não serão afetadas.
 
-4. Quando solicitado, entre usando sua conta de administrador global.
+6. Quando solicitado, entre usando sua conta de administrador global.
 
-5. Na caixa de diálogo **Permissões solicitadas**, examine as informações e selecione **Aceitar**.
+7. Na caixa de diálogo **Permissões solicitadas**, examine as informações e selecione **Aceitar**.

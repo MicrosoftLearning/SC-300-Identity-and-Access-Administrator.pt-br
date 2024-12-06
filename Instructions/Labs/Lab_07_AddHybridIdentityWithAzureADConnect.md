@@ -9,7 +9,7 @@ lab:
 
 
 
-# Este laboratório não está disponível no momento.  Devido a uma alteração de licenciamento no Microsoft Entra ID, o laboratório está falhando.  No momento, estamos solucionando problemas e atualizando o laboratório, e devemos tê-lo novamente online dentro de uma semana.  Passe para o próximo laboratório.
+# Este laboratório só funcionará em um ambiente que não seja de host de laboratório. Se você quiser experimentá-lo usando uma conta pessoal, deve funcionar. Você não poderá se apresentar dentro da classe.
 
 
 

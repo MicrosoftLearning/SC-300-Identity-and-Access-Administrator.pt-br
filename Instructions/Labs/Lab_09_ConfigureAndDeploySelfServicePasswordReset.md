@@ -6,6 +6,9 @@ lab:
 ---
 
 # Laboratório 09 – Configurar e implantar a redefinição de senha por autoatendimento
+
+### Tipo de logon = administração do Microsoft 365
+
 ## Cenário do laboratório
 
 A empresa decidiu capacitar os funcionários e habilitar a redefinição de senha por autoatendimento. Você deve configurá-la na sua organização.
@@ -48,15 +51,13 @@ Habilite a SSPR para o grupo.
 
 3. Na página Propriedades da página Redefinição de senha, em **Redefinição de senha por autoatendimento habilitada**, selecione  **Selecionado**.
 
-4. Selecione **Selecionar grupo** e escolha **SSPRSecurityGroupUser**.
+4. Em **Selecionar grupo**, substitua o SSPRSecurityGroupUsers existente pelo **SSPRTesters** que você acabou de criar.
 
-5. No painel Política de redefinição de senha padrão, selecione o grupo **SSPRTesters** .
-
-6. Na página Propriedades da página Redefinição de senha, selecione  **Salvar**.
+5. Na página Propriedades da página Redefinição de senha, selecione  **Salvar**.
 
     ![Imagem da tela exibindo a página de propriedades Redefinição de senha com Selecionado, Selecionar grupo e Salvar realçados](./media/lp2-mod2-enable-password-reset-for-selected-group.png)
 
-7. Na tela **Redefinição de senha**, procure em  **Gerenciar*, selecione e examine os valores padrão para cada uma das **configurações de métodos de autenticação **, ** Registro**, **Notificações** e **Personalização**.
+6. Na tela **Redefinição de senha**, procure em  **Gerenciar*, selecione e examine os valores padrão para cada uma das **configurações de métodos de autenticação **, ** Registro**, **Notificações** e **Personalização**.
 
     **Observação** é importante ter **telefone** selecionado como um dos métodos de autenticação para o restante deste laboratório, mas você também pode ter outras opções.
 
@@ -66,29 +67,25 @@ Agora que a configuração da SSPR foi concluída, registre um número do telefo
 
 1. Abra um navegador diferente ou uma sessão anônima do navegador e acesse [https://aka.ms/ssprsetup](https://aka.ms/ssprsetup).
 
-    Isso garante que seja solicitada a você a autenticação de usuário.
+    Isso garante que a autenticação do usuário será solicitada.
 
-2. Entre como **AlexW@**`<<organization-domain-name>>.onmicrosoft.com` com a senha = Digite a senha de administrador do locatário (Consulte a guia Recursos de laboratório para recuperar a senha de administrador).
+2. Faça login como **AllanD@**`<<organization-domain-name>>.onmicrosoft.com` com a senha fornecida.
 
     **Observação** – Substitua organization-domain-name pelo nome do seu domínio.
 
 3. Ao receber uma solicitação de atualização de senha, insira uma nova senha de sua escolha. Não se esqueça de registrar a nova senha.
 
-4. Na caixa de diálogo **Mais informações necessárias**, selecione **Avançar**.
+4. Se aparecer uma mensagem perguntando se deseja permanecer conectado, escolha Sim.
 
-5. Na página Manter sua conta segura, use a opção **Telefone**.
+5. Na caixa de diálogo **Mais informações necessárias**, selecione **Avançar**.
 
-    ![Imagem da tela exibindo a página Manter sua conta segura com a caixa de diálogo Escolher um método diferente realçada](./media/lp2-mod2-keep-your-account-secure-page.png)
+6. Na página Manter sua conta segura, clique em **Avançar** para usar o aplicativo Authenticator.
 
-    **Observação** – Neste laboratório, você usará a opção **Telefone**. Insira os detalhes de seu celular.
+7. Siga as instruções na tela para configurar sua conta no Authenticator digitalizando o código QR.
 
-6. Digite seu número de telefone celular pessoal no campo de número de telefone.
-7. Selecione  **Enviar um código por SMS**.
-8. Selecione **Avançar**.
+8. Conclua o processo clicando em **Concluído** quando você tiver se registrado.
 
-9. Ao receber o código em seu celular, digite-o na caixa de texto e selecione **Avançar**.
-
-10. Após o telefone ser registrado, selecione **Avançar** e **Concluído**.
+  - **Observação** – Neste ponto, você se registrou para SSPR e MFA em uma única etapa.
 
 11. Feche o navegador. Você não precisa concluir o processo de entrada.
 
@@ -108,19 +105,15 @@ Agora, vamos testar se o usuário pode redefinir a própria senha.
 
 4. Na página Voltar para sua conta, preencha as informações solicitadas e selecione **Avançar**.
 
-    ![Imagem da tela exibindo a página Voltar para sua conta com Email ou nome de usuário, a caixa de captcha e o botão Avançar realçados](./media/lp2-mod2-get-back-into-your-account-page.png)
-
-5. Na tarefa **etapa de verificação 1**, selecione **Enviar SMS para o meu celular**, digite seu número de telefone e clique em **Enviar SMS**.
-
-    ![Imagem da tela exibindo a etapa de verificação 1 com os métodos de contato, a caixa de número de telefone e o botão Enviar SMS realçados](./media/lp2-mod2-sspr-verification-step-1.png)
+5. Siga as instruções na tela para obter o código de verificação do aplicativo Microsoft Authenticator.
 
 6. Insira seu código de verificação e selecione **Avançar**.
 
-7. Na etapa Escolher nova senha, insira e confirme sua nova senha.  Senha recomendável = **Pass@w.rd1234**.
+7. Na etapa Escolher nova senha, insira e confirme sua nova senha.
 
 8. Ao concluir, selecione **Concluir**.
 
-9. Entre como **AlexW** com a nova senha que você criou.
+9. Entre como **AllanD** com a nova senha que você criou.
 
 10. Insira seu código de verificação e verifique se você pode concluir o processo de entrada.
 
