@@ -7,6 +7,8 @@ lab:
 
 # Laboratório 05: adicionar usuários convidados ao diretório
 
+### Tipo de logon = administração do Microsoft 365
+
 ## Cenário do laboratório
 
 Sua empresa trabalha com muitos fornecedores e, ocasionalmente, você precisa adicionar algumas contas de fornecedor ao seu diretório como convidado.
@@ -90,7 +92,7 @@ Uma parceria recente foi estabelecida com outra empresa. Por enquanto, funcioná
 
 1. Abra o PowerShell como administrador.Isso pode ser feito pesquisando o PowerShell no Windows e escolhendo Executar como administrador. 
 
-**Observação** – Você precisa ter o PowerShell versão 7.2 ou superior para que este laboratório funcione.  Quando o PowerShell abrir, você obterá uma versão na parte superior da tela, se você estiver executando e versão mais antiga, siga as instruções na tela para ir para https://aka.ms/PowerShell-Release?tag=7.3.9. Role para baixo até a seção de ativos e selecione powershell-7.3.1-win-x64.msi. Quando o download for concluído, selecione Abrir arquivo. Instale usando todos os padrões.
+**Observação** – Você precisa ter o PowerShell versão 7.2 ou superior para que este laboratório funcione.  Quando o PowerShell abrir, você obterá uma versão na parte superior da tela, se estiver executando uma versão mais antiga, atualize ou esta parte do laboratório falhará.
 
 2. Você precisará instalar o módulo do Microsoft.Graph PowerShell se não o tiver usado antes.  Execute s dois comandos a seguir e confirme a operação quando solicitado apertando Y:
 
@@ -109,7 +111,7 @@ Uma parceria recente foi estabelecida com outra empresa. Por enquanto, funcioná
     ```
     Connect-MgGraph -Scopes "User.ReadWrite.All"
     ``` 
-    O navegador Edge será aberto e solicitaremos que você entre.  Use a conta de Administrador do MOD para se conectar.  Accpet a solicitação de permissões; Em seguida, feche a janela do navegador.
+    O navegador Edge será aberto e solicitaremos que você entre.  Use a conta de Administrador do MOD para se conectar.  Marque a caixa de consentimento, aceite a solicitação de permissões e feche a janela do navegador.
 
 5. Defina os valores para o email e redirecione para o usuário externo:
 
@@ -122,7 +124,7 @@ Uma parceria recente foi estabelecida com outra empresa. Por enquanto, funcioná
     }
     ```
 
-6. Envie o comando MgInvitation para convidar o usuário externo:
+6. Enviou o comando MgInvitation para convidar o usuário externo:
 
     ```
     New-MgInvitation -BodyParameter $params

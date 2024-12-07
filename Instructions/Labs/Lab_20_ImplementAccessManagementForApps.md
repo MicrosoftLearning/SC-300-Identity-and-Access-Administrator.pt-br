@@ -7,6 +7,8 @@ lab:
 
 # Laboratório 20 – Implementar o gerenciamento de acesso para aplicativos
 
+### Tipo de logon = administração do Microsoft 365
+
 ## Cenário do laboratório
 
 Sua organização exige que apenas usuários ou grupos específicos tenham acesso a aplicativos empresariais. Você deve atribuir um usuário a um aplicativo específico.
@@ -47,9 +49,11 @@ Sua organização exige que apenas usuários ou grupos específicos tenham acess
 
 4. Na página Adicionar Atribuição, na seção **Usuários e grupos**, selecione **Nenhum selecionado**.
 
-5. No painel Usuários e grupos, selecione sua conta de administrador e clique em **Selecionar**.
+5. No painel Usuários e grupos, selecione Adele Vance a sua conta de administrador MOD.
+
+6. Escolha **Selecionar**.
 
     ![Imagem da tela exibindo a adição de uma atribuição de conta de usuário a um aplicativo com o botão Selecionar realçado ](./media/lp3-mod1-add-app-assignment.png)
 
-6. Selecione **Atribuir**.
+7. Selecione **Atribuir**.
 

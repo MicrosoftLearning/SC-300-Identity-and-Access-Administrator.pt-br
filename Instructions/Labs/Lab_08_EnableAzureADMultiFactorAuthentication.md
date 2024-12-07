@@ -7,9 +7,11 @@ lab:
 
 # Laboratório 08 – Habilitar a autenticação multifator
 
+### Tipo de logon = administração do Microsoft 365
+
 ## Cenário do laboratório
 
-Para aprimorar a segurança em sua organização, você recebeu a direção para habilitar a autenticação multifator para o Microsoft Entra ID.
+Para aumentar a segurança da sua organização, você recebeu orientações para habilitar a autenticação multifator para o Microsoft Entra ID.
 
 #### Tempo estimado: 15 minutos
 
@@ -62,14 +64,15 @@ Em seguida, vamos examinar como configurar regras de política de acesso condici
 
    - Na lista suspensa, verifique se **Aplicativos de nuvem** está selecionado.
    - Em Incluir, marque **Todos os aplicativos de nuvem** e observe o aviso que aparece sobre a possibilidade de bloquear-se. 
-   - Agora, em Incluir, altere sua escolha para o item **Selecionar aplicativos**.
+   - Agora, na seção Selecionar, escolha o item **Nenhum**.
    - Na caixa de diálogo recém-aberta, escolha **Office 365**.
       - **Lembrete** – em um laboratório anterior, demos a Delia Dennis uma licença do Office 365 e fizemos logon para garantir que funcionava.
    - Escolha **Selecionar**.
 
 6. Examine a seção Condições.
 
-   - Selecione **Locais** e o configure para **Qualquer local**.
+   - Escolha **Sim** para o controle deslizante de configuração.
+   - Selecione **Qualquer rede ou local**.
 
 7. Em **Controles de Acesso**, encontre a seção **Conceder** e selecione **0 controles selecionados**.
 
@@ -110,6 +113,7 @@ Por fim, vamos examinar como configurar a MFA para contas de usuário. Essa é o
 2. Selecione **Usuários** e, em seguida, selecione **Todos os usuários**.
 
 3. Na parte superior do painel Usuários, selecione **MFA por usuário**.
+  - OBSERVAÇÃO: talvez seja necessário usar as reticências (...) para acessar o item de menu MFA por usuário.
 
    ![Captura de tela mostrando a opção de MFA](./media/lp2-mod1-users-mfa.png)
 
@@ -120,7 +124,7 @@ Por fim, vamos examinar como configurar a MFA para contas de usuário. Essa é o
    ![Captura de tela mostrando as opções de MFA](./media/lp2-mod1-mfa-service-settings-and-users.png)
 
 5. Selecione **Adele Vance** com uma marca de seleção.
-6. Selecione a opção **Ativar** em etapas rápidas.
+6. Selecione a opção **Ativar MFA** em Etapas rápidas.
 7. Leia o pop-up de notificação, se o receber, e selecione **ativar botão de autenticação multifator**.
 8. Selecione **Fechar**.
 9. O status da MFA de Adele agora é **Habilitado**.

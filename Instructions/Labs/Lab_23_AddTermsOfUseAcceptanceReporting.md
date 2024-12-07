@@ -5,7 +5,9 @@ lab:
   module: Module 04 - Plan and Implement and Identity Governance Strategy
 ---
 
-# Laboratório 23: Adicionar o relatório de aceitação e os termos de uso 
+# Laboratório 23: Adicionar o relatório de aceitação e os termos de uso
+
+### Tipo de logon = administração do Microsoft 365
 
 ## Cenário do laboratório
 
@@ -82,26 +84,30 @@ Quando o documento dos termos de uso estiver pronto, use o procedimento a seguir
 
 14. Em **Acesso condicional**, selecione **Política personalizada**.
 
-    | Modelo | Descrição |
-    |---|---|
-    | **Acesso a aplicativos de nuvem para todos os convidados** | Uma política de acesso condicional será criada para todos os convidados e todos os aplicativos de nuvem. Essa política afeta o portal do Azure. Após ela ser criada, talvez seja necessário sair e entrar novamente. | 
-    |**Acesso a aplicativos de nuvem para todos os usuários** | Uma política de acesso condicional será criada para todos os usuários e todos os aplicativos de nuvem. Essa política afeta o portal do Azure. Após ela ser criada, será necessário sair e entrar novamente. |
-    | **Política personalizada** | Selecione os usuários, grupos e aplicativos aos quais esses termos de uso serão aplicados. |
-    | **Criar a política de acesso condicional mais tarde** | Esses termos de uso serão exibidos na lista de controle de concessão ao criar uma política de Acesso Condicional. |
+ - Escolhas possíveis e quando usá-las:
 
-    **IMPORTANTE**Controles de política de Acesso Condicional (incluindo termos de uso) não dão suporte à imposição em contas de serviço. Recomenda-se excluir todas as contas de serviço da política de Acesso Condicional.
+  | Modelo | Descrição |
+  |---|---|
+  | **Acesso a aplicativos de nuvem para todos os convidados** | Uma política de acesso condicional será criada para todos os convidados e todos os aplicativos de nuvem. Essa política afeta o portal do Azure. Após ela ser criada, talvez seja necessário sair e entrar novamente. | 
+  |**Acesso a aplicativos de nuvem para todos os usuários** | Uma política de acesso condicional será criada para todos os usuários e todos os aplicativos de nuvem. Essa política afeta o portal do Azure. Após ela ser criada, será necessário sair e entrar novamente. |
+  | **Política personalizada** | Selecione os usuários, grupos e aplicativos aos quais esses termos de uso serão aplicados. |
+  | **Criar a política de acesso condicional mais tarde** | Esses termos de uso serão exibidos na lista de controle de concessão ao criar uma política de Acesso Condicional. |
 
-    As políticas de Acesso Condicional personalizadas permitem termos de uso granulares, para até um aplicativo de nuvem ou um grupo de usuários específicos. Para obter mais informações, consulte [https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/require-tou](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/require-tou).
+  **IMPORTANTE**Controles de política de Acesso Condicional (incluindo termos de uso) não dão suporte à imposição em contas de serviço. Recomenda-se excluir todas as contas de serviço da política de Acesso Condicional.
+
+  As políticas de Acesso Condicional personalizadas permitem termos de uso granulares, para até um aplicativo de nuvem ou um grupo de usuários específicos. Para obter mais informações, consulte [https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/require-tou](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/require-tou).
 
 15. Quando concluir, selecione **Criar**.
 
     ![Imagem da tela exibindo a página de novos termos de uso com as opções configuradas realçadas](./media/lp4-mod1-new-terms-of-use-create.png)
 
+#### Continuação da Tarefa 1 – Crie a política de acesso condicional
+
 16. Quando os termos de uso forem criados, você será redirecionado automaticamente para a página de política de acesso condicional. Na página, na caixa **Nome**, insira **Impor termos de uso**.
 
 17. Em **Atribuições**, clique em **Identidades de usuários**.
 
-18. Na guia Incluir, marque a caixa de seleção **Usuários e grupos**.
+18. Na guia Incluir, escolha **Selecionar usuários e grupos** e selecione a caixa de seleção **Usuários e grupos**.
 
 19. No painel Selecionar, selecione**Adele Vance** para usar para testar a política de termos de uso.
 
@@ -113,7 +119,7 @@ Quando o documento dos termos de uso estiver pronto, use o procedimento a seguir
 
 22. Em **Controles de acesso**, selecione **Conceder**.
 
-23. No painel Conceder, selecione os **Termos de uso de teste** e **Selecionar**.
+23. No painel Conceder, selecione **Termos de uso da Contoso** e **Selecionar**.
 
 24. Em **Habilitar política**, selecione **Ativar**.
 

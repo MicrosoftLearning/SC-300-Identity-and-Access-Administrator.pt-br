@@ -7,6 +7,8 @@ lab:
 
 # Laboratório 12 – Gerenciar os valores de bloqueio inteligente do Microsoft Entra
 
+### Tipo de logon = administração do Microsoft 365
+
 ## Cenário do laboratório
 
 Você deve definir as configurações adicionais de proteção de senha para sua organização.

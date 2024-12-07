@@ -7,13 +7,15 @@ lab:
 
 # Laboratório 13 – Implementar e testar uma política de acesso condicional
 
+### Tipo de logon = administração do Microsoft 365
+
 ## Cenário do laboratório
 
 Sua organização precisa ser capaz de limitar o acesso do usuário a seus aplicativos internos. Você deve implantar uma política de acesso condicional do Microsoft Entra.
 
 **Observação** - Para políticas de acesso condicional, você pode desativar os Padrões de Segurança, os principais pontos a serem lembrados são do treinamento.  Informações adicionais sobre padrões de segurança podem ser encontradas neste link: <https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/concept-fundamentals-security-defaults>
 
-#### Tempo estimado: 30 minutos
+#### Tempo estimado: 20 minutos
 
 ### Exercício 1: Definir uma política de acesso condicional para impedir que o DebraB acesse o Sway
 
@@ -24,12 +26,16 @@ Sua organização precisa ser capaz de limitar o acesso do usuário a seus aplic
 2. Conectar-se a [https://www.office.com](https://www.office.com) 
 3. Quando solicitado, faça login como DebraB:
 
-   | Configuração | Valor |
-   | :--- | :--- |
-   | Nome de Usuário | **DebraB@**`<<your lab domain>>.onmicrosoft.com` |
-   | Senha | Insira a senha de administrador do locatário (Consulte a guia Recursos de laboratório para recuperar a senha de administrador do locatário). |
+  | Configuração | Valor |
+  | :--- | :--- |
+  | Nome de Usuário | **DebraB@**`<<your lab domain>>.onmicrosoft.com` |
+  | Senha | Insira a senha de administrador do locatário (Consulte a guia Recursos de laboratório para recuperar a senha de administrador do locatário). |
     
-4. Selecione no ícone **Sway** para ver se ele é carregado corretamente.
+4. Ignore as telas de boas-vindas e introdução.
+
+5. Abra a página **Aplicativos** e clique no ícone **Sway** para ver se ele carrega corretamente.
+
+6. Saia do Office e feche a sessão do navegador.
 
 #### Tarefa 2 - – Criar uma política de acesso condicional
 
@@ -122,6 +128,7 @@ Você deve testar suas políticas de acesso condicional para garantir que elas e
 1. Selecione **What if**. Você veráum relatório na parte inferior do bloco para **Políticas que serão aplicadas** e **Políticas que não serão aplicadas**.
 
 Isso permite que você teste as políticas e sua afetividade antes de habilitá-las.
+
 
 ### Exercício 3 – Configurar controles de frequência de entrada usando uma política de acesso condicional
 

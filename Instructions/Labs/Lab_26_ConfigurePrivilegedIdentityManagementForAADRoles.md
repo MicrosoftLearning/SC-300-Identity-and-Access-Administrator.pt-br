@@ -7,6 +7,8 @@ lab:
 
 # Laboratório 26 – Configurar o Privileged Identity Management para funções do Microsoft Entra
 
+### Tipo de logon = administração do Microsoft 365
+
 ## Cenário do laboratório
 
 Um administrador de funções com privilégios pode personalizar o PIM (Privileged Identity Management) em sua organização do Microsoft Entra, incluindo alterar a experiência de um usuário que está ativando uma atribuição de função elegível. Você deve se familiarizar com a configuração do PIM.
@@ -55,7 +57,7 @@ Caso esteja configurando vários aprovadores, a aprovação será concluída ass
 
 5. Depois de definir as configurações da função, selecione **Atualizar** para salvar suas alterações.
 
-### Exercício 2 – PIM com funções do Microsoft Entra
+### Exercício 2 – Usar um PIM para atribuir funções do Microsoft Entra
 
 #### Tarefa 1 – Atribuir uma função
 

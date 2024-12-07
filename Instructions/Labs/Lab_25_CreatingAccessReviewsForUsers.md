@@ -5,7 +5,9 @@ lab:
   module: Module 04 - Plan and Implement and Identity Governance Strategy
 ---
 
-# Laboratório 25: criar revisões de acesso para usuários internos e externos  
+# Laboratório 25: criar revisões de acesso para usuários internos e externos
+
+### Tipo de logon = administração do Microsoft 365
 
 ## Cenário do laboratório
 
@@ -33,11 +35,11 @@ O acesso privilegiado do usuário deve ser revisado regularmente de maneira seme
 
 8. O próximo passo é determinar os revisores.Esses revisores podem ser os próprios membros, fazendo uma autorrevisão, ou sendo atribuídos a supervisores, ao revisarem o acesso de um departamento inteiro. Você também pode definir a ação quando um revisor não responder para remover automaticamente esse acesso privilegiado do membro.
 
-9. Escolha um revisor e revise a opção de recorrência.  Em seguida, selecione **Configurações**.
+9. Escolha um revisor, **Alex Wilber**, e revise a opção de recorrência **Anual**.  Em seguida, selecione **Avançar: configurações**.
 
 10. As configurações avançadas permitem que você insira uma mensagem como parte da revisão.
 
-11. Alterne para a guia **Revisar + Criar** para finalizar a revisão de acesso.
+11. Alterne para a guia **Avançar: Revisar + Criar** para finalizar a revisão de acesso.
 
 12. Nomeie a revisão de acesso **Teste de revisão de acesso SC300**.
 

@@ -7,6 +7,8 @@ lab:
 
 # Laboratório 06: Adicionar um provedor de identidade federado
 
+### Tipo de logon = administração do Microsoft 365
+
 ## Cenário do laboratório
 
 Sua empresa trabalha com muitos fornecedores e, ocasionalmente, você precisa adicionar algumas contas de fornecedor ao seu diretório como convidado e permitir que eles usem sua Conta do Google para fazer logon.

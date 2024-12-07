@@ -7,6 +7,8 @@ lab:
 
 # Laboratório 11 – Atribuir funções de recurso do Azure no Privileged Identity Management
 
+### Tipo de logon = logon do recurso do Azure
+
 **Observação** – Este laboratório requer um Azure Pass. Consulte o laboratório 00 para obter instruções.
 
 ## Cenário do laboratório
@@ -21,7 +23,6 @@ O Microsoft Entra Privileged Identity Management (PIM) pode gerenciar as funçõ
 
 Você precisará tornar um usuário qualificado para uma função de recurso do Azure.
 
-
 #### Tempo estimado: 10 minutos
 
 ### Exercício 1 – PIM com recursos do Azure
@@ -34,11 +35,9 @@ Você precisará tornar um usuário qualificado para uma função de recurso do 
 
 3. Na página Privileged Identity Management, no painel de navegação esquerdo, selecione **Recursos do Azure.**
 
-4. No menu superior, selecione **Descobrir recursos**.
+4. No menu suspenso Assinaturas, escolha o item Assinatura do MOC##### . Em seguida, na parte inferior da tela, selecione **Gerenciar recursos**.
 
 5. Na página Recursos do Azure – Descoberta, selecione sua assinatura.
-
-   ![Imagem de tela exibindo a página de descobrir dos recursos do Azure com a assinatura e o recurso de gerenciamento destacado](./media/lp4-mod3-pim-azure-resource-management.png)
 
 6. Na página **Visão geral**, revise as informações.
 
@@ -52,7 +51,7 @@ Você precisará tornar um usuário qualificado para uma função de recurso do 
 
 10. Em **Selecionar membro(s)**, escolha **Nenhum membro selecionado**.
 
-11. Selecione **Miriam Graham** da sua organização que será atribuída a função.  Em seguida, escolha **Selecionar**.
+11. Em Selecionar um membro ou grupo, pesquise suas funções de administrador **User1-######@LODSPRODMCA.onmicrosoft.com** da sua organização que receberá a função.  Em seguida, escolha **Selecionar**.
 
 12. Selecione **Avançar**.
 

@@ -7,6 +7,8 @@ lab:
 
 # Laboratório 14 – Habilitar políticas de risco do usuário e de entrada
 
+### Tipo de logon = administração do Microsoft 365
+
 ## Cenário do laboratório
 
 Como uma camada adicional de segurança, você precisa habilitar e configurar as políticas de risco do usuário e de entrada da sua organização do Microsoft Entra.

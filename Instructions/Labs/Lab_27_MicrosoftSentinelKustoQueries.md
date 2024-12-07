@@ -7,7 +7,7 @@ lab:
 
 # Laboratório 27 – Consultas Kusto do Microsoft Sentinel para fontes de dados do Microsoft Entra
 
-**Observação** – Este laboratório requer um Azure Pass. Consulte o laboratório 00 para obter instruções.
+### Tipo de logon = logon do recurso do Azure
 
 ## Cenário do laboratório
 
@@ -40,7 +40,6 @@ O Microsoft Sentinel é uma solução nativa de nuvem, SIEM e SOAR da Microsoft.
 1. Se solicitado, selecione **OK** para ativar a avaliação gratuita do Microsoft Sentinel.
 
 #### Tarefa 2 – Adicionar o Microsoft Entra ID como uma fonte de dados
-    **Note** - As of 2/8/2024, the data source is now Microsoft Entra ID.
 
 1. No  **Microsoft Sentinel**, navegue pelo menu até **Gerenciamento de conteúdo** e selecione **Hub de Conteúdo**.
 

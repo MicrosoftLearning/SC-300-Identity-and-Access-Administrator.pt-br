@@ -7,6 +7,8 @@ lab:
 
 # Laboratório 17 – Descoberta de aplicativos do Defender para Nuvem e imposição de restrições
 
+### Tipo de logon = administração do Microsoft 365
+
 ## Cenário do laboratório
 
 Os aplicativos do Microsoft Defender para Nuvem utilizam logs do tráfego de rede para identificar os aplicativos que os usuários estão acessando.Os logs de tráfego de firewalls locais fornecerão um relatório de instantâneos sobre os aplicativos mais comuns e os usuários que estão acessando esses aplicativos.O tráfego de dispositivos gerenciados será alimentado no painel de visão geral da descoberta dos aplicativos do Microsoft Defender para Nuvem.
@@ -29,6 +31,11 @@ Os aplicativos do Microsoft Defender para Nuvem utilizam logs do tráfego de red
 
 1. Você poderá acessar este site.
 
+1. Feche a guia do Dropbox.
+
+1. Retorne à tela do Defender para Aplicativos de Nuvem e clique nos três pontos à direita do Dropbox.
+
+1. Clique em **Sancionado** e, em seguida, no botão **Avançar** . 
 
 #### Tarefa 2 – Restringir aplicativos nos aplicativos do Defender para Nuvem
 
@@ -38,9 +45,6 @@ Os aplicativos do Microsoft Defender para Nuvem utilizam logs do tráfego de red
 
 1. Esse processo permite que você bloqueie aplicativos que não são sancionados dentro da política da sua empresa, limitando o shadow IT dentro da sua organização.
 
-**Observação**: há um atraso entre a proibição de um aplicativo e o bloqueio do mesmo.
+**Observação**: há um atraso entre ao sancionar e anular a sanção de um aplicativo e desse aplicativo. Você pode ter que esperar até cinco minutos.
 
 Uma vez que o aplicativo for bloqueado como não sancionado, ele não poderá ser acessado por meio do navegador, navegador privado ou download da loja em um cliente integrado ao MDE (Microsoft Defender para ponto de extremidade) integrado aos aplicativos do Microsoft Defender para Nuvem.
-
-
-
