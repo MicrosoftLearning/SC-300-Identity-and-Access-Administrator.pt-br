@@ -109,7 +109,7 @@ Você precisa adicionar e remover licenças por meio do Centro de administraçã
 
    ![Imagem de tela do site Office.com com Delia Dennis logada com aplicativos de escritório disponíveis, porque uma licença está atribuída.](./media/delia-office-license.png)
     
-5. Feche a janela do navegador. 
+5. Feche a janela do navegador.
 
 ### Exercício 2 – Criar um grupo do Microsoft 365 no Microsoft Entra ID
 

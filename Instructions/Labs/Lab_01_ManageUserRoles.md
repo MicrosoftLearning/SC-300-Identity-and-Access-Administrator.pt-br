@@ -134,8 +134,8 @@ Esta tarefa usará um método alternativo para remover a função atribuída; el
 2. Na caixa de pesquisa, digite **Funções e**, em seguida, inicie as Funções e administração do Microsoft Entra ID.
 3. Em  **Todas as funções** de  **Funções e administradores**, selecione a função **Administrador de aplicativo** na lista.
 4. Na página **Administrador do aplicativo | Atribuições** você deve ver o nome de Chris Green listado.
-5. Marque a caixa ao lado de Chris Green.
-6. Selecione **X Remover atribuições** nas opções na parte superior da caixa de diálogo.
+5. Role totalmente para a direita em Chris Green.
+6. Selecione **Remover** nas opções na parte superior da caixa de diálogo.
 7. Responda **Sim** quando a caixa de confirmação for aberta.
 8. Feche a tela.
 

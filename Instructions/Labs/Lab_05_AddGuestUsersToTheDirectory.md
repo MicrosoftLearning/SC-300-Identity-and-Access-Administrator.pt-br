@@ -90,7 +90,7 @@ Uma parceria recente foi estabelecida com outra empresa. Por enquanto, funcioná
 
 #### Tarefa 2 – Convidar usuários convidados em massa com o PowerShell
 
-1. Abra o PowerShell como administrador.Isso pode ser feito pesquisando o PowerShell no Windows e escolhendo Executar como administrador. 
+1. Abra o PowerShell como administrador. Isso pode ser feito pesquisando o PowerShell no Windows e escolhendo Executar como administrador. 
 
 **Observação** – Você precisa ter o PowerShell versão 7.2 ou superior para que este laboratório funcione.  Quando o PowerShell abrir, você obterá uma versão na parte superior da tela, se estiver executando uma versão mais antiga, atualize ou esta parte do laboratório falhará.
 
