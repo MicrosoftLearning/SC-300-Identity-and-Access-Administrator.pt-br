@@ -38,29 +38,3 @@ As tarefas neste exercício e nos outros deste roteiro de aprendizagem requerem 
 1. Atualize o navegador até ver Azure AD Premium P2 sob o nome da organização. Isso poderá levar alguns minutos.
 
 1. Talvez seja necessário sair e entrar novamente no Microsoft Azure se encontrar problemas com os recursos esperados que não estão disponíveis.
-
-#### Resgatar o Azure Pass
-
-1. Abra um navegador e acesse: [www.microsoftazurepass.com](https://www.microsoftazurepass.com).
-
-1. Recomendamos que você feche todos os navegadores e abra uma nova sessão anônima. Outros logons podem persistir e causar erros durante a etapa de ativação.
-
-1. Selecione o botão **Iniciar** para começar.
-
-1. Verifique se o nome de usuário é o mesmo que a conta de locatário do provedor de laboratório.
-
-1. Insira o código de voucher do Azure Pass no campo **Inserir código de promoção**. Confirme que você é um ser humano, se solicitado. 
-
-1. Insira as informações de endereço nos campos do**Perfil**
-    - **Linha de endereço 1**: 1 Microsoft Way
-    - **Cidade**: Redmond
-    - **Estado**: Washington
-    - **CEP**: 98052
-
-1. Marque a caixa para concordar com o contrato de assinatura e selecione **Inscrever-se**.
-
-    ![Concordar com o contrato de assinatura e se inscrever](media/azurepassactivation.png)
-
-1. Navegue até [https://portal.azure.com](https://portal.azure.com) e entre usando uma conta de administrador global no diretório.
-
-1. Navegue até **Assinaturas** e verifique se o **Azure Pass - Patrocínio** mostra o status **Ativo**. 
