@@ -7,16 +7,13 @@ lab:
 
 # Laboratório 07: OPCIONAL — Adicionar identidade híbrida com o Microsoft Entra Connect
 
-
-
 # Este laboratório só funcionará em um ambiente que não seja de host de laboratório. Se você quiser experimentá-lo usando uma conta pessoal, deve funcionar. Você não poderá se apresentar dentro da classe.
 
 
 
 
-**Observação** – Este laboratório requer um Azure Pass. Consulte o laboratório 00 para obter instruções.
 
-**Observação 2** – Este laboratório é intitulado Opcional.  Leva pelo menos 1 hora para ser concluído e requer que você esteja informado sobre as etapas do laboratório.  Sinta-se livre para computá-lo quando lhe for conveniente.  Se sua empresa já definiu a configuração híbrida ou você não planeja usar o Microsoft Entra Connect, pule este laboratório.
+**Observação** – Este laboratório é intitulado Opcional.  Leva pelo menos 1 hora para ser concluído e requer que você esteja informado sobre as etapas do laboratório.  Sinta-se livre para computá-lo quando lhe for conveniente.  Se sua empresa já definiu a configuração híbrida ou você não planeja usar o Microsoft Entra Connect, pule este laboratório.
 
 ## Cenário do laboratório
 
@@ -38,7 +35,7 @@ Sua empresa tem o Active Directory Domain Services local.  Eles gostariam de con
 
    **Observação** – A Configuração base de 3 VMs provisiona um controlador de domínio do Active Directory do Windows Server 2016 chamado DC1 usando o nome de domínio especificado e um servidor membro do domínio chamado APP1 executando o Windows Server 2016. Ele também oferece uma opção para provisionar uma VM cliente executando o Windows 10, no entanto, não a usaremos em nosso laboratório (principalmente devido aos requisitos de licenciamento aplicáveis ao executar VMs do Windows 10 no Azure). O servidor membro do domínio (APP1) instalou automaticamente o .NET 4.5 e o IIS.  
    
-   **Observação** – A VM necessária para este laboratório é **DC1**.  Se você estiver usando um Azure Pass, há uma limitação de 2 VMs, portanto, a VM do cliente pode falhar.  Isso não é necessário para este laboratório.
+   **Observação** – A VM necessária para este laboratório é **DC1**.
 
 3. Na página **Implantação personalizada**, especifique as configurações a seguir e selecione **Revisar + Criar** e **Criar**.
 

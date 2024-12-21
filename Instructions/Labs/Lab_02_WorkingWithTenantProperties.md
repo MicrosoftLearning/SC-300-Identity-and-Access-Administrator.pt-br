@@ -32,10 +32,10 @@ Você usaria a ID do Microsoft Entra para criar um domínio que comprou.  Se voc
 1. No campo **Nome de domínio personalizado**, crie um subdomínio personalizado para o locatário do laboratório colocando **vendas** na frente do nome de domínio **onmicrosoft.com**.  O formato será semelhante a este:
 
     ```
-    mydomain.com
+    Sales.###onmicrosoft.com
     ```
 
-1. **Observação**: Você será solicitado a abrir o centro de administração do Microsoft 365 para concluir essa ação.
+**Observação**: Você será solicitado a abrir o centro de administração do Microsoft 365 para concluir essa ação.
 
 1. Selecione **Adicionar domínio** para adicionar o subdomínio.
 
