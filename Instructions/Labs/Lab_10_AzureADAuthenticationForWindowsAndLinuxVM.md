@@ -65,7 +65,7 @@ A empresa decidiu que o Microsoft Entra ID deve ser usado para fazer logon em m�
 1. Atribua as seguintes configurações:
   - **Funções de função de trabalho**
   - **Função** logon de administrador da máquina virtual
-  - **Membros**, selecione Usuário, grupo ou entidade de serviço.  Em seguida, use **+ Selecionar membros** para adicionar **Joni Sherman** como um usuário específico para a VM.
+  - **Membros**, selecione Usuário, grupo ou entidade de serviço.  Em seguida, use **+ Selecionar membros** para adicionar **User2** como um usuário específico para a VM.
 
 1. Selecione **Revisar + atribuir** para concluir o processo.
 
@@ -133,30 +133,30 @@ A empresa decidiu que o Microsoft Entra ID deve ser usado para fazer logon em m�
 1. Selecione **OK**.
 
 1. Na caixa de diálogo de logon, insira as seguintes informações:
-   - Nome de usuário = **AzureAD\JoniS@ seu nome de domínio**
+   - Nome de usuário = **AzureAD\User2@ seu nome de domínio**
    - Senha = Insira a senha fornecida pelo provedor do laboratório
 
-   NOTA: JoniS é o usuário que concedemos acesso para fazer logon como administrador durante a Tarefa 1.
+   OBSERVAÇÃO: User2 é o usuário a quem concedemos acesso para fazer logon como administrador durante a Tarefa 1.
 
-1. O Windows Server deve confirmar o logon e abrir o Painel do Gerenciador do Servidor normal.
+1. O Windows confirmará o login e abrirá na área de trabalho normal.
 
 #### Tarefa 6 – Teste opcional para explorar o logon do Microsoft Entra ID
 
-1. Verifique se o JoniS foi o único usuário adicionado ao grupo Administradores.
+1. Verifique se User2 foi o único usuário adicionado ao grupo Administradores.
 
 1. Use clique secundário do mouse no botão INICIAR e selecione **Gerenciamento do computador** no menu pop-up.
 
 1. Abra **Usuários e Grupos Locais** e navegue até **Grupos, Administradores**.
 
-1. Você deve ver **Azure\JoniSherman...** na lista.
+1. Você verá **Azure\User2...** na lista.
 
 1. Verifique se outros membros do Microsoft Entra ID conseguem entrar.
 
 1. Saia da sessão de Área de Trabalho Remota.
 
-1. Inicie o arquivo **<<server name>>-AzureAD.RDP** novamente.
+1. Inicie o arquivo **<<server name>>-EntraID.RDP** novamente.
 
-1. Tente fazer logon como outros membros do Azure AD, como AdeleV ou AlexW ou DiegoS.
+1. Tente se conectar como outros membros do Microsoft Entra ID.
 
 1. Você deve notar que o acesso a cada um desses usuários é negado.
 

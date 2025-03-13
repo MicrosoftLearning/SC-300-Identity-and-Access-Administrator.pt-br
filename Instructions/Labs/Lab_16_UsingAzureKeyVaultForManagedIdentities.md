@@ -55,6 +55,8 @@ Ao usar as identidades gerenciadas nos recursos do Azure, seu código pode obter
   | Senha | Define uma senha válida que você consiga lembrar |
   | Licenciamento | Confirme se você tem uma licença elegível |
 
+1. Certifique-se de marcar a caixa de seleção **Confirmar licença**.
+
 1. Use no botão **Avançar** para acessar a guia **Gerenciamento**.
 
 1. Na guia **Gerenciamento**, marque a caixa ao lado de **Habilitar identidade gerenciada atribuída ao sistema**.

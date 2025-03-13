@@ -7,7 +7,7 @@ lab:
 
 # Laboratório 03: atribuir licenças usando associação de grupo
 
-### Tipo de logon = administração do Microsoft 365
+### Tipo de logon = logon do locatário do Microsoft 365 + E5
 
 ## Cenário do laboratório
 
@@ -23,10 +23,10 @@ Sua organização decidiu usar grupos de segurança no Microsoft Entra ID para g
 2. Conecte-se ao [https://www.office.com](https://www.office.com).
 3. Selecione Entrar e conecte-se como Delia Dennis.
 
-   | **Configuração**| **Valor**|
+   | **Configuração** | **Valor** |
    | :--- | :--- |
-   | Nome de Usuário | DeliaD@`your domain name.com`|
-   | Senha| Digite a senha do Administrador Global nos Recursos|
+   | Nome de Usuário | DeliaD@`your domain name.com` |
+   | Senha| Insira a senha de usuário fornecida para o DeliaD |
 
 4. Você deve se conectar ao site da Office.com, mas verá uma mensagem indicando que não tem uma licença.
 
@@ -60,7 +60,7 @@ Sua organização decidiu usar grupos de segurança no Microsoft Entra ID para g
 
 #### Tarefa 3 – Adicionar uma licença do Office ao sg-SC300-O365
 
-Você precisa adicionar e remover licenças por meio do Centro de administração do Microsoft 365. Esta é uma mudança relativamente nova.
+**Dica de laboratório** — Você precisa adicionar e remover licenças por meio do Centro de administração do Microsoft 365. Esta é uma mudança relativamente nova.
 
 1. Abra uma nova guia no navegador.
 
@@ -74,11 +74,11 @@ Você precisa adicionar e remover licenças por meio do Centro de administraçã
 
 6. Escolha a guia **Grupos** na tela de licenças.
 
-7. Escolha o item **+ Adicionar licença**.
+7. Escolha o item **+ Atribuir licenças**.
 
 8. Procure pelo grupo **sg-SC300-O365** e selecione-o na lista.
 
-8. Depois de adicionar Raul, clique em **Atribuir**.
+8. Depois de adicionar o grupo, clique em **Atribuir**.
  
 9. Feche a mensagem de confirmação.
 
@@ -86,7 +86,7 @@ Você precisa adicionar e remover licenças por meio do Centro de administraçã
 
 11. Navegue de volta para **Todos os grupos**. Na navegação à esquerda, em **Identidade**, selecione **Grupos**
 
-12. Na página Usuários, selecione **sg-SC300-O365**.
+12. Na página Grupos, selecione **sg-SC300-O365**.
 
 13. No painel de navegação esquerdo, selecione **Licenças**.
 
@@ -94,7 +94,7 @@ Você precisa adicionar e remover licenças por meio do Centro de administraçã
 
 15. Você pode sair da tela de licença.
 
-#### Taks 4 - Confirmar a licença do Office 365
+#### Tarefa 4 — Confirmar a licença do Office 365
 
 1. Inicie uma nova janela do navegador InPrivate.
 2. Conecte-se ao [https://www.office.com](https://www.office.com).
@@ -103,7 +103,7 @@ Você precisa adicionar e remover licenças por meio do Centro de administraçã
    | **Configuração**| **Valor**|
    | :--- | :--- |
    | Nome de Usuário | DeliaD@`your domain name.com`|
-   | Senha| Digite a senha do Administrador Global nos Recursos|
+   | Senha| Insira a senha fornecida  |
 
 4. Você deve se conectar ao site da Office.com e não ver nenhuma mensagem sobre a licença. Todos os aplicativos do Office estão disponíveis à esquerda.
 
@@ -143,7 +143,7 @@ Parte de suas funções como administrador do Microsoft Entra é criar diferente
 
 À medida que sua empresa cresce, o gerenciamento manual de grupos é muito demorado. Desde a padronização do diretório, agora você pode aproveitar os grupos dinâmicos. Você deve criar um novo grupo dinâmico para garantir que esteja pronto para a criação de grupos dinâmicos em produção.
 
-1. Entre no[https://entra.microsoft.com](https://entra.microsoft.com) com uma conta que é atribuída à função de Administrador global ou de Administrador de usuários no locatário.
+1. Entre no [https://entra.microsoft.com](https://entra.microsoft.com) com uma conta de administrador fornecida. Você precisa pelo menos da função de Administrador de Usuários no locatário.
 
 2. Selecionar **Identidade**.
 
@@ -164,10 +164,10 @@ Parte de suas funções como administrador do Microsoft Entra é criar diferente
 9. No painel Editar sintaxe de regra, insira a seguinte expressão na caixa **Sintaxe de regra**:
 
    ```powershell
-   user.objectid -ne null
+   user.objectId -ne null
    ```
 
-   **Aviso** - o `user.objectid` diferencia maiúsculas de minúsculas.
+   **Aviso** - o `user.objectId` diferencia maiúsculas de minúsculas.
 
 10. Selecione **OK**. A regra é exibida na caixa Sintaxe de regra.
 
@@ -194,8 +194,10 @@ Parte de suas funções como administrador do Microsoft Entra é criar diferente
 
 1. Tente criar um grupo apenas com usuários **Convidados**:
 
-   - (user.objectid -ne null) e (user.userType -eq "Guest")
+   - (user.objectId -ne null) e (user.userType -eq "Guest")
 
 2. Tente criar um grupo com apenas **membros** dos usuários do Microsoft Entra.
 
-   - (user.objectid -ne null) e (user.userType -eq "Member")
+   - (user.objectId -ne null) e (user.userType -eq "Member")
+
+**Dica de laboratório** — Se você receber uma mensagem Falha ao criar grupo mencionando um operador inválido, confirme a ortografia do operador.  Observação: o I em objectId e o T em userType são letras maiúsculas.

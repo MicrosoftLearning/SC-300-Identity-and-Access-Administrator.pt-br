@@ -29,7 +29,7 @@ Sua organização precisa ser capaz de limitar o acesso do usuário a seus aplic
   | Configuração | Valor |
   | :--- | :--- |
   | Nome de Usuário | **DebraB@**`<<your lab domain>>.onmicrosoft.com` |
-  | Senha | Insira a senha de administrador do locatário (Consulte a guia Recursos de laboratório para recuperar a senha de administrador do locatário). |
+  | Senha | Insira a senha fornecida |
     
 4. Ignore as telas de boas-vindas e introdução.
 
@@ -83,13 +83,13 @@ O acesso condicional do Microsoft Entra é um recurso avançado do Microsoft Ent
 
 Você deve testar suas políticas de acesso condicional para garantir que elas estejam funcionando conforme o esperado.
 
-1. Abra uma nova guia do navegador "InPrivate" e navegue até [https://sway.office.com](https://sway.office.com).
+1. Abra uma nova guia do navegador "InPrivate" e navegue até [https://sway.cloud.microsoft](https://sway.cloud.microsoft).
     - Quando solicitado, faça login como DebraB:
 
    | Configuração | Valor |
    | :--- | :--- |
    | Nome de Usuário | **DebraB@**`<<your lab domain>>.onmicrosoft.com` |
-   | Senha | Insira a senha de administrador do locatário (Consulte a guia Recursos de laboratório para recuperar a senha de administrador do locatário). |
+   | Senha | Insira a senha fornecida |
      
 2. Verifique se você pode acessar o Microsoft Sway.
 
