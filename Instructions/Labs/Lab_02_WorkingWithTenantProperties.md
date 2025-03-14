@@ -7,7 +7,7 @@ lab:
 
 # Laboratório 02: Trabalhando com propriedades de locatário
 
-### Tipo de logon = administração do Microsoft 365
+### Tipo de logon = logon do locatário do Microsoft 365 + E5
 
 ## Cenário do laboratório
 
@@ -32,14 +32,14 @@ Você usaria a ID do Microsoft Entra para criar um domínio que comprou.  Se voc
 1. No campo **Nome de domínio personalizado**, crie um subdomínio personalizado para o locatário do laboratório colocando **vendas** na frente do nome de domínio **onmicrosoft.com**.  O formato será semelhante a este:
 
     ```
-    Sales.###onmicrosoft.com
+    Sales.labTenantName.onmicrosoft.com
     ```
 
 **Observação**: Você será solicitado a abrir o centro de administração do Microsoft 365 para concluir essa ação.
 
 1. Selecione **Adicionar domínio** para adicionar o subdomínio.
 
-1. Insira o nome do subdomínio `sales.tenantname.onmicrosoft.com` na caixa de diálogo.
+1. Insira o nome do subdomínio `sales.tenantname.onmicrosoft.com` na caixa de diálogo. Lembre-se de substituir *tenantname* pelo nome do seu locatário.
 
 1. Clique no botão **Usar este domínio** na parte inferior da tela.
 
@@ -87,6 +87,8 @@ As assinaturas do Azure têm uma relação de confiança com o Microsoft Entra I
 1. Em **Propriedades do locatário**, localize a **ID do locatário**. Esse é o seu identificador de locatário exclusivo.
 
     ![Imagem da tela exibindo a página Propriedades do locatário com a caixa ID do locatário destacada](./media/portal-tenant-id.png)
+
+**Observação** — É útil se você registrar a anotação da ID de locatário no bloco de notas ou outro local para uso em laboratórios futuros.
 
 ### Exercício 3 – Configurar as informações de privacidade
 

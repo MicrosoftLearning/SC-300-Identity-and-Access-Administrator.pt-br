@@ -31,7 +31,7 @@ Você deve habilitar as configurações de colaboração externa para sua organi
 1. Entre em  [https://entra.microsoft.com](https://entra.microsoft.com)  como um administrador de locatários.
 2. Selecione **Identidade**.
 3. Selecione  **Identidades externas** e, em seguida, selecione **Todos os provedores de identidade**.
-4. Selecione o link de notificação **Senha de uso único por email** que você vê próximo à parte superior da tela.
+4. Na lista de provedores, selecione o item **Senha de uso único por email** e selecione **Configurada**.
 
     **Observação** – A senha de uso único é uma maneira segura de convidar um usuário para ingressar em sua organização.
     

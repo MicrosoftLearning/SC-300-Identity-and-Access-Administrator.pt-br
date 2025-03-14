@@ -17,7 +17,7 @@ lab:
 
 Registrar seu aplicativo estabelece uma relação de confiança entre seu aplicativo e a plataforma de identidade da Microsoft. A confiança é unidirecional: seu aplicativo confia na plataforma de identidade da Microsoft, e não o contrário.
 
-1. Faça login em [https://entra.microsoft.com](https://entra.microsoft.com) usando uma conta de Administrador global.
+1. Entre no [https://entra.microsoft.com](https://entra.microsoft.com) usando a conta de administrador fornecida.
 
 2. Abra o menu do portal e selecione  **Microsoft Entra ID**.
 

@@ -29,11 +29,13 @@ Você precisará tornar um usuário qualificado para uma função de recurso do 
 
 #### Tarefa 1 – Atribuir funções de recurso do Azure
 
-1. Entre no [https://entra.microsoft.com](https://entra.microsoft.com) usando uma conta de administrador global.
+1. Entre no [https://entra.microsoft.com](https://entra.microsoft.com) usando a conta de administrador fornecida.
 
 2. Pesquise e selecione o **Privileged Identity Management.**
 
 3. Na página Privileged Identity Management, no painel de navegação esquerdo, selecione **Recursos do Azure.**
+
+**Dica de laboratório** – As próximas etapas são escritas para a experiência de Recurso do Azure herdado.  Você pode mudar para a experiência antiga na parte superior da tela ou concluir o exercício na nova experiência sem o passo a passo.
 
 4. No menu suspenso Assinaturas, escolha o item Assinatura do MOC##### . Em seguida, na parte inferior da tela, selecione **Gerenciar recursos**.
 
@@ -42,6 +44,8 @@ Você precisará tornar um usuário qualificado para uma função de recurso do 
 6. Na página **Visão geral**, revise as informações.
 
    ![Imagem da tela exibindo o Recurso do Azure adicionado recentemente](./media/lp4-mod3-pim-az-resource-overview.png)
+
+   **Dica de laboratório** — Devido à natureza do ambiente de laboratório, você não verá nenhum recurso. Consulte a imagem para ver um exemplo.
 
 7. No menu de navegação esquerdo, em **Gerenciar**, selecione **Funções** para ver a lista de funções para recursos do Azure.
 
@@ -68,6 +72,8 @@ Você precisará tornar um usuário qualificado para uma função de recurso do 
 16. Depois que a nova atribuição de função for criada, uma notificação de status será exibida.
 
 #### Tarefa 2 – Atualizar ou remover uma atribuição de função de recurso
+
+**Observação** — Devido à segurança imposta neste ambiente de laboratório, você não pode concluir essas etapas.  Revise as etapas na interface do usuário, mas você não poderá aplicar alterações.  Estamos trabalhando ativamente para resolver isso.
 
 Siga estas etapas para atualizar ou remover uma atribuição de função existente.
 

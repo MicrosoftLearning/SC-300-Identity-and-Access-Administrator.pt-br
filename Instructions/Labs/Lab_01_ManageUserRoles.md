@@ -15,13 +15,14 @@ Este laboratório tem duas opções de logon diferentes, usadas em diferentes pa
 
   - Logon baseado em recurso do Azure
   - Logon de locatário do Microsoft 365 + E5
+      - Conta de administrador MOD
 
 Será informado qual logon usar em cada um dos laboratórios.
 
 
 # Laboratório 01: Gerenciar funções de usuários
 
-### Tipo de logon = administração do Microsoft 365
+### Tipo de logon = logon do locatário do Microsoft 365 + E5
 
 ## Cenário do laboratório
 
@@ -93,14 +94,17 @@ Usando o Microsoft Entra ID, você pode designar administradores limitados para 
 3. Selecione **Todos os usuários** na seção Gerenciar do menu.
 4. Selecione a conta **Chris Green**.
 5. Escolha **Funções atribuídas** no menu Gerenciar.
-6. Selecione **+ Adicionar atribuições** e marque a função `Application administrator`.
-7. Selecione **Adicionar**
+6. Selecione **+ Adicionar atribuições**.
+7. Selecione a função `Application administrator` na lista suspensa.
+8. Selecione o botão **Avançar**.
+9. Marque o valor **Ativo** em **Tipo de atribuição**.
+10. Selecione **Atribuir**
 
     ![Página Funções atribuídas – mostrando a função selecionada](./media/directory-role-select-role.png)
 
 **Observação** – se o ambiente de laboratório já tiver ativado a P2 do Microsoft Entra ID Premium, o PIM (gerenciamento de identidade privilegiada) será habilitado e você precisará selecionar **Avançar** e atribuir uma função permanente a esse usuário.
 
-9. Selecione o botão **Atualizar**.
+11. Clique no botão **Atualizar**.
 
 **Observação – A função Administrador de aplicativos recém-atribuída aparece na página Funções atribuídas do usuário.**
 
@@ -118,11 +122,11 @@ Usando o Microsoft Entra ID, você pode designar administradores limitados para 
 4. Pesquise e selecione **Aplicativos empresariais** na caixa de diálogo de pesquisa na parte superior da tela.
 5. Observe que **+ Novo Aplicativo** agora está disponível.
 6. Selecione **+ Novo Aplicativo**
-7. Veja que **"**+ Criar seu próprio aplicativo** não está esmaecido. Se você escolher um aplicativo de galeria, verá que o botão **Criar** está disponível.
+7. Veja que **+ Criar seu próprio aplicativo** não está esmaecido. Se você escolher um aplicativo de galeria, verá que o botão **Criar** está disponível.
 
    **Observação – Essa função agora tem a capacidade de adicionar aplicativos ao locatário. Vamos experimentar mais com esse recurso em laboratórios posteriores.**
 
-7. Sair da instância Chris Green do portal e fechar o navegador.
+8. Sair da instância Chris Green do portal e fechar o navegador.
 
 ### Exercício 3 - Remover uma atribuição de função
 
@@ -157,7 +161,7 @@ Esta tarefa usará um método alternativo para remover a função atribuída; el
 
     Você pode modificar esse arquivo para adicionar usuários em massa.  Observe que você não precisa preencher todo o campo.  De acordo com os dados de amostra fornecidos, você precisa adicionar as informações de nome e nome de usuário.
 
-6. Um CSV de amostra foi fornecido na pasta Allfiles/Lab1 -- **SC300BulkUser.csv**.
+6. Um CSV de amostra foi fornecido na pasta Allfiles/Labs/Lab1 -- **SC300BulkUser.csv**.
    1. Abra o Bloco de Notas.
      - Dentro do ambiente de laboratório, selecione o botão INICIAR e digite Bloco de Notas.  
    1. Abra o arquivo SC300BulkUser.csv
@@ -166,7 +170,7 @@ Esta tarefa usará um método alternativo para remover a função atribuída; el
 
 7. Na caixa de diálogo **Criar usuários em massa**, selecione o ícone de pasta do arquivo na etapa 3.
 
-8. Procure a pasta Allfiles/Lab1 e selecione o arquivo **SC300BulkUser.csv**.
+8. Procure a pasta Allfiles/Labs/Lab1 e selecione o arquivo **SC300BulkUser.csv**.
 
 9. Selecione **Abrir**.
 
@@ -180,6 +184,8 @@ Quando os usuários forem criados, você será avisado de que a criação foi be
 
 **Observação** – Você precisa ter o PowerShell versão 7.2 ou superior para que este laboratório funcione.  Quando o PowerShell abrir, você obterá uma versão na parte superior da tela, se você estiver executando e versão mais antiga, siga as instruções na tela para ir para https://aka.ms/PowerShell-Release?tag=7.3.9. Role para baixo até a seção de ativos e selecione powershell-7.3.1-win-x64.msi. Quando o download for concluído, selecione Abrir arquivo. Instale usando todos os padrões.
 
+**Dica de laboratório** – TouchType não funciona bem com o PowerShell no ambiente de laboratório.  Para contornar esse problema, abra o Bloco de Notas no ambiente de laboratório. Em seguida, use o recurso TouchType para colocar o script no Bloco de Notas e, por fim, use Copiar e Colar para colocar o comando no PowerShell.  Desculpas pela etapa extra.
+
 2. Você precisará instalar o módulo do Microsoft.Graph PowerShell se não o tiver usado antes.  Execute s dois comandos a seguir e confirme a operação quando solicitado apertando Y:
 
     ```
@@ -192,7 +198,7 @@ Quando os usuários forem criados, você será avisado de que a criação foi be
     ```
     
 
-4. Em seguida, você precisará fazer logon no Azure executando:  
+4. Em seguida, você precisará fazer logon na API do Microsoft Graph executando:  
 
     ```
     Connect-MgGraph -Scopes "User.ReadWrite.All"
@@ -298,7 +304,7 @@ Você precisa adicionar e remover licenças por meio do Centro de administraçã
 
 1. Abra uma nova guia no navegador.
 
-2. Conecte-se ao centro de administração do Microsoft 365 em http://admin.microsoft.com.
+2. Conecte-se ao centro de administração do Microsoft 365 em [https://admin.microsoft.com](https://admin.microsoft.com).
 
 3. Faça login como sua conta de administrador, se solicitado.
 
@@ -306,7 +312,7 @@ Você precisa adicionar e remover licenças por meio do Centro de administraçã
 
 5. Na lista, selecione **Windows 10/11 Enterprise E3**.
 
-6. Escolha o item **+ Adicionar licença**.
+6. Escolha o item **+ Atribuir licenças**.
 
 7. Procure por **Raul Razo** na lista.
 

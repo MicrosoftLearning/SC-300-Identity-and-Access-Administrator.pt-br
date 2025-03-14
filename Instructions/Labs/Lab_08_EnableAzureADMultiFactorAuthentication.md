@@ -7,7 +7,7 @@ lab:
 
 # Laboratório 08 – Habilitar a autenticação multifator
 
-### Tipo de logon = administração do Microsoft 365
+### Tipo de logon = logon do locatário do Microsoft 365 + E5
 
 ## Cenário do laboratório
 
@@ -63,28 +63,29 @@ Em seguida, vamos examinar como configurar regras de política de acesso condici
 5. Em Recursos de destino, selecione **Nenhum recurso de destino selecionado**.
 
    - Na lista suspensa, verifique se **Aplicativos de nuvem** está selecionado.
-   - Em Incluir, marque **Todos os aplicativos de nuvem** e observe o aviso que aparece sobre a possibilidade de bloquear-se. 
-   - Agora, na seção Selecionar, escolha o item **Nenhum**.
+   - Em Incluir, marque **Recursos (anteriormente aplicativos de nuvem)** e observe o aviso que aparece sobre a possibilidade de ficar bloqueado. 
+   - Agora, na seção Incluir, escolha o item **Selecionar recursos**.
+   - Na seção **Selecionar**, selecione o link **Nenhum**.
    - Na caixa de diálogo recém-aberta, escolha **Office 365**.
       - **Lembrete** – em um laboratório anterior, demos a Delia Dennis uma licença do Office 365 e fizemos logon para garantir que funcionava.
    - Escolha **Selecionar**.
 
-6. Examine a seção Condições.
+6. Escolha um local de rede na seção Condições e selecione **Não configurado**.
 
-   - Escolha **Sim** para o controle deslizante de configuração.
+   - Na seção **Condições**, clique no link **0 condições selecionadas**.
+   - Na parte inferior do menu recém-aberto, localize a seção **Locais** e selecione **Não configurado**.
+   - Escolha **Sim** no item **Configurar**.
    - Selecione **Qualquer rede ou local**.
 
-7. Em **Controles de Acesso**, encontre a seção **Conceder** e selecione **0 controles selecionados**.
+7. Em **Controles de Acesso**, encontre a seção **Conceder** e selecione o link **0 controles selecionados**.
 
-8. Marque a caixa de seleção **Exigir autenticação multifator** para impor a MFA.
+   - Marque a caixa de seleção **Exigir autenticação multifator** para impor a MFA.
+   - Certifique-se de que **Exigir todos os controles selecionados** esteja selecionado.
+   - Clique em **Selecionar**.
 
-9. Certifique-se de que **Exigir todos os controles selecionados** esteja selecionado.
+8. Defina **Habilitar política** como **Ativo**.
 
-10. Clique em **Selecionar**.
-
-11. Defina **Habilitar política** como **Ativo**.
-
-12. Selecione **Criar** para criar a política.
+9. Selecione o botão **Criar** para criar a política.
 
     ![Captura de tela mostrando a caixa de diálogo completa Adicionar Política](./media/lp2-mod1-conditional-access-new-policy-complete.png)
 

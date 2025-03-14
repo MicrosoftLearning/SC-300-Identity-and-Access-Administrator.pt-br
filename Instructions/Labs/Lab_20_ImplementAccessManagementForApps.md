@@ -19,9 +19,9 @@ Sua organização exige que apenas usuários ou grupos específicos tenham acess
 
 #### Tarefa 1 – Adicionar um aplicativo ao locatário do Microsoft Entra
 
-1. Faça logon em  [https://entra.microsoft.com](https://entra.microsoft.com) usando uma Conta de administrador global.
+1. Entre no  [https://entra.microsoft.com](https://entra.microsoft.com) usando a conta de Administrador fornecida.
 
-2. Abra o menu do portal e selecione  **Microsoft Entra ID**.
+2. Olhe para o menu no lado esquerdo da tela.
 
 3. No menu Identidade, em **Aplicativos**, selecione **Aplicativos empresariais**.
 

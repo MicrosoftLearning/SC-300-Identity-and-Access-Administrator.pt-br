@@ -112,7 +112,7 @@ Siga estas etapas para tornar um usuário elegível para uma função de adminis
    | Campo | Valor |
    | :--- | :--- |
    | Nome de Usuário | **MiriamG@**`<<your domain.onmicrosoft.com>>` |
-   | Senha |  Insira a senha de administrador do locatário(Consulte a guia Recursos do laboratório para recuperar a senha de administrador do locatário) |
+   | Senha |  Insira a senha fornecida de administrador de locatário |
 
 4. No menu **Identidade** , abra **Usuários** e selecione **Todos os usuários**.
 5. Encontre **Miriam** na lista de usuários
