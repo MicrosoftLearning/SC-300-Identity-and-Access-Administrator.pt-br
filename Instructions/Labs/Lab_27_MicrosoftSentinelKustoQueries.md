@@ -5,7 +5,9 @@ lab:
   module: Module 04 - Plan and Implement and Identity Governance Strategy
 ---
 
-# Laboratório 27 – Consultas Kusto do Microsoft Sentinel para fontes de dados do Microsoft Entra
+# Laboratório 27 OPCIONAL — Consultas Kusto do Microsoft Sentinel para fontes de dados do Microsoft Entra
+
+**Observação** — Este laboratório não pode ser feito no ambiente de laboratório de treinamento fornecido no momento.  Estamos deixando a etapa de laboratório aqui para você ter a opção de testá-lo em seu ambiente Traga Sua Própria Assinatura (BYOS).  Leia as etapas para ver o que é possível.  Estamos trabalhando ativamente para atualizar este laboratório para encontrar uma solução alternativa no ambiente de laboratório e o atualizaremos em breve.
 
 ### Tipo de logon = logon do recurso do Azure
 

@@ -65,6 +65,13 @@ Sua empresa trabalha com muitos fornecedores e, ocasionalmente, você precisa ad
        (where <tenant name> is your tenant name)
    ```
 
+**Dica de laboratório** — Os resultados devem ser semelhantes a este, com a sua ID de locatário e nome de locatário.
+| Número do URI | Link |
+| :--- | :--- |
+| URIs 1 | https://login.microsoftonline.com |
+| URIs 2 | https://login.microsoftonline.com/te/aaaa1111bbbb2222cccc |
+| URIs 3 | https://login.microsoftonline.com/te/MyTenantName.onmicrosoft.com/oauth |
+
 16. Selecione **Criar**. Copie o **ID do cliente** e o **segredo do cliente**. Você os usará quando adicionar o provedor de identidade no portal do Azure.
 
 17. Você pode deixar seu projeto em um status de publicação de Teste.

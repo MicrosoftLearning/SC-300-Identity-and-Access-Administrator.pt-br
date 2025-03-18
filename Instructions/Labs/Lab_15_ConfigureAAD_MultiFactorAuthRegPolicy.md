@@ -52,7 +52,7 @@ A autenticação multifator fornece um meio de verificar quem você é usando ma
 
 1. Em **Atribuições**, selecione **Todos os usuários** em Usuários e selecione um usuário para aplicar a MFA.
 
-1. Mude **Imposição de política** para **Habilitada**.
+1. Encontre o campo **Aplicação de política** na caixa de diálogo.  Defina o valor como **Habilitado**.
 
 1. Selecione **Salvar**.
 
