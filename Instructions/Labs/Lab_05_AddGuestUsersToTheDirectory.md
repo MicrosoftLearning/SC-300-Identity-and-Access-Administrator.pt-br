@@ -57,7 +57,7 @@ Uma parceria recente foi estabelecida com outra empresa. Por enquanto, funcioná
 
 4. Na página Usuários, no menu, selecione **Operações em massa > Convite em massa**.
 
-     ![Imagem da tela exibindo a página Todos os usuários com as opções Operações em massa e Convite em massa realçadas.](./media/lp1-mod3-bulk-invite-option.png)
+   ![Imagem da tela exibindo a página Todos os usuários com as opções Operações em massa e Convite em massa realçadas.](./media/lp1-mod3-bulk-invite-option.png)
 
 5. No painel de usuários do convite em massa, selecione **Baixar** para um modelo CSV de exemplo com propriedades de convite.
 
@@ -69,6 +69,8 @@ Uma parceria recente foi estabelecida com outra empresa. Por enquanto, funcioná
     - **URL de redirecionamento** – a URL para a qual o usuário convidado é encaminhado depois de aceitar o convite.
 
     ![Imagem da tela exibindo o CSV de exemplo do modelo de convidados em massa](./media/lp1-mod3-template-csv.png)
+
+**Dica de laboratório** — Os usuários listados na captura de tela e nos arquivos de modelo são exemplos, eles não existem.  Você terá que adicionar usuários reais para testar totalmente esse recurso.
 
 8. Salve o arquivo.
 
@@ -93,6 +95,8 @@ Uma parceria recente foi estabelecida com outra empresa. Por enquanto, funcioná
 1. Abra o PowerShell como administrador. Isso pode ser feito pesquisando o PowerShell no Windows e escolhendo Executar como administrador. 
 
 **Observação** – Você precisa ter o PowerShell versão 7.2 ou superior para que este laboratório funcione.  Quando o PowerShell abrir, você obterá uma versão na parte superior da tela, se estiver executando uma versão mais antiga, atualize ou esta parte do laboratório falhará.
+
+**Dica de laboratório** — O recurso TouchType no ambiente de laboratório tem problemas para digitar no PowerShell. Se você iniciar o Bloco de notas em seu laboratório, use o TouchType para carregar as instruções do PowerShell no Bloco de notas. Você pode usar **Recortar e Colar** para inseri-las no PowerShell sem digitar.
 
 2. Você precisará instalar o módulo do Microsoft.Graph PowerShell se não o tiver usado antes.  Execute s dois comandos a seguir e confirme a operação quando solicitado apertando Y:
 
