@@ -9,8 +9,6 @@ lab:
 
 ### Tipo de logon = logon do recurso do Azure
 
-**Observação** – Este laboratório requer um Azure Pass. Consulte o laboratório 00 para obter instruções.
-
 ## Cenário do laboratório
 
 O Microsoft Entra Privileged Identity Management (PIM) pode gerenciar as funções de recurso internas do Azure, bem como funções personalizadas, incluindo (dentre outras):
